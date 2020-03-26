@@ -1,0 +1,50 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cmake_all",
+            "type": "shell",
+            "command": "bash cmake.sh clean cmake_all",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$go",
+            "promptOnClose": true,
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "label": "make",
+            "type": "shell",
+            "command": "bash cmake.sh _make {command:wsl-path.getRelativePath}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+        },
+        {
+            "label": "flash",
+            "group": "build",
+            "type": "shell",
+            "command": "bash cmake.sh flash",
+            "presentation": {
+                "reveal": "silent"
+            },
+        },
+        {
+            "label": "start debugsver",
+            "type": "shell",
+            "command": "bash cmake.sh start_debugersever",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$go",
+        },
+    ],
+}

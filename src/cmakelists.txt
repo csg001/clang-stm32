@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 2.6)
+project(src)
+
+#set(LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/GCCARM/STM32H743XIHx_FLASH.ld)
+include(stm32h7)
+
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/BSP)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/CMSIS)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/driver)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/User)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/GCCARM)
+
+
+
+#add_library(${project_nmae} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})
+
+
+

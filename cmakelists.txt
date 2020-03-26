@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 3.6)
+#project(v7001)
+set(CMAKE_SYSTEM_NAME  Generic)
+set(CMAKE_SYSTEM_PROCESSOR ARM)
+
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src)
+
+set(TOOLCHAIN_PREFIX "/mnt/d/gcc-arm-none-eabi-8-2019-q3-update")
+set(elf_name arm_minisys)
+
+add_executable(${elf_name}.elf
+         $<TARGET_OBJECTS:bsp>
+         $<TARGET_OBJECTS:cmsis>
+         $<TARGET_OBJECTS:gccarm>
+         $<TARGET_OBJECTS:driver>
+         $<TARGET_OBJECTS:user>
+         )
+#target_link_libraries(${EXE_NAME} m)
+set_property(TARGET ${elf_name}.elf PROPERTY C_STANDARD 11)
+include(gdb-helper)
+include(binutils-arm-none-eabi)
+
+
+print_section_sizes(${elf_name})
+
+
+create_bin_output(${elf_name})
+create_hex_output(${elf_name})
+generate_vscode_launch_openocd(${elf_name}.elf)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CMAKE_SOURCE_DIR}/custom_output.sh")

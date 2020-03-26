@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Win64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:\\gcc-arm-none-eabi-8-2019-q3-update\\lib\\gcc\\arm-none-eabi/8.3.1/include/**"
+            ],
+            "defines": [
+                "STM32H743xx",
+                "USE_HAL_DRIVER"
+            ],
+            "intelliSenseMode": "clang-x86",
+            "browse": {
+                "path": [],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerArgs": [],
+            "configurationProvider": "vector-of-bool.cmake-tools",
+            "compilerPath": ""
+        }
+    ],
+    "version": 4
+}

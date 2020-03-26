@@ -1,0 +1,45 @@
+Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+clang version 9.0.0 (tags/RELEASE_900/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /mnt/d/clangllvm/bin
+Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+clang-9: error: argument to '-V' is missing (expected 1 value)
+clang-9: error: no input files
+Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+clang version 9.0.0 (tags/RELEASE_900/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /mnt/d/clangllvm/bin
+Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+clang-9: error: argument to '-V' is missing (expected 1 value)
+clang-9: error: no input files
+Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+clang-9: error: unknown argument '-qversion'; did you mean '--version'?
+clang-9: error: no input files
+Checking whether the ASM compiler is MSVC using "/?" did not match "Microsoft":
+clang-9: error: no such file or directory: '/?'
+clang-9: error: no input files
+Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+clang-9: error: unknown argument: '-h'
+clang-9: error: no input files
+Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+clang-9: error: no input files
+Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)":
+clang-9: error: no input files
+Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
+clang version 9.0.0 (tags/RELEASE_900/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /mnt/d/clangllvm/bin
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
+clang version 9.0.0 (tags/RELEASE_900/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /mnt/d/clangllvm/bin

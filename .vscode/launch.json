@@ -1,0 +1,85 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/arm_minisys.elf",
+            "name": "Debug Microcontroller",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "${workspaceFolder}/openocd.cfg",
+            ],
+            "postLaunchCommands": [
+                "set substitute-path /mnt/d d:/"
+            ]
+        },
+        {
+            "name": "(gdb) Bash on Windows Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "arm",
+            "program": "${workspaceFolder}/build/arm_minisys.elf",
+            "args": [
+                "target remote localhost:3333"
+            ],
+            "logging": {
+                "engineLogging": true,
+                "moduleLoad": false,
+                "exceptions": false,
+                "trace": false,
+                "traceResponse": false
+            },
+            "customLaunchSetupCommands": [
+                {
+                    "text": "target remote :3333",
+                    "description": "connect to remote target",
+                    "ignoreFailures": false
+                },
+                {
+                    "text": "monitor reset halt",
+                    "description": "halt",
+                    "ignoreFailures": false
+                },
+                {
+                    "text": "file ${command:extension.vscode-wsl-workspaceFolder}/Build/arm_minisys.elf",
+                    "description": "load symbols",
+                    "ignoreFailures": false
+                },
+                {
+                    "text": "load",
+                    "description": "load to remote MCU",
+                    "ignoreFailures": false
+                },
+                {
+                    "text": "break MCU_START",
+                    "description": "halt",
+                    "ignoreFailures": false
+                },
+                {
+                    "text": "set substitute-path /mnt/d d:/",
+                    "description": "change directory to workspace",
+                    "ignoreFailures": false
+                },
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "launchCompleteCommand": "None",
+            "pipeTransport": {
+                "debuggerPath": "/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gdb",
+                "pipeProgram": "${env:windir}\\system32\\bash.exe",
+                "pipeArgs": [
+                    "-c"
+                ],
+                "pipeCwd": ""
+            },
+            //"sourceFileMap": {
+            //  "/mnt/d": "D:\\",
+            //"/usr": "${command:extension.vscode-wsl-workspaceFolder}"
+            //},
+        },
+    ]
+}
