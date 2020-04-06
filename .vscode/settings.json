@@ -4,7 +4,10 @@
         "main.h": "c",
         "stm32h7xx_hal_uart_ex.h": "c",
         "stm32h7xx_hal.h": "c",
-        "application.h": "c"
+        "application.h": "c",
+        "range_stack.h": "c",
+        "validator.h": "c",
+        "normal_stack.h": "c"
     },
     "C_Cpp.dimInactiveRegions": false
 }

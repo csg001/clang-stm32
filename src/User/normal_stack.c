@@ -1,13 +1,13 @@
 #include "normal_stack.h"
 
-static int _push(struct normal_stack *p_stack,int val){
+ int _push(struct normal_stack *p_stack,int val){
         if(p_stack->top!=p_stack->size){
             p_stack->p_buf[p_stack->top++] = val;
             return 0;
         }
         return -1;
 };
-static int _pop(struct normal_stack *p_stack,int *val){
+int _pop(struct normal_stack *p_stack,int *val){
         if(p_stack->top!=0){
             *val= p_stack->p_buf[--p_stack->top] ;
             return 0;

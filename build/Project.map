@@ -1923,12 +1923,9 @@ Discarded input sections
  .text          0x0000000000000000        0x0 src/User/CMakeFiles/user.dir/normal_stack.c.o
  .llvm_addrsig  0x0000000000000000        0x2 src/User/CMakeFiles/user.dir/normal_stack.c.o
  .text          0x0000000000000000        0x0 src/User/CMakeFiles/user.dir/range_stack.c.o
- .comment       0x0000000000000000       0x2e src/User/CMakeFiles/user.dir/range_stack.c.o
- .note.GNU-stack
-                0x0000000000000000        0x0 src/User/CMakeFiles/user.dir/range_stack.c.o
- .ARM.attributes
-                0x0000000000000000       0x45 src/User/CMakeFiles/user.dir/range_stack.c.o
- .llvm_addrsig  0x0000000000000000        0x0 src/User/CMakeFiles/user.dir/range_stack.c.o
+ .llvm_addrsig  0x0000000000000000        0x1 src/User/CMakeFiles/user.dir/range_stack.c.o
+ .text          0x0000000000000000        0x0 src/User/CMakeFiles/user.dir/validator.c.o
+ .llvm_addrsig  0x0000000000000000        0x0 src/User/CMakeFiles/user.dir/validator.c.o
  .data          0x0000000000000000        0x0 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_aeabi_uldivmod.o)
  .bss           0x0000000000000000        0x0 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_aeabi_uldivmod.o)
  .data          0x0000000000000000        0x0 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
@@ -2173,6 +2170,7 @@ LOAD src/User/CMakeFiles/user.dir/application.c.o
 LOAD src/User/CMakeFiles/user.dir/main.c.o
 LOAD src/User/CMakeFiles/user.dir/normal_stack.c.o
 LOAD src/User/CMakeFiles/user.dir/range_stack.c.o
+LOAD src/User/CMakeFiles/user.dir/validator.c.o
 START GROUP
 LOAD /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a
 LOAD /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a
@@ -2200,7 +2198,7 @@ LOAD /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.
                 0x0000000008000000                g_pfnVectors
                 0x0000000008000298                . = ALIGN (0x4)
 
-.text           0x00000000080002a0     0x4d60
+.text           0x00000000080002a0     0x4da8
                 0x00000000080002a0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080002a0       0x40 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtbegin.o
@@ -2665,622 +2663,642 @@ LOAD /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.
                 0x0000000008003d1e        0x6 src/User/CMakeFiles/user.dir/application.c.o
                 0x0000000008003d1e                application_init
  .text.application_run
-                0x0000000008003d24       0x9e src/User/CMakeFiles/user.dir/application.c.o
+                0x0000000008003d24       0x9c src/User/CMakeFiles/user.dir/application.c.o
                 0x0000000008003d24                application_run
  .text.stack_push
-                0x0000000008003dc2        0x4 src/User/CMakeFiles/user.dir/application.c.o
+                0x0000000008003dc0        0x4 src/User/CMakeFiles/user.dir/application.c.o
  .text.stack_pop
-                0x0000000008003dc6        0x6 src/User/CMakeFiles/user.dir/application.c.o
- .text.main     0x0000000008003dcc       0x8c src/User/CMakeFiles/user.dir/main.c.o
-                0x0000000008003dcc                main
+                0x0000000008003dc4        0x4 src/User/CMakeFiles/user.dir/application.c.o
+ .text.main     0x0000000008003dc8       0x96 src/User/CMakeFiles/user.dir/main.c.o
+                0x0000000008003dc8                main
  .text.PrintfLogo
-                0x0000000008003e58      0x10c src/User/CMakeFiles/user.dir/main.c.o
+                0x0000000008003e5e      0x10c src/User/CMakeFiles/user.dir/main.c.o
  .text.PrintfHelp
-                0x0000000008003f64       0x2c src/User/CMakeFiles/user.dir/main.c.o
+                0x0000000008003f6a       0x2c src/User/CMakeFiles/user.dir/main.c.o
+ .text._push    0x0000000008003f96       0x1c src/User/CMakeFiles/user.dir/normal_stack.c.o
+                0x0000000008003f96                _push
+ .text._pop     0x0000000008003fb2       0x1c src/User/CMakeFiles/user.dir/normal_stack.c.o
+                0x0000000008003fb2                _pop
  .text.normal_stack_init
-                0x0000000008003f90       0x18 src/User/CMakeFiles/user.dir/normal_stack.c.o
-                0x0000000008003f90                normal_stack_init
+                0x0000000008003fce       0x18 src/User/CMakeFiles/user.dir/normal_stack.c.o
+                0x0000000008003fce                normal_stack_init
  .text.stack_init
-                0x0000000008003fa8       0x16 src/User/CMakeFiles/user.dir/normal_stack.c.o
- .text._push    0x0000000008003fbe       0x1c src/User/CMakeFiles/user.dir/normal_stack.c.o
- .text._pop     0x0000000008003fda       0x1c src/User/CMakeFiles/user.dir/normal_stack.c.o
+                0x0000000008003fe6       0x16 src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .text.range_check
+                0x0000000008003ffc       0x16 src/User/CMakeFiles/user.dir/range_stack.c.o
+                0x0000000008003ffc                range_check
+ .text.range_stack_init
+                0x0000000008004012       0x28 src/User/CMakeFiles/user.dir/range_stack.c.o
+                0x0000000008004012                range_stack_init
+ .text.validator_init
+                0x000000000800403a        0x4 src/User/CMakeFiles/user.dir/validator.c.o
+                0x000000000800403a                validator_init
  .text.__aeabi_memclr
-                0x0000000008003ff6        0x6 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-aeabi_memclr.o)
-                0x0000000008003ff6                __aeabi_memclr8
-                0x0000000008003ff6                __aeabi_memclr
-                0x0000000008003ff6                __aeabi_memclr4
- .text.printf   0x0000000008003ffc       0x30 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-printf.o)
-                0x0000000008003ffc                printf
-                0x0000000008003ffc                iprintf
- .text._puts_r  0x000000000800402c       0xdc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-puts.o)
-                0x000000000800402c                _puts_r
- .text.puts     0x0000000008004108       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-puts.o)
-                0x0000000008004108                puts
+                0x000000000800403e        0x6 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-aeabi_memclr.o)
+                0x000000000800403e                __aeabi_memclr8
+                0x000000000800403e                __aeabi_memclr
+                0x000000000800403e                __aeabi_memclr4
+ .text.printf   0x0000000008004044       0x30 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-printf.o)
+                0x0000000008004044                printf
+                0x0000000008004044                iprintf
+ .text._puts_r  0x0000000008004074       0xdc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-puts.o)
+                0x0000000008004074                _puts_r
+ .text.puts     0x0000000008004150       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-puts.o)
+                0x0000000008004150                puts
  .text.__swbuf_r
-                0x0000000008004118       0xa4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-wbuf.o)
-                0x0000000008004118                __swbuf_r
+                0x0000000008004160       0xa4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-wbuf.o)
+                0x0000000008004160                __swbuf_r
  .text.__swsetup_r
-                0x00000000080041bc       0xdc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-wsetup.o)
-                0x00000000080041bc                __swsetup_r
+                0x0000000008004204       0xdc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-wsetup.o)
+                0x0000000008004204                __swsetup_r
  .text.__sflush_r
-                0x0000000008004298      0x10c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fflush.o)
-                0x0000000008004298                __sflush_r
+                0x00000000080042e0      0x10c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fflush.o)
+                0x00000000080042e0                __sflush_r
  .text._fflush_r
-                0x00000000080043a4       0x78 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fflush.o)
-                0x00000000080043a4                _fflush_r
- .text.std      0x000000000800441c       0x48 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x00000000080043ec       0x78 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fflush.o)
+                0x00000000080043ec                _fflush_r
+ .text.std      0x0000000008004464       0x48 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x0000000008004464        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
-                0x0000000008004464                _cleanup_r
+                0x00000000080044ac        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x00000000080044ac                _cleanup_r
  .text.__sfmoreglue
-                0x0000000008004470       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
-                0x0000000008004470                __sfmoreglue
+                0x00000000080044b8       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x00000000080044b8                __sfmoreglue
  .text.__sfp_lock_acquire
-                0x000000000800449c        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
-                0x000000000800449c                __sfp_lock_acquire
+                0x00000000080044e4        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x00000000080044e4                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x00000000080044a8        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080044a8                __sfp_lock_release
+                0x00000000080044f0        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x00000000080044f0                __sfp_lock_release
  .text.__sinit_lock_acquire
-                0x00000000080044b4        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080044b4                __sinit_lock_acquire
+                0x00000000080044fc        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x00000000080044fc                __sinit_lock_acquire
  .text.__sinit_lock_release
-                0x00000000080044c0        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080044c0                __sinit_lock_release
- .text.__sinit  0x00000000080044cc       0x70 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080044cc                __sinit
- .text.__sfp    0x000000000800453c       0x8c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
-                0x000000000800453c                __sfp
+                0x0000000008004508        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000008004508                __sinit_lock_release
+ .text.__sinit  0x0000000008004514       0x70 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000008004514                __sinit
+ .text.__sfp    0x0000000008004584       0x8c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000008004584                __sfp
  .text._fwalk_reent
-                0x00000000080045c8       0x3c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fwalk.o)
-                0x00000000080045c8                _fwalk_reent
+                0x0000000008004610       0x3c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fwalk.o)
+                0x0000000008004610                _fwalk_reent
  .text.__retarget_lock_init_recursive
-                0x0000000008004604        0x2 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
-                0x0000000008004604                __retarget_lock_init_recursive
+                0x000000000800464c        0x2 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
+                0x000000000800464c                __retarget_lock_init_recursive
  .text.__retarget_lock_acquire_recursive
-                0x0000000008004606        0x2 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
-                0x0000000008004606                __retarget_lock_acquire_recursive
+                0x000000000800464e        0x2 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
+                0x000000000800464e                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0000000008004608        0x2 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
-                0x0000000008004608                __retarget_lock_release_recursive
+                0x0000000008004650        0x2 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
+                0x0000000008004650                __retarget_lock_release_recursive
  .text.__swhatbuf_r
-                0x000000000800460a       0x48 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-makebuf.o)
-                0x000000000800460a                __swhatbuf_r
- *fill*         0x0000000008004652        0x2 
+                0x0000000008004652       0x48 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-makebuf.o)
+                0x0000000008004652                __swhatbuf_r
+ *fill*         0x000000000800469a        0x2 
  .text.__smakebuf_r
-                0x0000000008004654       0x80 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-makebuf.o)
-                0x0000000008004654                __smakebuf_r
- .text._free_r  0x00000000080046d4       0x9c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-freer.o)
-                0x00000000080046d4                _free_r
+                0x000000000800469c       0x80 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-makebuf.o)
+                0x000000000800469c                __smakebuf_r
+ .text._free_r  0x000000000800471c       0x9c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-freer.o)
+                0x000000000800471c                _free_r
  .text._malloc_r
-                0x0000000008004770       0xb4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-mallocr.o)
-                0x0000000008004770                _malloc_r
+                0x00000000080047b8       0xb4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x00000000080047b8                _malloc_r
  .text.__sfputc_r
-                0x0000000008004824       0x2e /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000000000800486c       0x2e /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x0000000008004852       0x24 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
-                0x0000000008004852                __sfputs_r
- *fill*         0x0000000008004876        0x2 
+                0x000000000800489a       0x24 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000000000800489a                __sfputs_r
+ *fill*         0x00000000080048be        0x2 
  .text._vfprintf_r
-                0x0000000008004878      0x250 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
-                0x0000000008004878                _vfiprintf_r
-                0x0000000008004878                _vfprintf_r
+                0x00000000080048c0      0x250 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x00000000080048c0                _vfiprintf_r
+                0x00000000080048c0                _vfprintf_r
  .text._printf_common
-                0x0000000008004ac8       0xea /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0000000008004ac8                _printf_common
- *fill*         0x0000000008004bb2        0x2 
+                0x0000000008004b10       0xea /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000008004b10                _printf_common
+ *fill*         0x0000000008004bfa        0x2 
  .text._printf_i
-                0x0000000008004bb4      0x228 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0000000008004bb4                _printf_i
- .text._sbrk_r  0x0000000008004ddc       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-sbrkr.o)
-                0x0000000008004ddc                _sbrk_r
- .text.__sread  0x0000000008004dfc       0x22 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-stdio.o)
-                0x0000000008004dfc                __sread
+                0x0000000008004bfc      0x228 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000008004bfc                _printf_i
+ .text._sbrk_r  0x0000000008004e24       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-sbrkr.o)
+                0x0000000008004e24                _sbrk_r
+ .text.__sread  0x0000000008004e44       0x22 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-stdio.o)
+                0x0000000008004e44                __sread
  .text.__swrite
-                0x0000000008004e1e       0x38 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-stdio.o)
-                0x0000000008004e1e                __swrite
- .text.__sseek  0x0000000008004e56       0x24 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-stdio.o)
-                0x0000000008004e56                __sseek
+                0x0000000008004e66       0x38 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-stdio.o)
+                0x0000000008004e66                __swrite
+ .text.__sseek  0x0000000008004e9e       0x24 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-stdio.o)
+                0x0000000008004e9e                __sseek
  .text.__sclose
-                0x0000000008004e7a        0x8 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-stdio.o)
-                0x0000000008004e7a                __sclose
- *fill*         0x0000000008004e82        0x2 
+                0x0000000008004ec2        0x8 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-stdio.o)
+                0x0000000008004ec2                __sclose
+ *fill*         0x0000000008004eca        0x2 
  .text._write_r
-                0x0000000008004e84       0x24 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-writer.o)
-                0x0000000008004e84                _write_r
+                0x0000000008004ecc       0x24 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-writer.o)
+                0x0000000008004ecc                _write_r
  .text._close_r
-                0x0000000008004ea8       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-closer.o)
-                0x0000000008004ea8                _close_r
+                0x0000000008004ef0       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-closer.o)
+                0x0000000008004ef0                _close_r
  .text._fstat_r
-                0x0000000008004ec8       0x24 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fstatr.o)
-                0x0000000008004ec8                _fstat_r
+                0x0000000008004f10       0x24 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fstatr.o)
+                0x0000000008004f10                _fstat_r
  .text._isatty_r
-                0x0000000008004eec       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-isattyr.o)
-                0x0000000008004eec                _isatty_r
+                0x0000000008004f34       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-isattyr.o)
+                0x0000000008004f34                _isatty_r
  .text._lseek_r
-                0x0000000008004f0c       0x24 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lseekr.o)
-                0x0000000008004f0c                _lseek_r
+                0x0000000008004f54       0x24 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lseekr.o)
+                0x0000000008004f54                _lseek_r
  .text.__malloc_lock
-                0x0000000008004f30        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-mlock.o)
-                0x0000000008004f30                __malloc_lock
+                0x0000000008004f78        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-mlock.o)
+                0x0000000008004f78                __malloc_lock
  .text.__malloc_unlock
-                0x0000000008004f3c        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-mlock.o)
-                0x0000000008004f3c                __malloc_unlock
- .text._read_r  0x0000000008004f48       0x24 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-readr.o)
-                0x0000000008004f48                _read_r
- .text._close   0x0000000008004f6c       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(close.o)
-                0x0000000008004f6c                _close
- .text._fstat   0x0000000008004f7c       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(fstat.o)
-                0x0000000008004f7c                _fstat
- .text._isatty  0x0000000008004f8c       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(isatty.o)
-                0x0000000008004f8c                _isatty
- .text._lseek   0x0000000008004f9c       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(lseek.o)
-                0x0000000008004f9c                _lseek
- .text._read    0x0000000008004fac       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(read.o)
-                0x0000000008004fac                _read
- .text._sbrk    0x0000000008004fbc       0x1c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(sbrk.o)
-                0x0000000008004fbc                _sbrk
- .text._write   0x0000000008004fd8       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(write.o)
-                0x0000000008004fd8                _write
+                0x0000000008004f84        0xc /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-mlock.o)
+                0x0000000008004f84                __malloc_unlock
+ .text._read_r  0x0000000008004f90       0x24 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-readr.o)
+                0x0000000008004f90                _read_r
+ .text._close   0x0000000008004fb4       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(close.o)
+                0x0000000008004fb4                _close
+ .text._fstat   0x0000000008004fc4       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(fstat.o)
+                0x0000000008004fc4                _fstat
+ .text._isatty  0x0000000008004fd4       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(isatty.o)
+                0x0000000008004fd4                _isatty
+ .text._lseek   0x0000000008004fe4       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(lseek.o)
+                0x0000000008004fe4                _lseek
+ .text._read    0x0000000008004ff4       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(read.o)
+                0x0000000008004ff4                _read
+ .text._sbrk    0x0000000008005004       0x1c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(sbrk.o)
+                0x0000000008005004                _sbrk
+ .text._write   0x0000000008005020       0x10 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(write.o)
+                0x0000000008005020                _write
  *(.glue_7)
- .glue_7        0x0000000008004fe8        0x0 linker stubs
+ .glue_7        0x0000000008005030        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008004fe8        0x0 linker stubs
+ .glue_7t       0x0000000008005030        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008004fe8        0x0 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .eh_frame      0x0000000008005030        0x0 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtbegin.o
  *(.init)
- .init          0x0000000008004fe8        0x4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crti.o
-                0x0000000008004fe8                _init
- .init          0x0000000008004fec        0x8 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtn.o
+ .init          0x0000000008005030        0x4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x0000000008005030                _init
+ .init          0x0000000008005034        0x8 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtn.o
  *(.fini)
- .fini          0x0000000008004ff4        0x4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crti.o
-                0x0000000008004ff4                _fini
- .fini          0x0000000008004ff8        0x8 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtn.o
-                0x0000000008005000                . = ALIGN (0x4)
-                0x0000000008005000                _etext = .
+ .fini          0x000000000800503c        0x4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x000000000800503c                _fini
+ .fini          0x0000000008005040        0x8 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtn.o
+                0x0000000008005048                . = ALIGN (0x4)
+                0x0000000008005048                _etext = .
 
-.vfp11_veneer   0x0000000008005000        0x0
- .vfp11_veneer  0x0000000008005000        0x0 linker stubs
+.vfp11_veneer   0x0000000008005048        0x0
+ .vfp11_veneer  0x0000000008005048        0x0 linker stubs
 
-.v4_bx          0x0000000008005000        0x0
- .v4_bx         0x0000000008005000        0x0 linker stubs
+.v4_bx          0x0000000008005048        0x0
+ .v4_bx         0x0000000008005048        0x0 linker stubs
 
-.iplt           0x0000000008005000        0x0
- .iplt          0x0000000008005000        0x0 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.iplt           0x0000000008005048        0x0
+ .iplt          0x0000000008005048        0x0 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.rodata         0x0000000008005000      0x36c
-                0x0000000008005000                . = ALIGN (0x4)
+.rodata         0x0000000008005048      0x36c
+                0x0000000008005048                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata._global_impure_ptr
-                0x0000000008005000        0x4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-impure.o)
-                0x0000000008005000                _global_impure_ptr
+                0x0000000008005048        0x4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-impure.o)
+                0x0000000008005048                _global_impure_ptr
  .rodata.str1.1
-                0x0000000008005004       0x21 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
- *fill*         0x0000000008005025        0x3 
+                0x000000000800504c       0x21 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
+ *fill*         0x000000000800506d        0x3 
  .rodata.s_gpio_list
-                0x0000000008005028       0x40 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
- .rodata.cst16  0x0000000008005068       0x10 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
+                0x0000000008005070       0x40 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
+ .rodata.cst16  0x00000000080050b0       0x10 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
                                          0x40 (size before relaxing)
  .rodata.str1.1
-                0x0000000008005078       0x70 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
+                0x00000000080050c0       0x70 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
  .rodata.str1.1
-                0x00000000080050e8       0x24 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+                0x0000000008005130       0x24 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
  .rodata.D1CorePrescTable
-                0x000000000800510c       0x10 src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.o
-                0x000000000800510c                D1CorePrescTable
+                0x0000000008005154       0x10 src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.o
+                0x0000000008005154                D1CorePrescTable
  .rodata.UARTPrescTable
-                0x000000000800511c       0x18 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
+                0x0000000008005164       0x18 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
  .rodata..L__const.application_run.a
-                0x0000000008005134       0x14 src/User/CMakeFiles/user.dir/application.c.o
+                0x000000000800517c       0x14 src/User/CMakeFiles/user.dir/application.c.o
  .rodata..L__const.application_run.b
-                0x0000000008005148       0x14 src/User/CMakeFiles/user.dir/application.c.o
+                0x0000000008005190       0x14 src/User/CMakeFiles/user.dir/application.c.o
  .rodata.str1.1
-                0x000000000800515c       0x1d src/User/CMakeFiles/user.dir/application.c.o
+                0x00000000080051a4       0x1d src/User/CMakeFiles/user.dir/application.c.o
  .rodata.str1.1
-                0x0000000008005179      0x15d src/User/CMakeFiles/user.dir/main.c.o
+                0x00000000080051c1      0x15d src/User/CMakeFiles/user.dir/main.c.o
                                         0x160 (size before relaxing)
- *fill*         0x00000000080052d6        0x2 
+ *fill*         0x000000000800531e        0x2 
  .rodata.__sf_fake_stderr
-                0x00000000080052d8       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080052d8                __sf_fake_stderr
+                0x0000000008005320       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000008005320                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x00000000080052f8       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080052f8                __sf_fake_stdin
+                0x0000000008005340       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000008005340                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0000000008005318       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
-                0x0000000008005318                __sf_fake_stdout
+                0x0000000008005360       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000008005360                __sf_fake_stdout
  .rodata._vfprintf_r.str1.1
-                0x0000000008005338       0x11 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000008005380       0x11 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x0000000008005349       0x22 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x000000000800536c                . = ALIGN (0x4)
- *fill*         0x000000000800536b        0x1 
+                0x0000000008005391       0x22 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000000080053b4                . = ALIGN (0x4)
+ *fill*         0x00000000080053b3        0x1 
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x000000000800536c        0x8
-                0x000000000800536c                __exidx_start = .
+.ARM            0x00000000080053b4        0x8
+                0x00000000080053b4                __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.bsp_InitExtIO
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HC574_ConfigGPIO
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HC574_ConfigFMC
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HC574_SetPin
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HC574_GetPin
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_InitKey
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_InitKeyVar
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_InitKeyHard
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_PutKey
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_SetKeyParam
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_KeyScan10ms
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_DetectKey
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.IsKeyDownFunc
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.KeyPinActive
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_InitLed
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_LedOff
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_LedOn
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_LedToggle
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_InitTimer
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.SysTick_Config
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_InitHardTimer
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.SysTick_ISR
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_SoftTimerDec
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_DelayMS
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_StartAutoTimer
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_CheckTimer
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.SysTick_Handler
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.TIM2_IRQHandler
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.__NVIC_SetPriority
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_InitUart
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.UartVarInit
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.InitHardUart
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.RS485_InitTXE
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_SetUartParam
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.RS485_SendBefor
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.RS485_SendOver
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.RS485_ReciveNew
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.USART1_IRQHandler
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.UartIRQ
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.USART3_IRQHandler
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_Init
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.MPU_Config
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.CPU_CACHE_Enable
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.SystemClock_Config
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.Error_Handler
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_RunPer10ms
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_RunPer1ms
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.bsp_Idle
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.SCB_EnableICache
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.SCB_EnableDCache
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/bsp.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.NMI_Handler
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.MemManage_Handler
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.BusFault_Handler
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.UsageFault_Handler
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.SVC_Handler
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.DebugMon_Handler
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.PendSV_Handler
-                0x0000000008005374        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
+                0x00000000080053bc        0x0 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.SystemInit
-                0x0000000008005374        0x0 src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.o
+                0x00000000080053bc        0x0 src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_NVIC_SetPriorityGrouping
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.__NVIC_SetPriorityGrouping
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_NVIC_SetPriority
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.__NVIC_GetPriorityGrouping
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.__NVIC_SetPriority
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.NVIC_EncodePriority
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_NVIC_EnableIRQ
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.__NVIC_EnableIRQ
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_SYSTICK_Config
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.SysTick_Config
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_MPU_Disable
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_MPU_Enable
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_MPU_ConfigRegion
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_GPIO_Init
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_RCCEx_PeriphCLKConfig
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.RCCEx_PLL2_Config
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.RCCEx_PLL3_Config
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_RCCEx_GetPLL2ClockFreq
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_RCCEx_GetPLL3ClockFreq
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_RCCEx_GetD3PCLK1Freq
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_RCCEx_GetD1SysClockFreq
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_SRAM_Init
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_SRAM_MspInit
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_RCC_OscConfig
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_RCC_ClockConfig
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_RCC_GetSysClockFreq
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_RCC_GetHCLKFreq
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_RCC_GetPCLK1Freq
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_RCC_GetPCLK2Freq
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_TIM_Base_Init
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_TIM_Base_MspInit
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.TIM_Base_SetConfig
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_TIM_Base_Start
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_UART_Init
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_UART_MspInit
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.UART_SetConfig
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.UART_AdvFeatureConfig
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.UART_CheckIdleState
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.UART_WaitOnFlagUntilTimeout
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_Init
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_InitTick
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_MspInit
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_IncTick
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_GetTick
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.HAL_EnableCompensationCell
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.FMC_NORSRAM_Init
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.FMC_NORSRAM_Timing_Init
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.FMC_NORSRAM_Extended_Timing_Init
-                0x0000000008005374        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
+                0x00000000080053bc        0x0 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.application_init
-                0x0000000008005374        0x0 src/User/CMakeFiles/user.dir/application.c.o
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/application.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.application_run
-                0x0000000008005374        0x0 src/User/CMakeFiles/user.dir/application.c.o
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/application.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.stack_push
-                0x0000000008005374        0x0 src/User/CMakeFiles/user.dir/application.c.o
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/application.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.stack_pop
-                0x0000000008005374        0x0 src/User/CMakeFiles/user.dir/application.c.o
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/application.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.main
-                0x0000000008005374        0x0 src/User/CMakeFiles/user.dir/main.c.o
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/main.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.PrintfLogo
-                0x0000000008005374        0x0 src/User/CMakeFiles/user.dir/main.c.o
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/main.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text.PrintfHelp
-                0x0000000008005374        0x0 src/User/CMakeFiles/user.dir/main.c.o
-                                          0x8 (size before relaxing)
- .ARM.exidx.text.normal_stack_init
-                0x0000000008005374        0x0 src/User/CMakeFiles/user.dir/normal_stack.c.o
-                                          0x8 (size before relaxing)
- .ARM.exidx.text.stack_init
-                0x0000000008005374        0x0 src/User/CMakeFiles/user.dir/normal_stack.c.o
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/main.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text._push
-                0x0000000008005374        0x0 src/User/CMakeFiles/user.dir/normal_stack.c.o
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/normal_stack.c.o
                                           0x8 (size before relaxing)
  .ARM.exidx.text._pop
-                0x0000000008005374        0x0 src/User/CMakeFiles/user.dir/normal_stack.c.o
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/normal_stack.c.o
                                           0x8 (size before relaxing)
- .ARM.exidx     0x000000000800536c        0x8 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
-                0x0000000008005374                __exidx_end = .
+ .ARM.exidx.text.normal_stack_init
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/normal_stack.c.o
+                                          0x8 (size before relaxing)
+ .ARM.exidx.text.stack_init
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/normal_stack.c.o
+                                          0x8 (size before relaxing)
+ .ARM.exidx.text.range_check
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/range_stack.c.o
+                                          0x8 (size before relaxing)
+ .ARM.exidx.text.range_stack_init
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/range_stack.c.o
+                                          0x8 (size before relaxing)
+ .ARM.exidx.text.validator_init
+                0x00000000080053bc        0x0 src/User/CMakeFiles/user.dir/validator.c.o
+                                          0x8 (size before relaxing)
+ .ARM.exidx     0x00000000080053b4        0x8 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
+                0x00000000080053bc                __exidx_end = .
 
-.rel.dyn        0x0000000008005374        0x0
- .rel.iplt      0x0000000008005374        0x0 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.rel.dyn        0x00000000080053bc        0x0
+ .rel.iplt      0x00000000080053bc        0x0 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.preinit_array  0x0000000008005374        0x0
-                0x0000000008005374                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x00000000080053bc        0x0
+                0x00000000080053bc                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008005374                PROVIDE (__preinit_array_end = .)
+                0x00000000080053bc                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0000000008005374        0x4
-                0x0000000008005374                PROVIDE (__init_array_start = .)
+.init_array     0x00000000080053bc        0x4
+                0x00000000080053bc                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008005374        0x4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtbegin.o
-                0x0000000008005378                PROVIDE (__init_array_end = .)
+ .init_array    0x00000000080053bc        0x4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+                0x00000000080053c0                PROVIDE (__init_array_end = .)
 
-.fini_array     0x0000000008005378        0x4
+.fini_array     0x00000000080053c0        0x4
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008005378        0x4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .fini_array    0x00000000080053c0        0x4 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x000000000800537c                _sidata = LOADADDR (.data)
+                0x00000000080053c4                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000       0x74 load address 0x000000000800537c
+.data           0x0000000020000000       0x74 load address 0x00000000080053c4
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -3304,11 +3322,11 @@ LOAD /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.
                 0x0000000020000074                . = ALIGN (0x4)
                 0x0000000020000074                _edata = .
 
-.igot.plt       0x0000000020000074        0x0 load address 0x00000000080053f0
+.igot.plt       0x0000000020000074        0x0 load address 0x0000000008005438
  .igot.plt      0x0000000020000074        0x0 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtbegin.o
                 0x0000000020000074                . = ALIGN (0x4)
 
-.bss            0x0000000020000074     0x1198 load address 0x00000000080053f0
+.bss            0x0000000020000074     0x1198 load address 0x0000000008005438
                 0x0000000020000074                _sbss = .
                 0x0000000020000074                __bss_start__ = _sbss
  *(.bss)
@@ -3375,7 +3393,7 @@ LOAD /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.
                 0x000000002000120c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x000000002000120c      0x604 load address 0x00000000080053f0
+                0x000000002000120c      0x604 load address 0x0000000008005438
                 0x0000000020001210                . = ALIGN (0x8)
  *fill*         0x000000002000120c        0x4 
                 0x0000000020001210                PROVIDE (end = .)
@@ -3447,82 +3465,86 @@ LOAD /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.
  .ARM.attributes
                 0x0000000000000650       0x47 src/User/CMakeFiles/user.dir/normal_stack.c.o
  .ARM.attributes
-                0x0000000000000697       0x1e /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_aeabi_uldivmod.o)
+                0x0000000000000697       0x47 src/User/CMakeFiles/user.dir/range_stack.c.o
  .ARM.attributes
-                0x00000000000006b5       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
+                0x00000000000006de       0x47 src/User/CMakeFiles/user.dir/validator.c.o
  .ARM.attributes
-                0x00000000000006e7       0x1e /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_dvmd_tls.o)
+                0x0000000000000725       0x1e /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x0000000000000705       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-aeabi_memclr.o)
+                0x0000000000000743       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
  .ARM.attributes
-                0x0000000000000737       0x1c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-aeabi_memset-soft.o)
+                0x0000000000000775       0x1e /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x0000000000000753       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-printf.o)
+                0x0000000000000793       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-aeabi_memclr.o)
  .ARM.attributes
-                0x0000000000000785       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-puts.o)
+                0x00000000000007c5       0x1c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-aeabi_memset-soft.o)
  .ARM.attributes
-                0x00000000000007b7       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-wbuf.o)
+                0x00000000000007e1       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-printf.o)
  .ARM.attributes
-                0x00000000000007e9       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-wsetup.o)
+                0x0000000000000813       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-puts.o)
  .ARM.attributes
-                0x000000000000081b       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fflush.o)
+                0x0000000000000845       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-wbuf.o)
  .ARM.attributes
-                0x000000000000084d       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000000000877       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-wsetup.o)
  .ARM.attributes
-                0x000000000000087f       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fwalk.o)
+                0x00000000000008a9       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fflush.o)
  .ARM.attributes
-                0x00000000000008b1       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
+                0x00000000000008db       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
  .ARM.attributes
-                0x00000000000008e3       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-makebuf.o)
+                0x000000000000090d       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fwalk.o)
  .ARM.attributes
-                0x0000000000000915       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-freer.o)
+                0x000000000000093f       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
  .ARM.attributes
-                0x0000000000000947       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000000000971       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-makebuf.o)
  .ARM.attributes
-                0x0000000000000979       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x00000000000009a3       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-freer.o)
  .ARM.attributes
-                0x00000000000009ab       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000000000009d5       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-mallocr.o)
  .ARM.attributes
-                0x00000000000009dd       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-sbrkr.o)
+                0x0000000000000a07       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
  .ARM.attributes
-                0x0000000000000a0f       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-stdio.o)
+                0x0000000000000a39       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
  .ARM.attributes
-                0x0000000000000a41       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-writer.o)
+                0x0000000000000a6b       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x0000000000000a73       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-closer.o)
+                0x0000000000000a9d       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-stdio.o)
  .ARM.attributes
-                0x0000000000000aa5       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fstatr.o)
+                0x0000000000000acf       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-writer.o)
  .ARM.attributes
-                0x0000000000000ad7       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-isattyr.o)
+                0x0000000000000b01       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-closer.o)
  .ARM.attributes
-                0x0000000000000b09       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lseekr.o)
+                0x0000000000000b33       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fstatr.o)
  .ARM.attributes
-                0x0000000000000b3b       0x1c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-memchr.o)
+                0x0000000000000b65       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-isattyr.o)
  .ARM.attributes
-                0x0000000000000b57       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-mlock.o)
+                0x0000000000000b97       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lseekr.o)
  .ARM.attributes
-                0x0000000000000b89       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-readr.o)
+                0x0000000000000bc9       0x1c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-memchr.o)
  .ARM.attributes
-                0x0000000000000bbb       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-reent.o)
+                0x0000000000000be5       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-mlock.o)
  .ARM.attributes
-                0x0000000000000bed       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(close.o)
+                0x0000000000000c17       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-readr.o)
  .ARM.attributes
-                0x0000000000000c1f       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(fstat.o)
+                0x0000000000000c49       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-reent.o)
  .ARM.attributes
-                0x0000000000000c51       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(isatty.o)
+                0x0000000000000c7b       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(close.o)
  .ARM.attributes
-                0x0000000000000c83       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(lseek.o)
+                0x0000000000000cad       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(fstat.o)
  .ARM.attributes
-                0x0000000000000cb5       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(read.o)
+                0x0000000000000cdf       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(isatty.o)
  .ARM.attributes
-                0x0000000000000ce7       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(sbrk.o)
+                0x0000000000000d11       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(lseek.o)
  .ARM.attributes
-                0x0000000000000d19       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(write.o)
+                0x0000000000000d43       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(read.o)
  .ARM.attributes
-                0x0000000000000d4b       0x1e /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtn.o
+                0x0000000000000d75       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(sbrk.o)
+ .ARM.attributes
+                0x0000000000000da7       0x32 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(write.o)
+ .ARM.attributes
+                0x0000000000000dd9       0x1e /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/crtn.o
 OUTPUT(arm_minisys.elf elf32-littlearm)
 
-.debug_frame    0x0000000000000000     0x32a0
+.debug_frame    0x0000000000000000     0x3304
  .debug_frame   0x0000000000000000       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-init.o)
  .debug_frame   0x000000000000002c       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-memset.o)
  .debug_frame   0x000000000000004c       0xb8 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
@@ -3545,41 +3567,43 @@ OUTPUT(arm_minisys.elf elf32-littlearm)
  .debug_frame   0x0000000000002830       0x68 src/User/CMakeFiles/user.dir/application.c.o
  .debug_frame   0x0000000000002898       0x6c src/User/CMakeFiles/user.dir/main.c.o
  .debug_frame   0x0000000000002904       0x60 src/User/CMakeFiles/user.dir/normal_stack.c.o
- .debug_frame   0x0000000000002964       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x0000000000002990       0x34 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00000000000029c4       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-aeabi_memclr.o)
- .debug_frame   0x00000000000029e4       0x74 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-printf.o)
- .debug_frame   0x0000000000002a58       0x3c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-puts.o)
- .debug_frame   0x0000000000002a94       0x40 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-wbuf.o)
- .debug_frame   0x0000000000002ad4       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-wsetup.o)
- .debug_frame   0x0000000000002b00       0x5c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fflush.o)
- .debug_frame   0x0000000000002b5c      0x14c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
- .debug_frame   0x0000000000002ca8       0x54 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fwalk.o)
- .debug_frame   0x0000000000002cfc       0xb0 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
- .debug_frame   0x0000000000002dac       0x58 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-makebuf.o)
- .debug_frame   0x0000000000002e04       0x38 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x0000000000002e3c       0x30 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x0000000000002e6c       0xac /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
- .debug_frame   0x0000000000002f18       0x60 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x0000000000002f78       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x0000000000002fa4       0x88 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-stdio.o)
- .debug_frame   0x000000000000302c       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-writer.o)
- .debug_frame   0x0000000000003058       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-closer.o)
- .debug_frame   0x0000000000003084       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fstatr.o)
- .debug_frame   0x00000000000030b0       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-isattyr.o)
- .debug_frame   0x00000000000030dc       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lseekr.o)
- .debug_frame   0x0000000000003108       0x30 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-mlock.o)
- .debug_frame   0x0000000000003138       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-readr.o)
- .debug_frame   0x0000000000003164       0x5c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-reent.o)
- .debug_frame   0x00000000000031c0       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(close.o)
- .debug_frame   0x00000000000031e0       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(fstat.o)
- .debug_frame   0x0000000000003200       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(isatty.o)
- .debug_frame   0x0000000000003220       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(lseek.o)
- .debug_frame   0x0000000000003240       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(read.o)
- .debug_frame   0x0000000000003260       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(sbrk.o)
- .debug_frame   0x0000000000003280       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(write.o)
+ .debug_frame   0x0000000000002964       0x44 src/User/CMakeFiles/user.dir/range_stack.c.o
+ .debug_frame   0x00000000000029a8       0x20 src/User/CMakeFiles/user.dir/validator.c.o
+ .debug_frame   0x00000000000029c8       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00000000000029f4       0x34 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x0000000000002a28       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-aeabi_memclr.o)
+ .debug_frame   0x0000000000002a48       0x74 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-printf.o)
+ .debug_frame   0x0000000000002abc       0x3c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-puts.o)
+ .debug_frame   0x0000000000002af8       0x40 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x0000000000002b38       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x0000000000002b64       0x5c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fflush.o)
+ .debug_frame   0x0000000000002bc0      0x14c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
+ .debug_frame   0x0000000000002d0c       0x54 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x0000000000002d60       0xb0 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
+ .debug_frame   0x0000000000002e10       0x58 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x0000000000002e68       0x38 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000002ea0       0x30 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000000000002ed0       0xac /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x0000000000002f7c       0x60 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x0000000000002fdc       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000003008       0x88 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-stdio.o)
+ .debug_frame   0x0000000000003090       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-writer.o)
+ .debug_frame   0x00000000000030bc       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-closer.o)
+ .debug_frame   0x00000000000030e8       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x0000000000003114       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x0000000000003140       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x000000000000316c       0x30 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x000000000000319c       0x2c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-readr.o)
+ .debug_frame   0x00000000000031c8       0x5c /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x0000000000003224       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(close.o)
+ .debug_frame   0x0000000000003244       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(fstat.o)
+ .debug_frame   0x0000000000003264       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(isatty.o)
+ .debug_frame   0x0000000000003284       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(lseek.o)
+ .debug_frame   0x00000000000032a4       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(read.o)
+ .debug_frame   0x00000000000032c4       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(sbrk.o)
+ .debug_frame   0x00000000000032e4       0x20 /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(write.o)
 
-.debug_str      0x0000000000000000     0x5cf2
+.debug_str      0x0000000000000000     0x5daa
  .debug_str     0x0000000000000000      0x8c0 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
                                         0x991 (size before relaxing)
  .debug_str     0x00000000000008c0      0x1f0 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
@@ -3614,14 +3638,18 @@ OUTPUT(arm_minisys.elf elf32-littlearm)
                                         0xb66 (size before relaxing)
  .debug_str     0x00000000000056fd      0x4c3 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
                                         0x776 (size before relaxing)
- .debug_str     0x0000000000005bc0       0x8e src/User/CMakeFiles/user.dir/application.c.o
-                                         0xec (size before relaxing)
- .debug_str     0x0000000000005c4e       0x68 src/User/CMakeFiles/user.dir/main.c.o
-                                        0x11d (size before relaxing)
- .debug_str     0x0000000000005cb6       0x3c src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .debug_str     0x0000000000005bc0       0xca src/User/CMakeFiles/user.dir/application.c.o
+                                        0x14b (size before relaxing)
+ .debug_str     0x0000000000005c8a       0x5a src/User/CMakeFiles/user.dir/main.c.o
+                                        0x165 (size before relaxing)
+ .debug_str     0x0000000000005ce4       0x3c src/User/CMakeFiles/user.dir/normal_stack.c.o
                                          0xdb (size before relaxing)
+ .debug_str     0x0000000000005d20       0x4e src/User/CMakeFiles/user.dir/range_stack.c.o
+                                        0x115 (size before relaxing)
+ .debug_str     0x0000000000005d6e       0x3c src/User/CMakeFiles/user.dir/validator.c.o
+                                         0x9b (size before relaxing)
 
-.debug_loc      0x0000000000000000     0x5e9f
+.debug_loc      0x0000000000000000     0x5f05
  .debug_loc     0x0000000000000000       0x88 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
  .debug_loc     0x0000000000000088      0x155 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
  .debug_loc     0x00000000000001dd       0x72 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
@@ -3638,11 +3666,12 @@ OUTPUT(arm_minisys.elf elf32-littlearm)
  .debug_loc     0x00000000000044dd      0xfc0 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
  .debug_loc     0x000000000000549d      0x238 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
  .debug_loc     0x00000000000056d5      0x632 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
- .debug_loc     0x0000000000005d07       0xa8 src/User/CMakeFiles/user.dir/application.c.o
- .debug_loc     0x0000000000005daf       0x60 src/User/CMakeFiles/user.dir/main.c.o
- .debug_loc     0x0000000000005e0f       0x90 src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .debug_loc     0x0000000000005d07       0x95 src/User/CMakeFiles/user.dir/application.c.o
+ .debug_loc     0x0000000000005d9c       0x61 src/User/CMakeFiles/user.dir/main.c.o
+ .debug_loc     0x0000000000005dfd       0x90 src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .debug_loc     0x0000000000005e8d       0x78 src/User/CMakeFiles/user.dir/range_stack.c.o
 
-.debug_abbrev   0x0000000000000000     0x1d51
+.debug_abbrev   0x0000000000000000     0x1e50
  .debug_abbrev  0x0000000000000000      0x19b src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
  .debug_abbrev  0x000000000000019b      0x215 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
  .debug_abbrev  0x00000000000003b0       0x8b src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
@@ -3664,8 +3693,10 @@ OUTPUT(arm_minisys.elf elf32-littlearm)
  .debug_abbrev  0x0000000000001ae7       0xde src/User/CMakeFiles/user.dir/application.c.o
  .debug_abbrev  0x0000000000001bc5       0xe7 src/User/CMakeFiles/user.dir/main.c.o
  .debug_abbrev  0x0000000000001cac       0xa5 src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .debug_abbrev  0x0000000000001d51       0x87 src/User/CMakeFiles/user.dir/range_stack.c.o
+ .debug_abbrev  0x0000000000001dd8       0x78 src/User/CMakeFiles/user.dir/validator.c.o
 
-.debug_info     0x0000000000000000    0x11768
+.debug_info     0x0000000000000000    0x11b1d
  .debug_info    0x0000000000000000      0xd8c src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
  .debug_info    0x0000000000000d8c      0xa59 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
  .debug_info    0x00000000000017e5      0x13f src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
@@ -3684,11 +3715,13 @@ OUTPUT(arm_minisys.elf elf32-littlearm)
  .debug_info    0x000000000000dc67     0x18b9 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
  .debug_info    0x000000000000f520     0x10f2 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
  .debug_info    0x0000000000010612      0xbc8 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
- .debug_info    0x00000000000111da      0x1f3 src/User/CMakeFiles/user.dir/application.c.o
- .debug_info    0x00000000000113cd      0x1d4 src/User/CMakeFiles/user.dir/main.c.o
- .debug_info    0x00000000000115a1      0x1c7 src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .debug_info    0x00000000000111da      0x2c1 src/User/CMakeFiles/user.dir/application.c.o
+ .debug_info    0x000000000001149b      0x250 src/User/CMakeFiles/user.dir/main.c.o
+ .debug_info    0x00000000000116eb      0x1c9 src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .debug_info    0x00000000000118b4      0x1d7 src/User/CMakeFiles/user.dir/range_stack.c.o
+ .debug_info    0x0000000000011a8b       0x92 src/User/CMakeFiles/user.dir/validator.c.o
 
-.debug_ranges   0x0000000000000000      0xf48
+.debug_ranges   0x0000000000000000      0xf60
  .debug_ranges  0x0000000000000000       0x58 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
  .debug_ranges  0x0000000000000058       0x98 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
  .debug_ranges  0x00000000000000f0       0x30 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
@@ -3710,8 +3743,9 @@ OUTPUT(arm_minisys.elf elf32-littlearm)
  .debug_ranges  0x0000000000000ed8       0x28 src/User/CMakeFiles/user.dir/application.c.o
  .debug_ranges  0x0000000000000f00       0x20 src/User/CMakeFiles/user.dir/main.c.o
  .debug_ranges  0x0000000000000f20       0x28 src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .debug_ranges  0x0000000000000f48       0x18 src/User/CMakeFiles/user.dir/range_stack.c.o
 
-.debug_macinfo  0x0000000000000000       0x14
+.debug_macinfo  0x0000000000000000       0x16
  .debug_macinfo
                 0x0000000000000000        0x1 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
  .debug_macinfo
@@ -3752,6 +3786,10 @@ OUTPUT(arm_minisys.elf elf32-littlearm)
                 0x0000000000000012        0x1 src/User/CMakeFiles/user.dir/main.c.o
  .debug_macinfo
                 0x0000000000000013        0x1 src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .debug_macinfo
+                0x0000000000000014        0x1 src/User/CMakeFiles/user.dir/range_stack.c.o
+ .debug_macinfo
+                0x0000000000000015        0x1 src/User/CMakeFiles/user.dir/validator.c.o
 
 .comment        0x0000000000000000       0x2d
  .comment       0x0000000000000000       0x2d src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
@@ -3775,6 +3813,8 @@ OUTPUT(arm_minisys.elf elf32-littlearm)
  .comment       0x000000000000002d       0x2e src/User/CMakeFiles/user.dir/application.c.o
  .comment       0x000000000000002d       0x2e src/User/CMakeFiles/user.dir/main.c.o
  .comment       0x000000000000002d       0x2e src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .comment       0x000000000000002d       0x2e src/User/CMakeFiles/user.dir/range_stack.c.o
+ .comment       0x000000000000002d       0x2e src/User/CMakeFiles/user.dir/validator.c.o
 
 .note.GNU-stack
                 0x0000000000000000        0x0
@@ -3818,8 +3858,12 @@ OUTPUT(arm_minisys.elf elf32-littlearm)
                 0x0000000000000000        0x0 src/User/CMakeFiles/user.dir/main.c.o
  .note.GNU-stack
                 0x0000000000000000        0x0 src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/User/CMakeFiles/user.dir/range_stack.c.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/User/CMakeFiles/user.dir/validator.c.o
 
-.debug_line     0x0000000000000000     0x96ea
+.debug_line     0x0000000000000000     0x98c1
  .debug_line    0x0000000000000000      0x35a src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
  .debug_line    0x000000000000035a      0x572 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
  .debug_line    0x00000000000008cc      0x195 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o
@@ -3838,9 +3882,11 @@ OUTPUT(arm_minisys.elf elf32-littlearm)
  .debug_line    0x0000000000007084     0x1493 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
  .debug_line    0x0000000000008517      0x7b1 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
  .debug_line    0x0000000000008cc8      0x649 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
- .debug_line    0x0000000000009311      0x126 src/User/CMakeFiles/user.dir/application.c.o
- .debug_line    0x0000000000009437      0x1bb src/User/CMakeFiles/user.dir/main.c.o
- .debug_line    0x00000000000095f2       0xf8 src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .debug_line    0x0000000000009311      0x177 src/User/CMakeFiles/user.dir/application.c.o
+ .debug_line    0x0000000000009488      0x1ee src/User/CMakeFiles/user.dir/main.c.o
+ .debug_line    0x0000000000009676       0xf8 src/User/CMakeFiles/user.dir/normal_stack.c.o
+ .debug_line    0x000000000000976e       0xe6 src/User/CMakeFiles/user.dir/range_stack.c.o
+ .debug_line    0x0000000000009854       0x6d src/User/CMakeFiles/user.dir/validator.c.o
 
 .debug_aranges  0x0000000000000000       0x28
  .debug_aranges
@@ -4694,11 +4740,13 @@ _malloc_r                                         /mnt/d/gcc-arm-none-eabi-8-201
                                                   /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-findfp.o)
 _malloc_usable_size_r                             /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-msizer.o)
                                                   /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-reallocr.o)
+_pop                                              src/User/CMakeFiles/user.dir/normal_stack.c.o
 _printf_common                                    /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
 _printf_float                                     /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
 _printf_i                                         /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
                                                   /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
 _printf_r                                         /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-printf.o)
+_push                                             src/User/CMakeFiles/user.dir/normal_stack.c.o
 _puts_r                                           /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-puts.o)
 _read                                             /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libnosys.a(read.o)
                                                   /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-readr.o)
@@ -4833,8 +4881,13 @@ printf                                            /mnt/d/gcc-arm-none-eabi-8-201
                                                   src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
 puts                                              /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-puts.o)
                                                   src/User/CMakeFiles/user.dir/main.c.o
+range_check                                       src/User/CMakeFiles/user.dir/range_stack.c.o
+range_stack_init                                  src/User/CMakeFiles/user.dir/range_stack.c.o
+                                                  src/User/CMakeFiles/user.dir/main.c.o
 software_init_hook                                /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
 strlen                                            /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-strlen.o)
                                                   src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
+validator_init                                    src/User/CMakeFiles/user.dir/validator.c.o
+                                                  src/User/CMakeFiles/user.dir/range_stack.c.o
 vfiprintf                                         /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
 vfprintf                                          /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-vfprintf.o)

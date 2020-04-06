@@ -1,5 +1,6 @@
 #include "application.h"
 #include "stack.h"
+#include"range_stack.h"
 
  int application_init(struct application  *p_app,
                      struct stack *p_stack){                                
@@ -16,10 +17,15 @@
     
     for (int i = 0; i < 5; i++)
     {
-        if (stack_push(p_stack,a[i])!=0)
+        //if( ((struct range_stack*)(p_app->p_stack))->validator!=0&&((struct range_stack*)(p_app->p_stack))->validator(a[i],p_app->p_stack))
+        if(((struct range_stack*)(p_stack))->validate.validate.validate(&(((struct range_stack*)(p_stack))->validate.validate), a[i]))
         {
-            printf("the data %d push faild \n", a[i]);
+            if (stack_push(p_stack,a[i])!=0)
+            {
+                //printf("the data %d push faild \n", a[i]);
+            }
         }
+
     }   
       
     for ( int i = 0; i < 5; i++)

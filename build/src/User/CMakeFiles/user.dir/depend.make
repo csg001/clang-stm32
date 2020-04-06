@@ -3,7 +3,10 @@
 
 src/User/CMakeFiles/user.dir/application.c.o: ../src/User/application.c
 src/User/CMakeFiles/user.dir/application.c.o: ../src/User/application.h
+src/User/CMakeFiles/user.dir/application.c.o: ../src/User/normal_stack.h
+src/User/CMakeFiles/user.dir/application.c.o: ../src/User/range_stack.h
 src/User/CMakeFiles/user.dir/application.c.o: ../src/User/stack.h
+src/User/CMakeFiles/user.dir/application.c.o: ../src/User/validator.h
 
 src/User/CMakeFiles/user.dir/main.c.o: ../src/BSP/bsp.h
 src/User/CMakeFiles/user.dir/main.c.o: ../src/BSP/cmsis_compiler.h
@@ -108,11 +111,20 @@ src/User/CMakeFiles/user.dir/main.c.o: ../src/driver/stm32h7xx_hal_usart_ex.h
 src/User/CMakeFiles/user.dir/main.c.o: ../src/User/application.h
 src/User/CMakeFiles/user.dir/main.c.o: ../src/User/main.c
 src/User/CMakeFiles/user.dir/main.c.o: ../src/User/normal_stack.h
+src/User/CMakeFiles/user.dir/main.c.o: ../src/User/range_stack.h
 src/User/CMakeFiles/user.dir/main.c.o: ../src/User/stack.h
+src/User/CMakeFiles/user.dir/main.c.o: ../src/User/validator.h
 
 src/User/CMakeFiles/user.dir/normal_stack.c.o: ../src/User/normal_stack.c
 src/User/CMakeFiles/user.dir/normal_stack.c.o: ../src/User/normal_stack.h
 src/User/CMakeFiles/user.dir/normal_stack.c.o: ../src/User/stack.h
 
+src/User/CMakeFiles/user.dir/range_stack.c.o: ../src/User/normal_stack.h
 src/User/CMakeFiles/user.dir/range_stack.c.o: ../src/User/range_stack.c
+src/User/CMakeFiles/user.dir/range_stack.c.o: ../src/User/range_stack.h
+src/User/CMakeFiles/user.dir/range_stack.c.o: ../src/User/stack.h
+src/User/CMakeFiles/user.dir/range_stack.c.o: ../src/User/validator.h
+
+src/User/CMakeFiles/user.dir/validator.c.o: ../src/User/validator.c
+src/User/CMakeFiles/user.dir/validator.c.o: ../src/User/validator.h
 

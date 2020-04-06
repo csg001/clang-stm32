@@ -20,6 +20,6 @@ static inline int stack_push(struct stack *p_stack, int val)
 }
 static inline int stack_pop(struct stack *p_stack, int *val)
 {
-    return p_stack->pop(p_stack, *val);
+    return p_stack->pop(p_stack, val);
 }
 #endif

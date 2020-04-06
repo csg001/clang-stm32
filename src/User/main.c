@@ -26,8 +26,10 @@
 *********************************************************************************************************
 */
 #include "bsp.h" /* 底层硬件驱动 */
+#include "range_stack.h"
 #include "application.h"
  #include "normal_stack.h"
+ #include "validator.h"
 /* 定义例程名和例程发布日期 */
 #define EXAMPLE_NAME "V7-"
 #define EXAMPLE_DATE "2018-12-12"
@@ -66,10 +68,12 @@ int main(void)
   while (1) {
     int buf[20];
     struct application app;
-    struct normal_stack stack;
+    //struct normal_stack stack;
+    struct range_stack stack_test;
 
-    struct stack *p_stack = normal_stack_init (&stack, buf, 20);
-    application_init(&app, p_stack);
+    normal_stack_init (&stack_test,buf, 20);
+    range_stack_init(&stack_test, 3, 50);
+    application_init(&app, &stack_test);
     application_run(&app);
     bsp_Idle(); /* 这个函数在bsp.c文件。用户可以修改这个函数实现CPU休眠和喂狗 */
 

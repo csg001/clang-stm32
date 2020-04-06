@@ -233,6 +233,33 @@ range_stack.c.s:
 	cd /mnt/d/demo/build && $(MAKE) -f src/User/CMakeFiles/user.dir/build.make src/User/CMakeFiles/user.dir/range_stack.c.s
 .PHONY : range_stack.c.s
 
+validator.o: validator.c.o
+
+.PHONY : validator.o
+
+# target to build an object file
+validator.c.o:
+	cd /mnt/d/demo/build && $(MAKE) -f src/User/CMakeFiles/user.dir/build.make src/User/CMakeFiles/user.dir/validator.c.o
+.PHONY : validator.c.o
+
+validator.i: validator.c.i
+
+.PHONY : validator.i
+
+# target to preprocess a source file
+validator.c.i:
+	cd /mnt/d/demo/build && $(MAKE) -f src/User/CMakeFiles/user.dir/build.make src/User/CMakeFiles/user.dir/validator.c.i
+.PHONY : validator.c.i
+
+validator.s: validator.c.s
+
+.PHONY : validator.s
+
+# target to generate assembly for a file
+validator.c.s:
+	cd /mnt/d/demo/build && $(MAKE) -f src/User/CMakeFiles/user.dir/build.make src/User/CMakeFiles/user.dir/validator.c.s
+.PHONY : validator.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -254,6 +281,9 @@ help:
 	@echo "... range_stack.o"
 	@echo "... range_stack.i"
 	@echo "... range_stack.s"
+	@echo "... validator.o"
+	@echo "... validator.i"
+	@echo "... validator.s"
 .PHONY : help
 
 
