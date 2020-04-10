@@ -9,9 +9,9 @@ int range_check(struct  range_stack_validator *p_range_stack,int data){
     return 0;
 }
 struct range_stack *range_stack_init(struct range_stack *p_stack, int min, int max){
-    validator_init(&p_stack->validate,range_check);
+    validator_init(&p_stack->p_validator,range_check);
     //p_stack->validator = range_check;
-    p_stack->validate.min = min;
-    p_stack->validate.max = max;
+    p_stack->p_validator->min = min;
+    p_stack->p_validator->max = max;
     return p_stack;
 };

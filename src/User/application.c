@@ -18,7 +18,7 @@
     for (int i = 0; i < 5; i++)
     {
         //if( ((struct range_stack*)(p_app->p_stack))->validator!=0&&((struct range_stack*)(p_app->p_stack))->validator(a[i],p_app->p_stack))
-        if(((struct range_stack*)(p_stack))->validate.validate.validate(&(((struct range_stack*)(p_stack))->validate.validate), a[i]))
+        if(((struct range_stack*)(p_stack))->p_validator->validate.validate(&(((struct range_stack*)(p_stack))->p_validator->validate), a[i]))
         {
             if (stack_push(p_stack,a[i])!=0)
             {

@@ -13,7 +13,7 @@ struct range_stack_validator{
 struct range_stack
 {
     struct normal_stack super;
-    struct range_stack_validator validate;//过于复杂
+    struct range_stack_validator *p_validator;//为了复用，所以使用指针，确保检查功能分离
 };
 
 struct range_stack *range_stack_init(struct range_stack *p_stack, int min, int max);

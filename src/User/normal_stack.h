@@ -10,4 +10,5 @@ struct normal_stack
 };
 
 struct stact *normal_stack_init(struct normal_stack *stack, int *p_buf, int size);
+
 #endif
