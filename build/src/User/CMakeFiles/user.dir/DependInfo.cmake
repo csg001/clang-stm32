@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/mnt/d/demo/src/User/main.c" "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/main.c.o"
   "/mnt/d/demo/src/User/normal_stack.c" "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/normal_stack.c.o"
   "/mnt/d/demo/src/User/range_stack.c" "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/range_stack.c.o"
+  "/mnt/d/demo/src/User/stack.c" "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/stack.c.o"
   "/mnt/d/demo/src/User/validator.c" "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/validator.c.o"
   )
-set(CMAKE_C_COMPILER_ID "Clang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C

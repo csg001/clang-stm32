@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/user.dir/main.c.o"
   "CMakeFiles/user.dir/normal_stack.c.o"
   "CMakeFiles/user.dir/range_stack.c.o"
+  "CMakeFiles/user.dir/stack.c.o"
   "CMakeFiles/user.dir/validator.c.o"
 )
 

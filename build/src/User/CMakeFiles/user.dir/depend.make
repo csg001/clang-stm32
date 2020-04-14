@@ -125,6 +125,9 @@ src/User/CMakeFiles/user.dir/range_stack.c.o: ../src/User/range_stack.h
 src/User/CMakeFiles/user.dir/range_stack.c.o: ../src/User/stack.h
 src/User/CMakeFiles/user.dir/range_stack.c.o: ../src/User/validator.h
 
+src/User/CMakeFiles/user.dir/stack.c.o: ../src/User/stack.c
+src/User/CMakeFiles/user.dir/stack.c.o: ../src/User/stack.h
+
 src/User/CMakeFiles/user.dir/validator.c.o: ../src/User/validator.c
 src/User/CMakeFiles/user.dir/validator.c.o: ../src/User/validator.h
 

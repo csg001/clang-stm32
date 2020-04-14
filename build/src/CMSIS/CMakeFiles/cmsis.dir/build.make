@@ -60,15 +60,15 @@ include src/CMSIS/CMakeFiles/cmsis.dir/flags.make
 src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.o: src/CMSIS/CMakeFiles/cmsis.dir/flags.make
 src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.o: ../src/CMSIS/system_stm32h7xx.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.o"
-	cd /mnt/d/demo/build/src/CMSIS && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmsis.dir/system_stm32h7xx.c.o   -c /mnt/d/demo/src/CMSIS/system_stm32h7xx.c
+	cd /mnt/d/demo/build/src/CMSIS && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmsis.dir/system_stm32h7xx.c.o   -c /mnt/d/demo/src/CMSIS/system_stm32h7xx.c
 
 src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmsis.dir/system_stm32h7xx.c.i"
-	cd /mnt/d/demo/build/src/CMSIS && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/CMSIS/system_stm32h7xx.c > CMakeFiles/cmsis.dir/system_stm32h7xx.c.i
+	cd /mnt/d/demo/build/src/CMSIS && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/CMSIS/system_stm32h7xx.c > CMakeFiles/cmsis.dir/system_stm32h7xx.c.i
 
 src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmsis.dir/system_stm32h7xx.c.s"
-	cd /mnt/d/demo/build/src/CMSIS && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/CMSIS/system_stm32h7xx.c -o CMakeFiles/cmsis.dir/system_stm32h7xx.c.s
+	cd /mnt/d/demo/build/src/CMSIS && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/CMSIS/system_stm32h7xx.c -o CMakeFiles/cmsis.dir/system_stm32h7xx.c.s
 
 src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.o.requires:
 

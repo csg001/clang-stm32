@@ -15,10 +15,10 @@ int _pop(struct normal_stack *p_stack,int *val){
         return -1;
 };
 
-struct stact *normal_stack_init(struct normal_stack *stack, int *p_buf, int size){
+struct stack *normal_stack_init(struct normal_stack *stack, int *p_buf, int size){
     stack->top = 0;
     stack->p_buf = p_buf;
     stack->size = size;
     stack_init(&stack->super, _push, _pop);
     return &stack->super;
-}
+};

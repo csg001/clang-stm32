@@ -1,61 +1,59 @@
 The system is: Linux - 4.4.0-19041-Microsoft - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /mnt/d/clangllvm/bin/clang 
-Build flags: -nostdlib;-gdwarf-2;-fshort-enums;-mcpu=cortex-m7;-mthumb;-mfpu=fpv5-d16;-mfloat-abi=hard;;-O2;-Wall;-fdata-sections;-ffunction-sections;-g;-I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include;;-fmessage-length=0;;-target;arm-none-eabi;-std=gnu90;
-Id flags:  
+Compiler: /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc 
+Build flags: ;-fshort-enums;-mcpu=cortex-m7;-mthumb;-mfpu=fpv5-d16;-mfloat-abi=hard;;-Og;-Wall;-fdata-sections;-ffunction-sections;-g;-I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include;-std=gnu99;
+Id flags: -c 
 
 The output was:
 0
-ld.lld: warning: cannot find entry symbol _start; defaulting to 0x11000
 
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
 
-The C compiler identification is Clang, found in "/mnt/d/demo/build/CMakeFiles/3.10.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/mnt/d/demo/build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.o"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /mnt/d/clangllvm/bin/clang 
-Build flags: -nostdlib;-gdwarf-2;-fshort-enums;-mcpu=cortex-m7;-mthumb;-mfpu=fpv5-d16;-mfloat-abi=hard;;-O2;-Wall;-fdata-sections;-ffunction-sections;-g;-I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include;-fmessage-length=0;-target;arm-none-eabi;-std=c++11;
-Id flags:  
+Compiler: /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-g++ 
+Build flags: ;-fshort-enums;-mcpu=cortex-m7;-mthumb;-mfpu=fpv5-d16;-mfloat-abi=hard;;-Og;-Wall;-fdata-sections;-ffunction-sections;-g;-I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include;-std=c++11;
+Id flags: -c 
 
 The output was:
 0
-ld.lld: warning: cannot find entry symbol _start; defaulting to 0x11000
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
 
-The CXX compiler identification is Clang, found in "/mnt/d/demo/build/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/mnt/d/demo/build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.o"
 
 Determining if the C compiler works passed with the following output:
 Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_56f2f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_56f2f.dir/build.make CMakeFiles/cmTC_56f2f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e16a6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e16a6.dir/build.make CMakeFiles/cmTC_e16a6.dir/build
 make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_56f2f.dir/testCCompiler.c.o
-/mnt/d/clangllvm/bin/clang   -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include  -fmessage-length=0  -target arm-none-eabi -std=gnu90     -o CMakeFiles/cmTC_56f2f.dir/testCCompiler.c.o   -c /mnt/d/demo/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C static library libcmTC_56f2f.a
-/usr/bin/cmake -P CMakeFiles/cmTC_56f2f.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56f2f.dir/link.txt --verbose=1
-/usr/bin/ar qc libcmTC_56f2f.a  CMakeFiles/cmTC_56f2f.dir/testCCompiler.c.o
-/usr/bin/ranlib libcmTC_56f2f.a
+Building C object CMakeFiles/cmTC_e16a6.dir/testCCompiler.c.o
+/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc   -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=gnu99     -o CMakeFiles/cmTC_e16a6.dir/testCCompiler.c.o   -c /mnt/d/demo/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C static library libcmTC_e16a6.a
+/usr/bin/cmake -P CMakeFiles/cmTC_e16a6.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e16a6.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_e16a6.a  CMakeFiles/cmTC_e16a6.dir/testCCompiler.c.o
+/usr/bin/ranlib libcmTC_e16a6.a
 make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_10487/fast"
-/usr/bin/make -f CMakeFiles/cmTC_10487.dir/build.make CMakeFiles/cmTC_10487.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_dc0f1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dc0f1.dir/build.make CMakeFiles/cmTC_dc0f1.dir/build
 make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_10487.dir/CMakeCCompilerABI.c.o
-/mnt/d/clangllvm/bin/clang   -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include  -fmessage-length=0  -target arm-none-eabi -std=gnu90     -o CMakeFiles/cmTC_10487.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C static library libcmTC_10487.a
-/usr/bin/cmake -P CMakeFiles/cmTC_10487.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10487.dir/link.txt --verbose=1
-/usr/bin/ar qc libcmTC_10487.a  CMakeFiles/cmTC_10487.dir/CMakeCCompilerABI.c.o
-/usr/bin/ranlib libcmTC_10487.a
+Building C object CMakeFiles/cmTC_dc0f1.dir/CMakeCCompilerABI.c.o
+/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc   -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=gnu99     -o CMakeFiles/cmTC_dc0f1.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C static library libcmTC_dc0f1.a
+/usr/bin/cmake -P CMakeFiles/cmTC_dc0f1.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc0f1.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_dc0f1.a  CMakeFiles/cmTC_dc0f1.dir/CMakeCCompilerABI.c.o
+/usr/bin/ranlib libcmTC_dc0f1.a
 make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 
 
@@ -63,16 +61,16 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_10487/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_10487.dir/build.make CMakeFiles/cmTC_10487.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_dc0f1/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_dc0f1.dir/build.make CMakeFiles/cmTC_dc0f1.dir/build]
   ignore line: [make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_10487.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/mnt/d/clangllvm/bin/clang   -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include  -fmessage-length=0  -target arm-none-eabi -std=gnu90     -o CMakeFiles/cmTC_10487.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C static library libcmTC_10487.a]
-  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_10487.dir/cmake_clean_target.cmake]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10487.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/ar qc libcmTC_10487.a  CMakeFiles/cmTC_10487.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/ranlib libcmTC_10487.a]
+  ignore line: [Building C object CMakeFiles/cmTC_dc0f1.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc   -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=gnu99     -o CMakeFiles/cmTC_dc0f1.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C static library libcmTC_dc0f1.a]
+  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_dc0f1.dir/cmake_clean_target.cmake]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc0f1.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/ar qc libcmTC_dc0f1.a  CMakeFiles/cmTC_dc0f1.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/ranlib libcmTC_dc0f1.a]
   ignore line: [make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp']
   ignore line: []
   implicit libs: []
@@ -85,16 +83,16 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5525f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5525f.dir/build.make CMakeFiles/cmTC_5525f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_3d713/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3d713.dir/build.make CMakeFiles/cmTC_3d713.dir/build
 make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5525f.dir/feature_tests.c.o
-/mnt/d/clangllvm/bin/clang   -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include  -fmessage-length=0  -target arm-none-eabi -std=gnu90     -std=c11 -o CMakeFiles/cmTC_5525f.dir/feature_tests.c.o   -c /mnt/d/demo/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_5525f.a
-/usr/bin/cmake -P CMakeFiles/cmTC_5525f.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5525f.dir/link.txt --verbose=1
-/usr/bin/ar qc libcmTC_5525f.a  CMakeFiles/cmTC_5525f.dir/feature_tests.c.o
-/usr/bin/ranlib libcmTC_5525f.a
+Building C object CMakeFiles/cmTC_3d713.dir/feature_tests.c.o
+/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc   -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=gnu99     -std=c11 -o CMakeFiles/cmTC_3d713.dir/feature_tests.c.o   -c /mnt/d/demo/build/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_3d713.a
+/usr/bin/cmake -P CMakeFiles/cmTC_3d713.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d713.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_3d713.a  CMakeFiles/cmTC_3d713.dir/feature_tests.c.o
+/usr/bin/ranlib libcmTC_3d713.a
 make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 
 
@@ -107,16 +105,16 @@ make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3f629/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3f629.dir/build.make CMakeFiles/cmTC_3f629.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_87f52/fast"
+/usr/bin/make -f CMakeFiles/cmTC_87f52.dir/build.make CMakeFiles/cmTC_87f52.dir/build
 make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3f629.dir/feature_tests.c.o
-/mnt/d/clangllvm/bin/clang   -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include  -fmessage-length=0  -target arm-none-eabi -std=gnu90     -std=c99 -o CMakeFiles/cmTC_3f629.dir/feature_tests.c.o   -c /mnt/d/demo/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_3f629.a
-/usr/bin/cmake -P CMakeFiles/cmTC_3f629.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f629.dir/link.txt --verbose=1
-/usr/bin/ar qc libcmTC_3f629.a  CMakeFiles/cmTC_3f629.dir/feature_tests.c.o
-/usr/bin/ranlib libcmTC_3f629.a
+Building C object CMakeFiles/cmTC_87f52.dir/feature_tests.c.o
+/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc   -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=gnu99     -std=c99 -o CMakeFiles/cmTC_87f52.dir/feature_tests.c.o   -c /mnt/d/demo/build/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_87f52.a
+/usr/bin/cmake -P CMakeFiles/cmTC_87f52.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87f52.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_87f52.a  CMakeFiles/cmTC_87f52.dir/feature_tests.c.o
+/usr/bin/ranlib libcmTC_87f52.a
 make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 
 
@@ -129,16 +127,16 @@ make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_94221/fast"
-/usr/bin/make -f CMakeFiles/cmTC_94221.dir/build.make CMakeFiles/cmTC_94221.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_4622a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4622a.dir/build.make CMakeFiles/cmTC_4622a.dir/build
 make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_94221.dir/feature_tests.c.o
-/mnt/d/clangllvm/bin/clang   -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include  -fmessage-length=0  -target arm-none-eabi -std=gnu90     -std=c90 -o CMakeFiles/cmTC_94221.dir/feature_tests.c.o   -c /mnt/d/demo/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_94221.a
-/usr/bin/cmake -P CMakeFiles/cmTC_94221.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94221.dir/link.txt --verbose=1
-/usr/bin/ar qc libcmTC_94221.a  CMakeFiles/cmTC_94221.dir/feature_tests.c.o
-/usr/bin/ranlib libcmTC_94221.a
+Building C object CMakeFiles/cmTC_4622a.dir/feature_tests.c.o
+/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc   -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=gnu99     -std=c90 -o CMakeFiles/cmTC_4622a.dir/feature_tests.c.o   -c /mnt/d/demo/build/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_4622a.a
+/usr/bin/cmake -P CMakeFiles/cmTC_4622a.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4622a.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_4622a.a  CMakeFiles/cmTC_4622a.dir/feature_tests.c.o
+/usr/bin/ranlib libcmTC_4622a.a
 make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 
 
@@ -149,32 +147,32 @@ make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9aab9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9aab9.dir/build.make CMakeFiles/cmTC_9aab9.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_3bab0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3bab0.dir/build.make CMakeFiles/cmTC_3bab0.dir/build
 make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_9aab9.dir/testCXXCompiler.cxx.o
-/mnt/d/clangllvm/bin/clang    -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -fmessage-length=0 -target arm-none-eabi -std=c++11     -o CMakeFiles/cmTC_9aab9.dir/testCXXCompiler.cxx.o -c /mnt/d/demo/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX static library libcmTC_9aab9.a
-/usr/bin/cmake -P CMakeFiles/cmTC_9aab9.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9aab9.dir/link.txt --verbose=1
-/usr/bin/ar qc libcmTC_9aab9.a  CMakeFiles/cmTC_9aab9.dir/testCXXCompiler.cxx.o
-/usr/bin/ranlib libcmTC_9aab9.a
+Building CXX object CMakeFiles/cmTC_3bab0.dir/testCXXCompiler.cxx.o
+/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-g++    -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=c++11     -o CMakeFiles/cmTC_3bab0.dir/testCXXCompiler.cxx.o -c /mnt/d/demo/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX static library libcmTC_3bab0.a
+/usr/bin/cmake -P CMakeFiles/cmTC_3bab0.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bab0.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_3bab0.a  CMakeFiles/cmTC_3bab0.dir/testCXXCompiler.cxx.o
+/usr/bin/ranlib libcmTC_3bab0.a
 make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_447b6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_447b6.dir/build.make CMakeFiles/cmTC_447b6.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e27ad/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e27ad.dir/build.make CMakeFiles/cmTC_e27ad.dir/build
 make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_447b6.dir/CMakeCXXCompilerABI.cpp.o
-/mnt/d/clangllvm/bin/clang    -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -fmessage-length=0 -target arm-none-eabi -std=c++11     -o CMakeFiles/cmTC_447b6.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX static library libcmTC_447b6.a
-/usr/bin/cmake -P CMakeFiles/cmTC_447b6.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_447b6.dir/link.txt --verbose=1
-/usr/bin/ar qc libcmTC_447b6.a  CMakeFiles/cmTC_447b6.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/ranlib libcmTC_447b6.a
+Building CXX object CMakeFiles/cmTC_e27ad.dir/CMakeCXXCompilerABI.cpp.o
+/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-g++    -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=c++11     -o CMakeFiles/cmTC_e27ad.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX static library libcmTC_e27ad.a
+/usr/bin/cmake -P CMakeFiles/cmTC_e27ad.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e27ad.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_e27ad.a  CMakeFiles/cmTC_e27ad.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/ranlib libcmTC_e27ad.a
 make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 
 
@@ -182,16 +180,16 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_447b6/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_447b6.dir/build.make CMakeFiles/cmTC_447b6.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_e27ad/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_e27ad.dir/build.make CMakeFiles/cmTC_e27ad.dir/build]
   ignore line: [make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_447b6.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/mnt/d/clangllvm/bin/clang    -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -fmessage-length=0 -target arm-none-eabi -std=c++11     -o CMakeFiles/cmTC_447b6.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX static library libcmTC_447b6.a]
-  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_447b6.dir/cmake_clean_target.cmake]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_447b6.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/ar qc libcmTC_447b6.a  CMakeFiles/cmTC_447b6.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/ranlib libcmTC_447b6.a]
+  ignore line: [Building CXX object CMakeFiles/cmTC_e27ad.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-g++    -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=c++11     -o CMakeFiles/cmTC_e27ad.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX static library libcmTC_e27ad.a]
+  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_e27ad.dir/cmake_clean_target.cmake]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e27ad.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/ar qc libcmTC_e27ad.a  CMakeFiles/cmTC_e27ad.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/ranlib libcmTC_e27ad.a]
   ignore line: [make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp']
   ignore line: []
   implicit libs: []
@@ -204,16 +202,16 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_20deb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_20deb.dir/build.make CMakeFiles/cmTC_20deb.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_df0e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_df0e2.dir/build.make CMakeFiles/cmTC_df0e2.dir/build
 make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_20deb.dir/feature_tests.cxx.o
-/mnt/d/clangllvm/bin/clang    -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -fmessage-length=0 -target arm-none-eabi -std=c++11     -std=c++1z -o CMakeFiles/cmTC_20deb.dir/feature_tests.cxx.o -c /mnt/d/demo/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_20deb.a
-/usr/bin/cmake -P CMakeFiles/cmTC_20deb.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20deb.dir/link.txt --verbose=1
-/usr/bin/ar qc libcmTC_20deb.a  CMakeFiles/cmTC_20deb.dir/feature_tests.cxx.o
-/usr/bin/ranlib libcmTC_20deb.a
+Building CXX object CMakeFiles/cmTC_df0e2.dir/feature_tests.cxx.o
+/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-g++    -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=c++11     -std=c++1z -o CMakeFiles/cmTC_df0e2.dir/feature_tests.cxx.o -c /mnt/d/demo/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_df0e2.a
+/usr/bin/cmake -P CMakeFiles/cmTC_df0e2.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df0e2.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_df0e2.a  CMakeFiles/cmTC_df0e2.dir/feature_tests.cxx.o
+/usr/bin/ranlib libcmTC_df0e2.a
 make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 
 
@@ -279,16 +277,16 @@ make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_dcab6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_dcab6.dir/build.make CMakeFiles/cmTC_dcab6.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1d0db/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1d0db.dir/build.make CMakeFiles/cmTC_1d0db.dir/build
 make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_dcab6.dir/feature_tests.cxx.o
-/mnt/d/clangllvm/bin/clang    -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -fmessage-length=0 -target arm-none-eabi -std=c++11     -std=c++14 -o CMakeFiles/cmTC_dcab6.dir/feature_tests.cxx.o -c /mnt/d/demo/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_dcab6.a
-/usr/bin/cmake -P CMakeFiles/cmTC_dcab6.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcab6.dir/link.txt --verbose=1
-/usr/bin/ar qc libcmTC_dcab6.a  CMakeFiles/cmTC_dcab6.dir/feature_tests.cxx.o
-/usr/bin/ranlib libcmTC_dcab6.a
+Building CXX object CMakeFiles/cmTC_1d0db.dir/feature_tests.cxx.o
+/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-g++    -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=c++11     -std=c++14 -o CMakeFiles/cmTC_1d0db.dir/feature_tests.cxx.o -c /mnt/d/demo/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_1d0db.a
+/usr/bin/cmake -P CMakeFiles/cmTC_1d0db.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d0db.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_1d0db.a  CMakeFiles/cmTC_1d0db.dir/feature_tests.cxx.o
+/usr/bin/ranlib libcmTC_1d0db.a
 make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 
 
@@ -354,16 +352,16 @@ make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_58557/fast"
-/usr/bin/make -f CMakeFiles/cmTC_58557.dir/build.make CMakeFiles/cmTC_58557.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_fbdbb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fbdbb.dir/build.make CMakeFiles/cmTC_fbdbb.dir/build
 make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_58557.dir/feature_tests.cxx.o
-/mnt/d/clangllvm/bin/clang    -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -fmessage-length=0 -target arm-none-eabi -std=c++11     -std=c++11 -o CMakeFiles/cmTC_58557.dir/feature_tests.cxx.o -c /mnt/d/demo/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_58557.a
-/usr/bin/cmake -P CMakeFiles/cmTC_58557.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58557.dir/link.txt --verbose=1
-/usr/bin/ar qc libcmTC_58557.a  CMakeFiles/cmTC_58557.dir/feature_tests.cxx.o
-/usr/bin/ranlib libcmTC_58557.a
+Building CXX object CMakeFiles/cmTC_fbdbb.dir/feature_tests.cxx.o
+/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-g++    -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=c++11     -std=c++11 -o CMakeFiles/cmTC_fbdbb.dir/feature_tests.cxx.o -c /mnt/d/demo/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_fbdbb.a
+/usr/bin/cmake -P CMakeFiles/cmTC_fbdbb.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbdbb.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_fbdbb.a  CMakeFiles/cmTC_fbdbb.dir/feature_tests.cxx.o
+/usr/bin/ranlib libcmTC_fbdbb.a
 make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 
 
@@ -429,16 +427,16 @@ make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /mnt/d/demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5e863/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5e863.dir/build.make CMakeFiles/cmTC_5e863.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a9264/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a9264.dir/build.make CMakeFiles/cmTC_a9264.dir/build
 make[1]: Entering directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5e863.dir/feature_tests.cxx.o
-/mnt/d/clangllvm/bin/clang    -nostdlib -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -O2 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -fmessage-length=0 -target arm-none-eabi -std=c++11     -std=c++98 -o CMakeFiles/cmTC_5e863.dir/feature_tests.cxx.o -c /mnt/d/demo/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_5e863.a
-/usr/bin/cmake -P CMakeFiles/cmTC_5e863.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e863.dir/link.txt --verbose=1
-/usr/bin/ar qc libcmTC_5e863.a  CMakeFiles/cmTC_5e863.dir/feature_tests.cxx.o
-/usr/bin/ranlib libcmTC_5e863.a
+Building CXX object CMakeFiles/cmTC_a9264.dir/feature_tests.cxx.o
+/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-g++    -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -std=c++11     -std=c++98 -o CMakeFiles/cmTC_a9264.dir/feature_tests.cxx.o -c /mnt/d/demo/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_a9264.a
+/usr/bin/cmake -P CMakeFiles/cmTC_a9264.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9264.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_a9264.a  CMakeFiles/cmTC_a9264.dir/feature_tests.cxx.o
+/usr/bin/ranlib libcmTC_a9264.a
 make[1]: Leaving directory '/mnt/d/demo/build/CMakeFiles/CMakeTmp'
 
 

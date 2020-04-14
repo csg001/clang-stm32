@@ -613,6 +613,8 @@ stack.h
 /mnt/d/demo/src/User/main.c
 bsp.h
 /mnt/d/demo/src/User/bsp.h
+stack.h
+/mnt/d/demo/src/User/stack.h
 range_stack.h
 /mnt/d/demo/src/User/range_stack.h
 application.h
@@ -633,16 +635,18 @@ stack.h
 /mnt/d/demo/src/User/range_stack.c
 range_stack.h
 /mnt/d/demo/src/User/range_stack.h
-validator.h
-/mnt/d/demo/src/User/validator.h
 
 /mnt/d/demo/src/User/range_stack.h
-stack.h
-/mnt/d/demo/src/User/stack.h
 normal_stack.h
 /mnt/d/demo/src/User/normal_stack.h
 validator.h
 /mnt/d/demo/src/User/validator.h
+stack.h
+/mnt/d/demo/src/User/stack.h
+
+/mnt/d/demo/src/User/stack.c
+stack.h
+/mnt/d/demo/src/User/stack.h
 
 /mnt/d/demo/src/User/stack.h
 

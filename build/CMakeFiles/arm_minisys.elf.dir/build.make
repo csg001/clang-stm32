@@ -89,6 +89,7 @@ arm_minisys_elf_EXTERNAL_OBJECTS = \
 "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/main.c.o" \
 "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/normal_stack.c.o" \
 "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/range_stack.c.o" \
+"/mnt/d/demo/build/src/User/CMakeFiles/user.dir/stack.c.o" \
 "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/validator.c.o"
 
 arm_minisys.elf: src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
@@ -118,6 +119,7 @@ arm_minisys.elf: src/User/CMakeFiles/user.dir/application.c.o
 arm_minisys.elf: src/User/CMakeFiles/user.dir/main.c.o
 arm_minisys.elf: src/User/CMakeFiles/user.dir/normal_stack.c.o
 arm_minisys.elf: src/User/CMakeFiles/user.dir/range_stack.c.o
+arm_minisys.elf: src/User/CMakeFiles/user.dir/stack.c.o
 arm_minisys.elf: src/User/CMakeFiles/user.dir/validator.c.o
 arm_minisys.elf: CMakeFiles/arm_minisys.elf.dir/build.make
 arm_minisys.elf: CMakeFiles/arm_minisys.elf.dir/link.txt

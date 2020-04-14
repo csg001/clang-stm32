@@ -60,7 +60,7 @@ include src/GCCARM/CMakeFiles/gccarm.dir/flags.make
 src/GCCARM/CMakeFiles/gccarm.dir/startup_stm32h743xx.s.o: src/GCCARM/CMakeFiles/gccarm.dir/flags.make
 src/GCCARM/CMakeFiles/gccarm.dir/startup_stm32h743xx.s.o: ../src/GCCARM/startup_stm32h743xx.s
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object src/GCCARM/CMakeFiles/gccarm.dir/startup_stm32h743xx.s.o"
-	cd /mnt/d/demo/build/src/GCCARM && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/gccarm.dir/startup_stm32h743xx.s.o -c /mnt/d/demo/src/GCCARM/startup_stm32h743xx.s
+	cd /mnt/d/demo/build/src/GCCARM && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/gccarm.dir/startup_stm32h743xx.s.o -c /mnt/d/demo/src/GCCARM/startup_stm32h743xx.s
 
 src/GCCARM/CMakeFiles/gccarm.dir/startup_stm32h743xx.s.o.requires:
 

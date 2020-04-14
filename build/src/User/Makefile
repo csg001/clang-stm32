@@ -233,6 +233,33 @@ range_stack.c.s:
 	cd /mnt/d/demo/build && $(MAKE) -f src/User/CMakeFiles/user.dir/build.make src/User/CMakeFiles/user.dir/range_stack.c.s
 .PHONY : range_stack.c.s
 
+stack.o: stack.c.o
+
+.PHONY : stack.o
+
+# target to build an object file
+stack.c.o:
+	cd /mnt/d/demo/build && $(MAKE) -f src/User/CMakeFiles/user.dir/build.make src/User/CMakeFiles/user.dir/stack.c.o
+.PHONY : stack.c.o
+
+stack.i: stack.c.i
+
+.PHONY : stack.i
+
+# target to preprocess a source file
+stack.c.i:
+	cd /mnt/d/demo/build && $(MAKE) -f src/User/CMakeFiles/user.dir/build.make src/User/CMakeFiles/user.dir/stack.c.i
+.PHONY : stack.c.i
+
+stack.s: stack.c.s
+
+.PHONY : stack.s
+
+# target to generate assembly for a file
+stack.c.s:
+	cd /mnt/d/demo/build && $(MAKE) -f src/User/CMakeFiles/user.dir/build.make src/User/CMakeFiles/user.dir/stack.c.s
+.PHONY : stack.c.s
+
 validator.o: validator.c.o
 
 .PHONY : validator.o
@@ -281,6 +308,9 @@ help:
 	@echo "... range_stack.o"
 	@echo "... range_stack.i"
 	@echo "... range_stack.s"
+	@echo "... stack.o"
+	@echo "... stack.i"
+	@echo "... stack.s"
 	@echo "... validator.o"
 	@echo "... validator.i"
 	@echo "... validator.s"

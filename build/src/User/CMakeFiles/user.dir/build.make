@@ -60,15 +60,15 @@ include src/User/CMakeFiles/user.dir/flags.make
 src/User/CMakeFiles/user.dir/application.c.o: src/User/CMakeFiles/user.dir/flags.make
 src/User/CMakeFiles/user.dir/application.c.o: ../src/User/application.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/User/CMakeFiles/user.dir/application.c.o"
-	cd /mnt/d/demo/build/src/User && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/user.dir/application.c.o   -c /mnt/d/demo/src/User/application.c
+	cd /mnt/d/demo/build/src/User && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/user.dir/application.c.o   -c /mnt/d/demo/src/User/application.c
 
 src/User/CMakeFiles/user.dir/application.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/user.dir/application.c.i"
-	cd /mnt/d/demo/build/src/User && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/User/application.c > CMakeFiles/user.dir/application.c.i
+	cd /mnt/d/demo/build/src/User && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/User/application.c > CMakeFiles/user.dir/application.c.i
 
 src/User/CMakeFiles/user.dir/application.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/user.dir/application.c.s"
-	cd /mnt/d/demo/build/src/User && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/User/application.c -o CMakeFiles/user.dir/application.c.s
+	cd /mnt/d/demo/build/src/User && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/User/application.c -o CMakeFiles/user.dir/application.c.s
 
 src/User/CMakeFiles/user.dir/application.c.o.requires:
 
@@ -84,15 +84,15 @@ src/User/CMakeFiles/user.dir/application.c.o.provides.build: src/User/CMakeFiles
 src/User/CMakeFiles/user.dir/main.c.o: src/User/CMakeFiles/user.dir/flags.make
 src/User/CMakeFiles/user.dir/main.c.o: ../src/User/main.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/User/CMakeFiles/user.dir/main.c.o"
-	cd /mnt/d/demo/build/src/User && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/user.dir/main.c.o   -c /mnt/d/demo/src/User/main.c
+	cd /mnt/d/demo/build/src/User && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/user.dir/main.c.o   -c /mnt/d/demo/src/User/main.c
 
 src/User/CMakeFiles/user.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/user.dir/main.c.i"
-	cd /mnt/d/demo/build/src/User && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/User/main.c > CMakeFiles/user.dir/main.c.i
+	cd /mnt/d/demo/build/src/User && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/User/main.c > CMakeFiles/user.dir/main.c.i
 
 src/User/CMakeFiles/user.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/user.dir/main.c.s"
-	cd /mnt/d/demo/build/src/User && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/User/main.c -o CMakeFiles/user.dir/main.c.s
+	cd /mnt/d/demo/build/src/User && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/User/main.c -o CMakeFiles/user.dir/main.c.s
 
 src/User/CMakeFiles/user.dir/main.c.o.requires:
 
@@ -108,15 +108,15 @@ src/User/CMakeFiles/user.dir/main.c.o.provides.build: src/User/CMakeFiles/user.d
 src/User/CMakeFiles/user.dir/normal_stack.c.o: src/User/CMakeFiles/user.dir/flags.make
 src/User/CMakeFiles/user.dir/normal_stack.c.o: ../src/User/normal_stack.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/User/CMakeFiles/user.dir/normal_stack.c.o"
-	cd /mnt/d/demo/build/src/User && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/user.dir/normal_stack.c.o   -c /mnt/d/demo/src/User/normal_stack.c
+	cd /mnt/d/demo/build/src/User && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/user.dir/normal_stack.c.o   -c /mnt/d/demo/src/User/normal_stack.c
 
 src/User/CMakeFiles/user.dir/normal_stack.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/user.dir/normal_stack.c.i"
-	cd /mnt/d/demo/build/src/User && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/User/normal_stack.c > CMakeFiles/user.dir/normal_stack.c.i
+	cd /mnt/d/demo/build/src/User && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/User/normal_stack.c > CMakeFiles/user.dir/normal_stack.c.i
 
 src/User/CMakeFiles/user.dir/normal_stack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/user.dir/normal_stack.c.s"
-	cd /mnt/d/demo/build/src/User && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/User/normal_stack.c -o CMakeFiles/user.dir/normal_stack.c.s
+	cd /mnt/d/demo/build/src/User && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/User/normal_stack.c -o CMakeFiles/user.dir/normal_stack.c.s
 
 src/User/CMakeFiles/user.dir/normal_stack.c.o.requires:
 
@@ -132,15 +132,15 @@ src/User/CMakeFiles/user.dir/normal_stack.c.o.provides.build: src/User/CMakeFile
 src/User/CMakeFiles/user.dir/range_stack.c.o: src/User/CMakeFiles/user.dir/flags.make
 src/User/CMakeFiles/user.dir/range_stack.c.o: ../src/User/range_stack.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/User/CMakeFiles/user.dir/range_stack.c.o"
-	cd /mnt/d/demo/build/src/User && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/user.dir/range_stack.c.o   -c /mnt/d/demo/src/User/range_stack.c
+	cd /mnt/d/demo/build/src/User && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/user.dir/range_stack.c.o   -c /mnt/d/demo/src/User/range_stack.c
 
 src/User/CMakeFiles/user.dir/range_stack.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/user.dir/range_stack.c.i"
-	cd /mnt/d/demo/build/src/User && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/User/range_stack.c > CMakeFiles/user.dir/range_stack.c.i
+	cd /mnt/d/demo/build/src/User && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/User/range_stack.c > CMakeFiles/user.dir/range_stack.c.i
 
 src/User/CMakeFiles/user.dir/range_stack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/user.dir/range_stack.c.s"
-	cd /mnt/d/demo/build/src/User && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/User/range_stack.c -o CMakeFiles/user.dir/range_stack.c.s
+	cd /mnt/d/demo/build/src/User && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/User/range_stack.c -o CMakeFiles/user.dir/range_stack.c.s
 
 src/User/CMakeFiles/user.dir/range_stack.c.o.requires:
 
@@ -153,18 +153,42 @@ src/User/CMakeFiles/user.dir/range_stack.c.o.provides: src/User/CMakeFiles/user.
 src/User/CMakeFiles/user.dir/range_stack.c.o.provides.build: src/User/CMakeFiles/user.dir/range_stack.c.o
 
 
+src/User/CMakeFiles/user.dir/stack.c.o: src/User/CMakeFiles/user.dir/flags.make
+src/User/CMakeFiles/user.dir/stack.c.o: ../src/User/stack.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/User/CMakeFiles/user.dir/stack.c.o"
+	cd /mnt/d/demo/build/src/User && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/user.dir/stack.c.o   -c /mnt/d/demo/src/User/stack.c
+
+src/User/CMakeFiles/user.dir/stack.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/user.dir/stack.c.i"
+	cd /mnt/d/demo/build/src/User && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/User/stack.c > CMakeFiles/user.dir/stack.c.i
+
+src/User/CMakeFiles/user.dir/stack.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/user.dir/stack.c.s"
+	cd /mnt/d/demo/build/src/User && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/User/stack.c -o CMakeFiles/user.dir/stack.c.s
+
+src/User/CMakeFiles/user.dir/stack.c.o.requires:
+
+.PHONY : src/User/CMakeFiles/user.dir/stack.c.o.requires
+
+src/User/CMakeFiles/user.dir/stack.c.o.provides: src/User/CMakeFiles/user.dir/stack.c.o.requires
+	$(MAKE) -f src/User/CMakeFiles/user.dir/build.make src/User/CMakeFiles/user.dir/stack.c.o.provides.build
+.PHONY : src/User/CMakeFiles/user.dir/stack.c.o.provides
+
+src/User/CMakeFiles/user.dir/stack.c.o.provides.build: src/User/CMakeFiles/user.dir/stack.c.o
+
+
 src/User/CMakeFiles/user.dir/validator.c.o: src/User/CMakeFiles/user.dir/flags.make
 src/User/CMakeFiles/user.dir/validator.c.o: ../src/User/validator.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/User/CMakeFiles/user.dir/validator.c.o"
-	cd /mnt/d/demo/build/src/User && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/user.dir/validator.c.o   -c /mnt/d/demo/src/User/validator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/User/CMakeFiles/user.dir/validator.c.o"
+	cd /mnt/d/demo/build/src/User && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/user.dir/validator.c.o   -c /mnt/d/demo/src/User/validator.c
 
 src/User/CMakeFiles/user.dir/validator.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/user.dir/validator.c.i"
-	cd /mnt/d/demo/build/src/User && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/User/validator.c > CMakeFiles/user.dir/validator.c.i
+	cd /mnt/d/demo/build/src/User && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/User/validator.c > CMakeFiles/user.dir/validator.c.i
 
 src/User/CMakeFiles/user.dir/validator.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/user.dir/validator.c.s"
-	cd /mnt/d/demo/build/src/User && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/User/validator.c -o CMakeFiles/user.dir/validator.c.s
+	cd /mnt/d/demo/build/src/User && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/User/validator.c -o CMakeFiles/user.dir/validator.c.s
 
 src/User/CMakeFiles/user.dir/validator.c.o.requires:
 
@@ -181,6 +205,7 @@ user: src/User/CMakeFiles/user.dir/application.c.o
 user: src/User/CMakeFiles/user.dir/main.c.o
 user: src/User/CMakeFiles/user.dir/normal_stack.c.o
 user: src/User/CMakeFiles/user.dir/range_stack.c.o
+user: src/User/CMakeFiles/user.dir/stack.c.o
 user: src/User/CMakeFiles/user.dir/validator.c.o
 user: src/User/CMakeFiles/user.dir/build.make
 
@@ -195,6 +220,7 @@ src/User/CMakeFiles/user.dir/requires: src/User/CMakeFiles/user.dir/application.
 src/User/CMakeFiles/user.dir/requires: src/User/CMakeFiles/user.dir/main.c.o.requires
 src/User/CMakeFiles/user.dir/requires: src/User/CMakeFiles/user.dir/normal_stack.c.o.requires
 src/User/CMakeFiles/user.dir/requires: src/User/CMakeFiles/user.dir/range_stack.c.o.requires
+src/User/CMakeFiles/user.dir/requires: src/User/CMakeFiles/user.dir/stack.c.o.requires
 src/User/CMakeFiles/user.dir/requires: src/User/CMakeFiles/user.dir/validator.c.o.requires
 
 .PHONY : src/User/CMakeFiles/user.dir/requires

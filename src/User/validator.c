@@ -3,6 +3,7 @@ int validator_init(struct validator *p_validator,
                    int (*validate)(struct validator *p_validator, int value))
 {
     p_validator->validate = validate;
+
 };
 
 inline int validator_check(struct validator *p_validator, int value)

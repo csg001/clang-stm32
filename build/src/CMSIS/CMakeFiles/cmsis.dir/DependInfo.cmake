@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/mnt/d/demo/src/CMSIS/system_stm32h7xx.c" "/mnt/d/demo/build/src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.o"
   )
-set(CMAKE_C_COMPILER_ID "Clang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C

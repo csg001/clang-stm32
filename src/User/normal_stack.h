@@ -9,6 +9,6 @@ struct normal_stack
     int size;
 };
 
-struct stact *normal_stack_init(struct normal_stack *stack, int *p_buf, int size);
+struct stack *normal_stack_init(struct normal_stack *stack, int *p_buf, int size);
 
 #endif

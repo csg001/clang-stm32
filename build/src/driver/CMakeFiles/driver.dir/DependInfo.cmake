@@ -19,7 +19,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/mnt/d/demo/src/driver/stm32h7xx_hal_uart_ex.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o"
   "/mnt/d/demo/src/driver/stm32h7xx_ll_fmc.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o"
   )
-set(CMAKE_C_COMPILER_ID "Clang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C

@@ -14,12 +14,13 @@
     int b[] = {7, 7, 76, 67, 1070};
     int val;
     struct stack *p_stack = p_app->p_stack;
-    
+    struct range_stack *p_this = (struct range_stack *)p_stack;
     for (int i = 0; i < 5; i++)
     {
         //if( ((struct range_stack*)(p_app->p_stack))->validator!=0&&((struct range_stack*)(p_app->p_stack))->validator(a[i],p_app->p_stack))
-        if(((struct range_stack*)(p_stack))->p_validator->validate.validate(&(((struct range_stack*)(p_stack))->p_validator->validate), a[i]))
+        //if(((struct range_stack*)(p_stack))->p_validator.validate->validate(&(((struct range_stack*)(p_stack))->p_validator->validate), a[i]))
         {
+            
             if (stack_push(p_stack,a[i])!=0)
             {
                 //printf("the data %d push faild \n", a[i]);

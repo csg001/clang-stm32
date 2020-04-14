@@ -60,15 +60,15 @@ include src/BSP/CMakeFiles/bsp.dir/flags.make
 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o: src/BSP/CMakeFiles/bsp.dir/flags.make
 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o: ../src/BSP/bsp_fmc_io.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/bsp_fmc_io.c.o   -c /mnt/d/demo/src/BSP/bsp_fmc_io.c
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/bsp_fmc_io.c.o   -c /mnt/d/demo/src/BSP/bsp_fmc_io.c
 
 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsp.dir/bsp_fmc_io.c.i"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/bsp_fmc_io.c > CMakeFiles/bsp.dir/bsp_fmc_io.c.i
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/bsp_fmc_io.c > CMakeFiles/bsp.dir/bsp_fmc_io.c.i
 
 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsp.dir/bsp_fmc_io.c.s"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/bsp_fmc_io.c -o CMakeFiles/bsp.dir/bsp_fmc_io.c.s
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/bsp_fmc_io.c -o CMakeFiles/bsp.dir/bsp_fmc_io.c.s
 
 src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o.requires:
 
@@ -84,15 +84,15 @@ src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o.provides.build: src/BSP/CMakeFiles/bsp
 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o: src/BSP/CMakeFiles/bsp.dir/flags.make
 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o: ../src/BSP/bsp_key.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/bsp_key.c.o   -c /mnt/d/demo/src/BSP/bsp_key.c
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/bsp_key.c.o   -c /mnt/d/demo/src/BSP/bsp_key.c
 
 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsp.dir/bsp_key.c.i"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/bsp_key.c > CMakeFiles/bsp.dir/bsp_key.c.i
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/bsp_key.c > CMakeFiles/bsp.dir/bsp_key.c.i
 
 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsp.dir/bsp_key.c.s"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/bsp_key.c -o CMakeFiles/bsp.dir/bsp_key.c.s
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/bsp_key.c -o CMakeFiles/bsp.dir/bsp_key.c.s
 
 src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o.requires:
 
@@ -108,15 +108,15 @@ src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o.provides.build: src/BSP/CMakeFiles/bsp.di
 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o: src/BSP/CMakeFiles/bsp.dir/flags.make
 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o: ../src/BSP/bsp_led.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/bsp_led.c.o   -c /mnt/d/demo/src/BSP/bsp_led.c
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/bsp_led.c.o   -c /mnt/d/demo/src/BSP/bsp_led.c
 
 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsp.dir/bsp_led.c.i"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/bsp_led.c > CMakeFiles/bsp.dir/bsp_led.c.i
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/bsp_led.c > CMakeFiles/bsp.dir/bsp_led.c.i
 
 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsp.dir/bsp_led.c.s"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/bsp_led.c -o CMakeFiles/bsp.dir/bsp_led.c.s
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/bsp_led.c -o CMakeFiles/bsp.dir/bsp_led.c.s
 
 src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o.requires:
 
@@ -132,15 +132,15 @@ src/BSP/CMakeFiles/bsp.dir/bsp_led.c.o.provides.build: src/BSP/CMakeFiles/bsp.di
 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o: src/BSP/CMakeFiles/bsp.dir/flags.make
 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o: ../src/BSP/bsp_timer.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/bsp_timer.c.o   -c /mnt/d/demo/src/BSP/bsp_timer.c
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/bsp_timer.c.o   -c /mnt/d/demo/src/BSP/bsp_timer.c
 
 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsp.dir/bsp_timer.c.i"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/bsp_timer.c > CMakeFiles/bsp.dir/bsp_timer.c.i
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/bsp_timer.c > CMakeFiles/bsp.dir/bsp_timer.c.i
 
 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsp.dir/bsp_timer.c.s"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/bsp_timer.c -o CMakeFiles/bsp.dir/bsp_timer.c.s
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/bsp_timer.c -o CMakeFiles/bsp.dir/bsp_timer.c.s
 
 src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o.requires:
 
@@ -156,15 +156,15 @@ src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o.provides.build: src/BSP/CMakeFiles/bsp.
 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o: src/BSP/CMakeFiles/bsp.dir/flags.make
 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o: ../src/BSP/bsp_uart_fifo.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/bsp_uart_fifo.c.o   -c /mnt/d/demo/src/BSP/bsp_uart_fifo.c
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/bsp_uart_fifo.c.o   -c /mnt/d/demo/src/BSP/bsp_uart_fifo.c
 
 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsp.dir/bsp_uart_fifo.c.i"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/bsp_uart_fifo.c > CMakeFiles/bsp.dir/bsp_uart_fifo.c.i
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/bsp_uart_fifo.c > CMakeFiles/bsp.dir/bsp_uart_fifo.c.i
 
 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsp.dir/bsp_uart_fifo.c.s"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/bsp_uart_fifo.c -o CMakeFiles/bsp.dir/bsp_uart_fifo.c.s
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/bsp_uart_fifo.c -o CMakeFiles/bsp.dir/bsp_uart_fifo.c.s
 
 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o.requires:
 
@@ -180,15 +180,15 @@ src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o.provides.build: src/BSP/CMakeFiles/
 src/BSP/CMakeFiles/bsp.dir/bsp.c.o: src/BSP/CMakeFiles/bsp.dir/flags.make
 src/BSP/CMakeFiles/bsp.dir/bsp.c.o: ../src/BSP/bsp.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/BSP/CMakeFiles/bsp.dir/bsp.c.o"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/bsp.c.o   -c /mnt/d/demo/src/BSP/bsp.c
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/bsp.c.o   -c /mnt/d/demo/src/BSP/bsp.c
 
 src/BSP/CMakeFiles/bsp.dir/bsp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsp.dir/bsp.c.i"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/bsp.c > CMakeFiles/bsp.dir/bsp.c.i
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/bsp.c > CMakeFiles/bsp.dir/bsp.c.i
 
 src/BSP/CMakeFiles/bsp.dir/bsp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsp.dir/bsp.c.s"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/bsp.c -o CMakeFiles/bsp.dir/bsp.c.s
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/bsp.c -o CMakeFiles/bsp.dir/bsp.c.s
 
 src/BSP/CMakeFiles/bsp.dir/bsp.c.o.requires:
 
@@ -204,15 +204,15 @@ src/BSP/CMakeFiles/bsp.dir/bsp.c.o.provides.build: src/BSP/CMakeFiles/bsp.dir/bs
 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o: src/BSP/CMakeFiles/bsp.dir/flags.make
 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o: ../src/BSP/stm32h7xx_it.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/stm32h7xx_it.c.o   -c /mnt/d/demo/src/BSP/stm32h7xx_it.c
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsp.dir/stm32h7xx_it.c.o   -c /mnt/d/demo/src/BSP/stm32h7xx_it.c
 
 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsp.dir/stm32h7xx_it.c.i"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/stm32h7xx_it.c > CMakeFiles/bsp.dir/stm32h7xx_it.c.i
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/BSP/stm32h7xx_it.c > CMakeFiles/bsp.dir/stm32h7xx_it.c.i
 
 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsp.dir/stm32h7xx_it.c.s"
-	cd /mnt/d/demo/build/src/BSP && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/stm32h7xx_it.c -o CMakeFiles/bsp.dir/stm32h7xx_it.c.s
+	cd /mnt/d/demo/build/src/BSP && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/BSP/stm32h7xx_it.c -o CMakeFiles/bsp.dir/stm32h7xx_it.c.s
 
 src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o.requires:
 

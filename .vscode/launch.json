@@ -8,9 +8,11 @@
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "openocd",
+            "svdFile": "${workspaceRoot}/SVD/STM32H7x3.svd",
             "configFiles": [
                 "${workspaceFolder}/openocd.cfg",
             ],
+
             "postLaunchCommands": [
                 "set substitute-path /mnt/d d:/"
             ]

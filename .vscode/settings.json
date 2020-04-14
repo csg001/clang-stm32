@@ -7,7 +7,8 @@
         "application.h": "c",
         "range_stack.h": "c",
         "validator.h": "c",
-        "normal_stack.h": "c"
+        "normal_stack.h": "c",
+        "bsp.h": "c"
     },
     "C_Cpp.dimInactiveRegions": false
 }

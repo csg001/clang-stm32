@@ -12,7 +12,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/mnt/d/demo/src/BSP/bsp_uart_fifo.c" "/mnt/d/demo/build/src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o"
   "/mnt/d/demo/src/BSP/stm32h7xx_it.c" "/mnt/d/demo/build/src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o"
   )
-set(CMAKE_C_COMPILER_ID "Clang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C
