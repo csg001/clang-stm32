@@ -20,3 +20,16 @@
 /mnt/d/demo/build/src/GCCARM/CMakeFiles/rebuild_cache.dir
 /mnt/d/demo/build/src/GCCARM/CMakeFiles/gccarm.dir
 /mnt/d/demo/build/src/GCCARM/CMakeFiles/edit_cache.dir
+/mnt/d/demo/build/src/rtos/CMakeFiles/rebuild_cache.dir
+/mnt/d/demo/build/src/rtos/CMakeFiles/edit_cache.dir
+/mnt/d/demo/build/src/rtos/cortex-m7/CMakeFiles/rebuild_cache.dir
+/mnt/d/demo/build/src/rtos/cortex-m7/CMakeFiles/cortex-m7.dir
+/mnt/d/demo/build/src/rtos/cortex-m7/CMakeFiles/edit_cache.dir
+/mnt/d/demo/build/src/rtos/src/CMakeFiles/rebuild_cache.dir
+/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir
+/mnt/d/demo/build/src/rtos/src/CMakeFiles/edit_cache.dir
+/mnt/d/demo/build/src/components/CMakeFiles/rebuild_cache.dir
+/mnt/d/demo/build/src/components/CMakeFiles/edit_cache.dir
+/mnt/d/demo/build/src/components/finsh/CMakeFiles/rebuild_cache.dir
+/mnt/d/demo/build/src/components/finsh/CMakeFiles/finsh.dir
+/mnt/d/demo/build/src/components/finsh/CMakeFiles/edit_cache.dir

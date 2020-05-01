@@ -5,7 +5,7 @@ function clean() {
 }
 function cmake_all() {
     cd build
-    cmake -DCMAKE_BUILD_TYPE=debug -D CMAKE_TOOLCHAIN_FILE=cmake/toolchain-arm-none-eabi.cmake -D COMPILER="gcc" ..
+    cmake -DCMAKE_BUILD_TYPE=debug -D CMAKE_TOOLCHAIN_FILE=cmake/toolchain-arm-none-eabi.cmake -D COMPILER="clang" ..
     #make >> output_file.txt 2>&1
     _make
     return 1
@@ -14,7 +14,7 @@ function cmake_all() {
 function _make() {
     cd build
     #清除屏幕
-    clear
+    #clear
     make
     return 1
 }

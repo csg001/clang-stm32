@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/mnt/d/demo/src/CMSIS/system_stm32h7xx.c" "/mnt/d/demo/build/src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "Clang")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C
@@ -18,7 +18,13 @@ set(CMAKE_TARGET_DEFINITIONS_C
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/BSP"
   "../src/BSP/inc"
+  "../src/GCCARM"
+  "../src/rtos/src/include"
+  "../src/rtos/src/include/libc"
   "../src/driver"
+  "../src/rtos/cortex-m7"
+  "../src/User"
+  "../src/components/finsh"
   )
 
 # Targets to which this target links.

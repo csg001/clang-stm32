@@ -69,6 +69,7 @@ arm_minisys_elf_EXTERNAL_OBJECTS = \
 "/mnt/d/demo/build/src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o" \
 "/mnt/d/demo/build/src/BSP/CMakeFiles/bsp.dir/bsp.c.o" \
 "/mnt/d/demo/build/src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o" \
+"/mnt/d/demo/build/src/BSP/CMakeFiles/bsp.dir/board.c.o" \
 "/mnt/d/demo/build/src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.o" \
 "/mnt/d/demo/build/src/GCCARM/CMakeFiles/gccarm.dir/startup_stm32h743xx.s.o" \
 "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o" \
@@ -90,7 +91,28 @@ arm_minisys_elf_EXTERNAL_OBJECTS = \
 "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/normal_stack.c.o" \
 "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/range_stack.c.o" \
 "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/stack.c.o" \
-"/mnt/d/demo/build/src/User/CMakeFiles/user.dir/validator.c.o"
+"/mnt/d/demo/build/src/User/CMakeFiles/user.dir/validator.c.o" \
+"/mnt/d/demo/build/src/rtos/cortex-m7/CMakeFiles/cortex-m7.dir/context_gcc.S.o" \
+"/mnt/d/demo/build/src/rtos/cortex-m7/CMakeFiles/cortex-m7.dir/cpu_cache.c.o" \
+"/mnt/d/demo/build/src/rtos/cortex-m7/CMakeFiles/cortex-m7.dir/cpuport.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/clock.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/components.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/cpu.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/idle.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/ipc.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/irq.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/mem.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/memheap.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/mempool.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/object.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/scheduler.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/slab.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/thread.c.o" \
+"/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/timer.c.o" \
+"/mnt/d/demo/build/src/components/finsh/CMakeFiles/finsh.dir/cmd.c.o" \
+"/mnt/d/demo/build/src/components/finsh/CMakeFiles/finsh.dir/msh.c.o" \
+"/mnt/d/demo/build/src/components/finsh/CMakeFiles/finsh.dir/shell.c.o"
 
 arm_minisys.elf: src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
 arm_minisys.elf: src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
@@ -99,6 +121,7 @@ arm_minisys.elf: src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
 arm_minisys.elf: src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
 arm_minisys.elf: src/BSP/CMakeFiles/bsp.dir/bsp.c.o
 arm_minisys.elf: src/BSP/CMakeFiles/bsp.dir/stm32h7xx_it.c.o
+arm_minisys.elf: src/BSP/CMakeFiles/bsp.dir/board.c.o
 arm_minisys.elf: src/CMSIS/CMakeFiles/cmsis.dir/system_stm32h7xx.c.o
 arm_minisys.elf: src/GCCARM/CMakeFiles/gccarm.dir/startup_stm32h743xx.s.o
 arm_minisys.elf: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
@@ -121,6 +144,27 @@ arm_minisys.elf: src/User/CMakeFiles/user.dir/normal_stack.c.o
 arm_minisys.elf: src/User/CMakeFiles/user.dir/range_stack.c.o
 arm_minisys.elf: src/User/CMakeFiles/user.dir/stack.c.o
 arm_minisys.elf: src/User/CMakeFiles/user.dir/validator.c.o
+arm_minisys.elf: src/rtos/cortex-m7/CMakeFiles/cortex-m7.dir/context_gcc.S.o
+arm_minisys.elf: src/rtos/cortex-m7/CMakeFiles/cortex-m7.dir/cpu_cache.c.o
+arm_minisys.elf: src/rtos/cortex-m7/CMakeFiles/cortex-m7.dir/cpuport.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/clock.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/components.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/cpu.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/idle.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/ipc.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/irq.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/mem.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/memheap.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/mempool.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/object.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/scheduler.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/slab.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/thread.c.o
+arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/timer.c.o
+arm_minisys.elf: src/components/finsh/CMakeFiles/finsh.dir/cmd.c.o
+arm_minisys.elf: src/components/finsh/CMakeFiles/finsh.dir/msh.c.o
+arm_minisys.elf: src/components/finsh/CMakeFiles/finsh.dir/shell.c.o
 arm_minisys.elf: CMakeFiles/arm_minisys.elf.dir/build.make
 arm_minisys.elf: CMakeFiles/arm_minisys.elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C executable arm_minisys.elf"

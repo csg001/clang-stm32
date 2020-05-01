@@ -214,6 +214,45 @@ gccarm/fast:
 	$(MAKE) -f src/GCCARM/CMakeFiles/gccarm.dir/build.make src/GCCARM/CMakeFiles/gccarm.dir/build
 .PHONY : gccarm/fast
 
+#=============================================================================
+# Target rules for targets named cortex-m7
+
+# Build rule for target.
+cortex-m7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cortex-m7
+.PHONY : cortex-m7
+
+# fast build rule for target.
+cortex-m7/fast:
+	$(MAKE) -f src/rtos/cortex-m7/CMakeFiles/cortex-m7.dir/build.make src/rtos/cortex-m7/CMakeFiles/cortex-m7.dir/build
+.PHONY : cortex-m7/fast
+
+#=============================================================================
+# Target rules for targets named rtossrc
+
+# Build rule for target.
+rtossrc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rtossrc
+.PHONY : rtossrc
+
+# fast build rule for target.
+rtossrc/fast:
+	$(MAKE) -f src/rtos/src/CMakeFiles/rtossrc.dir/build.make src/rtos/src/CMakeFiles/rtossrc.dir/build
+.PHONY : rtossrc/fast
+
+#=============================================================================
+# Target rules for targets named finsh
+
+# Build rule for target.
+finsh: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 finsh
+.PHONY : finsh
+
+# fast build rule for target.
+finsh/fast:
+	$(MAKE) -f src/components/finsh/CMakeFiles/finsh.dir/build.make src/components/finsh/CMakeFiles/finsh.dir/build
+.PHONY : finsh/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -230,6 +269,9 @@ help:
 	@echo "... driver"
 	@echo "... user"
 	@echo "... gccarm"
+	@echo "... cortex-m7"
+	@echo "... rtossrc"
+	@echo "... finsh"
 .PHONY : help
 
 

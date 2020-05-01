@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 2.6)
+PROJECT(segger)
+enable_language(ASM)
+
+list(APPEND ${PROJECT_NAME}_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/SEGGER_HardFaultHandler.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/HardFaultHandler.s"
+    )
+
+#file(GLOB ${PROJECT_NAME}_SOURCES "${CMAKE_CURRENT_LIST_DIR}/*.s")
+
+add_library(${PROJECT_NAME} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})

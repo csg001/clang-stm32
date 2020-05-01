@@ -255,6 +255,8 @@ Half duplex, UART LIN mode and UART multiprocessor mode configuration procedures
  * @param huart: UART handle.
  * @retval HAL status
  */
+
+
 HAL_StatusTypeDef HAL_UART_Init(UART_HandleTypeDef *huart) {
   /* Check the UART handle allocation */
   if (huart == NULL) {
@@ -2787,6 +2789,7 @@ static HAL_StatusTypeDef UART_EndTransmit_IT(UART_HandleTypeDef *huart) {
 
   return HAL_OK;
 }
+
 
 /**
  * @brief  Receive an amount of data in interrupt mode.

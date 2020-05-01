@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 2.6)
+project(finsh)
+list(APPEND ${PROJECT_NAME}_SOURCES 
+        "${CMAKE_CURRENT_SOURCE_DIR}/cmd.c"
+        "${CMAKE_CURRENT_SOURCE_DIR}/msh.c"
+        "${CMAKE_CURRENT_SOURCE_DIR}/shell.c"
+       )
+add_library(${PROJECT_NAME} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})
+
+target_compile_definitions(${PROJECT_NAME} PUBLIC 
+    -DUSE_HAL_DRIVER -DSTM32H743xx)
+target_include_directories(${PROJECT_NAME} PUBLIC 
+                                                    ${CMAKE_CURRENT_SOURCE_DIR}
+                                                    $<TARGET_PROPERTY:bsp,INTERFACE_INCLUDE_DIRECTORIES>
+                                                    $<TARGET_PROPERTY:driver,INTERFACE_INCLUDE_DIRECTORIES>
+                                                    $<TARGET_PROPERTY:gccarm,INTERFACE_INCLUDE_DIRECTORIES>
+                                                    $<TARGET_PROPERTY:cmsis,INTERFACE_INCLUDE_DIRECTORIES>
+                                                    $<TARGET_PROPERTY:cortex-m7,INTERFACE_INCLUDE_DIRECTORIES>
+                                                    $<TARGET_PROPERTY:user,INTERFACE_INCLUDE_DIRECTORIES>
+                                                    $<TARGET_PROPERTY:rtossrc,INTERFACE_INCLUDE_DIRECTORIES>
+                                                    )

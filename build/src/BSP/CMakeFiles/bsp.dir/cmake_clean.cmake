@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/bsp.dir/bsp_uart_fifo.c.o"
   "CMakeFiles/bsp.dir/bsp.c.o"
   "CMakeFiles/bsp.dir/stm32h7xx_it.c.o"
+  "CMakeFiles/bsp.dir/board.c.o"
 )
 
 # Per-language clean rules from dependency scanning.

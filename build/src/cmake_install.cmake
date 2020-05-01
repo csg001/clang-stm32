@@ -44,6 +44,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/mnt/d/demo/build/src/driver/cmake_install.cmake")
   include("/mnt/d/demo/build/src/User/cmake_install.cmake")
   include("/mnt/d/demo/build/src/GCCARM/cmake_install.cmake")
+  include("/mnt/d/demo/build/src/rtos/cmake_install.cmake")
+  include("/mnt/d/demo/build/src/components/cmake_install.cmake")
 
 endif()
 

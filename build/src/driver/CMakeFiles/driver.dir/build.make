@@ -60,15 +60,15 @@ include src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o: ../src/driver/stm32h7xx_hal_cortex.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_cortex.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_cortex.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_cortex.c > CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_cortex.c > CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_cortex.c -o CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_cortex.c -o CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o.requires:
 
@@ -84,15 +84,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o.provides.build: src/dr
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.o: ../src/driver/stm32h7xx_hal_dma_ex.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_dma_ex.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_dma_ex.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_dma_ex.c > CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_dma_ex.c > CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_dma_ex.c -o CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_dma_ex.c -o CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.o.requires:
 
@@ -108,15 +108,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.o.provides.build: src/dr
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.o: ../src/driver/stm32h7xx_hal_dma.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_dma.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_dma.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_dma.c > CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_dma.c > CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_dma.c -o CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_dma.c -o CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.o.requires:
 
@@ -132,15 +132,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.o.provides.build: src/drive
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.o: ../src/driver/stm32h7xx_hal_gpio.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_gpio.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_gpio.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_gpio.c > CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_gpio.c > CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_gpio.c -o CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_gpio.c -o CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.o.requires:
 
@@ -156,15 +156,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.o.provides.build: src/driv
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.o: ../src/driver/stm32h7xx_hal_mdma.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_mdma.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_mdma.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_mdma.c > CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_mdma.c > CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_mdma.c -o CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_mdma.c -o CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.o.requires:
 
@@ -180,15 +180,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.o.provides.build: src/driv
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o: ../src/driver/stm32h7xx_hal_rcc_ex.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_rcc_ex.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_rcc_ex.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_rcc_ex.c > CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_rcc_ex.c > CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_rcc_ex.c -o CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_rcc_ex.c -o CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o.requires:
 
@@ -204,15 +204,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o.provides.build: src/dr
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.o: ../src/driver/stm32h7xx_hal_sram.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_sram.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_sram.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_sram.c > CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_sram.c > CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_sram.c -o CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_sram.c -o CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.o.requires:
 
@@ -228,15 +228,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.o.provides.build: src/driv
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o: ../src/driver/stm32h7xx_hal_rcc.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_rcc.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_rcc.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_rcc.c > CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_rcc.c > CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_rcc.c -o CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_rcc.c -o CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o.requires:
 
@@ -252,15 +252,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o.provides.build: src/drive
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.o: ../src/driver/stm32h7xx_hal_tim_ex.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_tim_ex.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_tim_ex.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_tim_ex.c > CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_tim_ex.c > CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_tim_ex.c -o CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_tim_ex.c -o CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.o.requires:
 
@@ -276,15 +276,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim_ex.c.o.provides.build: src/dr
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o: ../src/driver/stm32h7xx_hal_tim.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_tim.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_tim.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_tim.c > CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_tim.c > CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_tim.c -o CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_tim.c -o CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o.requires:
 
@@ -300,15 +300,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_tim.c.o.provides.build: src/drive
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o: ../src/driver/stm32h7xx_hal_uart.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_uart.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_uart.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_uart.c > CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_uart.c > CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_uart.c -o CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_uart.c -o CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o.requires:
 
@@ -324,15 +324,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o.provides.build: src/driv
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o: ../src/driver/stm32h7xx_hal_uart_ex.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_uart_ex.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_uart_ex.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_uart_ex.c > CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_uart_ex.c > CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_uart_ex.c -o CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_uart_ex.c -o CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o.requires:
 
@@ -348,15 +348,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o.provides.build: src/d
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o: ../src/driver/stm32h7xx_hal.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal.c > CMakeFiles/driver.dir/stm32h7xx_hal.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal.c > CMakeFiles/driver.dir/stm32h7xx_hal.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal.c -o CMakeFiles/driver.dir/stm32h7xx_hal.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal.c -o CMakeFiles/driver.dir/stm32h7xx_hal.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o.requires:
 
@@ -372,15 +372,15 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o.provides.build: src/driver/CM
 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o: src/driver/CMakeFiles/driver.dir/flags.make
 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o: ../src/driver/stm32h7xx_ll_fmc.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_ll_fmc.c
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_ll_fmc.c
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.i"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_ll_fmc.c > CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.i
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_ll_fmc.c > CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.i
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.s"
-	cd /mnt/d/demo/build/src/driver && /mnt/d/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_ll_fmc.c -o CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.s
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_ll_fmc.c -o CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.s
 
 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o.requires:
 

@@ -131,7 +131,8 @@ void bsp_Idle(void);
 
 void bsp_GetCpuID(uint32_t *_id);
 void Error_Handler(char *file, uint32_t line);
-
+int _write(int file, char *ptr, int len);
+char rt_hw_console_getchar(void);
 #endif
 
 /***************************** 安富莱电子 www.armfly.com (END OF FILE) *********************************/

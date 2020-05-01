@@ -14,8 +14,14 @@ add_executable(${elf_name}.elf
          $<TARGET_OBJECTS:gccarm>
          $<TARGET_OBJECTS:driver>
          $<TARGET_OBJECTS:user>
-         )
+         #$<TARGET_OBJECTS:segger>
+         $<TARGET_OBJECTS:cortex-m7>
+         $<TARGET_OBJECTS:rtossrc>
+         $<TARGET_OBJECTS:finsh>)
 #target_link_libraries(${EXE_NAME} m)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CMAKE_SOURCE_DIR}/custom_output.sh")
+set_property(GLOBAL PROPERTY RULE_LAUNCH_LINK "${CMAKE_SOURCE_DIR}/custom_linker.sh")
 set_property(TARGET ${elf_name}.elf PROPERTY C_STANDARD 11)
 include(gdb-helper)
 include(binutils-arm-none-eabi)
@@ -27,5 +33,4 @@ print_section_sizes(${elf_name})
 create_bin_output(${elf_name})
 create_hex_output(${elf_name})
 generate_vscode_launch_openocd(${elf_name}.elf)
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CMAKE_SOURCE_DIR}/custom_output.sh")
+

@@ -103,12 +103,27 @@ src/User/CMakeFiles/user.dir/main.c.o
  ../src/BSP/inc/stm32h7xx_ll_sdmmc.h
  ../src/BSP/inc/stm32h7xx_ll_usb.h
  ../src/BSP/mpu_armv7.h
+ ../src/BSP/rtconfig.h
  ../src/BSP/stm32h743xx.h
  ../src/BSP/stm32h7xx.h
  ../src/BSP/system_stm32h7xx.h
+ ../src/components/finsh/finsh_api.h
  ../src/driver/stm32h7xx_hal_conf.h
  ../src/driver/stm32h7xx_hal_usart.h
  ../src/driver/stm32h7xx_hal_usart_ex.h
+ ../src/rtos/src/include/libc/libc_dirent.h
+ ../src/rtos/src/include/libc/libc_errno.h
+ ../src/rtos/src/include/libc/libc_fcntl.h
+ ../src/rtos/src/include/libc/libc_fdset.h
+ ../src/rtos/src/include/libc/libc_ioctl.h
+ ../src/rtos/src/include/libc/libc_signal.h
+ ../src/rtos/src/include/libc/libc_stat.h
+ ../src/rtos/src/include/rtdebug.h
+ ../src/rtos/src/include/rtdef.h
+ ../src/rtos/src/include/rtlibc.h
+ ../src/rtos/src/include/rtm.h
+ ../src/rtos/src/include/rtservice.h
+ ../src/rtos/src/include/rtthread.h
  /mnt/d/demo/src/User/application.h
  /mnt/d/demo/src/User/main.c
  /mnt/d/demo/src/User/normal_stack.h
