@@ -393,6 +393,126 @@ src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o.provides: src/driver/CMake
 src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o.provides.build: src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
 
 
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o: src/driver/CMakeFiles/driver.dir/flags.make
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o: ../src/driver/stm32h7xx_hal_pcd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_pcd.c
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.i"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_pcd.c > CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.i
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.s"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_pcd.c -o CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.s
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o.requires:
+
+.PHONY : src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o.requires
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o.provides: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o.requires
+	$(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o.provides.build
+.PHONY : src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o.provides
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o.provides.build: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o
+
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o: src/driver/CMakeFiles/driver.dir/flags.make
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o: ../src/driver/stm32h7xx_hal_pcd_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_pcd_ex.c
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.i"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_pcd_ex.c > CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.i
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.s"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_pcd_ex.c -o CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.s
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o.requires:
+
+.PHONY : src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o.requires
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o.provides: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o.requires
+	$(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o.provides.build
+.PHONY : src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o.provides
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o.provides.build: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o
+
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o: src/driver/CMakeFiles/driver.dir/flags.make
+src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o: ../src/driver/stm32h7xx_ll_usb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_ll_usb.c
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.i"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_ll_usb.c > CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.i
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.s"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_ll_usb.c -o CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.s
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o.requires:
+
+.PHONY : src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o.requires
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o.provides: src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o.requires
+	$(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o.provides.build
+.PHONY : src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o.provides
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o.provides.build: src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o
+
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o: src/driver/CMakeFiles/driver.dir/flags.make
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o: ../src/driver/stm32h7xx_hal_pwr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_pwr.c
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.i"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_pwr.c > CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.i
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.s"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_pwr.c -o CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.s
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o.requires:
+
+.PHONY : src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o.requires
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o.provides: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o.requires
+	$(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o.provides.build
+.PHONY : src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o.provides
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o.provides.build: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o
+
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o: src/driver/CMakeFiles/driver.dir/flags.make
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o: ../src/driver/stm32h7xx_hal_pwr_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/demo/custom_output.sh /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o   -c /mnt/d/demo/src/driver/stm32h7xx_hal_pwr_ex.c
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.i"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/demo/src/driver/stm32h7xx_hal_pwr_ex.c > CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.i
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.s"
+	cd /mnt/d/demo/build/src/driver && /mnt/d/clangllvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/demo/src/driver/stm32h7xx_hal_pwr_ex.c -o CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.s
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o.requires:
+
+.PHONY : src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o.requires
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o.provides: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o.requires
+	$(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o.provides.build
+.PHONY : src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o.provides
+
+src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o.provides.build: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o
+
+
 driver: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_cortex.c.o
 driver: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.o
 driver: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma.c.o
@@ -407,6 +527,11 @@ driver: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
 driver: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o
 driver: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
 driver: src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
+driver: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o
+driver: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o
+driver: src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o
+driver: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o
+driver: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o
 driver: src/driver/CMakeFiles/driver.dir/build.make
 
 .PHONY : driver
@@ -430,6 +555,11 @@ src/driver/CMakeFiles/driver.dir/requires: src/driver/CMakeFiles/driver.dir/stm3
 src/driver/CMakeFiles/driver.dir/requires: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o.requires
 src/driver/CMakeFiles/driver.dir/requires: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o.requires
 src/driver/CMakeFiles/driver.dir/requires: src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o.requires
+src/driver/CMakeFiles/driver.dir/requires: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o.requires
+src/driver/CMakeFiles/driver.dir/requires: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o.requires
+src/driver/CMakeFiles/driver.dir/requires: src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o.requires
+src/driver/CMakeFiles/driver.dir/requires: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o.requires
+src/driver/CMakeFiles/driver.dir/requires: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o.requires
 
 .PHONY : src/driver/CMakeFiles/driver.dir/requires
 

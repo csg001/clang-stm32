@@ -287,6 +287,114 @@ stm32h7xx_hal_mdma.c.s:
 	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.s
 .PHONY : stm32h7xx_hal_mdma.c.s
 
+stm32h7xx_hal_pcd.o: stm32h7xx_hal_pcd.c.o
+
+.PHONY : stm32h7xx_hal_pcd.o
+
+# target to build an object file
+stm32h7xx_hal_pcd.c.o:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o
+.PHONY : stm32h7xx_hal_pcd.c.o
+
+stm32h7xx_hal_pcd.i: stm32h7xx_hal_pcd.c.i
+
+.PHONY : stm32h7xx_hal_pcd.i
+
+# target to preprocess a source file
+stm32h7xx_hal_pcd.c.i:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.i
+.PHONY : stm32h7xx_hal_pcd.c.i
+
+stm32h7xx_hal_pcd.s: stm32h7xx_hal_pcd.c.s
+
+.PHONY : stm32h7xx_hal_pcd.s
+
+# target to generate assembly for a file
+stm32h7xx_hal_pcd.c.s:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.s
+.PHONY : stm32h7xx_hal_pcd.c.s
+
+stm32h7xx_hal_pcd_ex.o: stm32h7xx_hal_pcd_ex.c.o
+
+.PHONY : stm32h7xx_hal_pcd_ex.o
+
+# target to build an object file
+stm32h7xx_hal_pcd_ex.c.o:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o
+.PHONY : stm32h7xx_hal_pcd_ex.c.o
+
+stm32h7xx_hal_pcd_ex.i: stm32h7xx_hal_pcd_ex.c.i
+
+.PHONY : stm32h7xx_hal_pcd_ex.i
+
+# target to preprocess a source file
+stm32h7xx_hal_pcd_ex.c.i:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.i
+.PHONY : stm32h7xx_hal_pcd_ex.c.i
+
+stm32h7xx_hal_pcd_ex.s: stm32h7xx_hal_pcd_ex.c.s
+
+.PHONY : stm32h7xx_hal_pcd_ex.s
+
+# target to generate assembly for a file
+stm32h7xx_hal_pcd_ex.c.s:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.s
+.PHONY : stm32h7xx_hal_pcd_ex.c.s
+
+stm32h7xx_hal_pwr.o: stm32h7xx_hal_pwr.c.o
+
+.PHONY : stm32h7xx_hal_pwr.o
+
+# target to build an object file
+stm32h7xx_hal_pwr.c.o:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o
+.PHONY : stm32h7xx_hal_pwr.c.o
+
+stm32h7xx_hal_pwr.i: stm32h7xx_hal_pwr.c.i
+
+.PHONY : stm32h7xx_hal_pwr.i
+
+# target to preprocess a source file
+stm32h7xx_hal_pwr.c.i:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.i
+.PHONY : stm32h7xx_hal_pwr.c.i
+
+stm32h7xx_hal_pwr.s: stm32h7xx_hal_pwr.c.s
+
+.PHONY : stm32h7xx_hal_pwr.s
+
+# target to generate assembly for a file
+stm32h7xx_hal_pwr.c.s:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.s
+.PHONY : stm32h7xx_hal_pwr.c.s
+
+stm32h7xx_hal_pwr_ex.o: stm32h7xx_hal_pwr_ex.c.o
+
+.PHONY : stm32h7xx_hal_pwr_ex.o
+
+# target to build an object file
+stm32h7xx_hal_pwr_ex.c.o:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o
+.PHONY : stm32h7xx_hal_pwr_ex.c.o
+
+stm32h7xx_hal_pwr_ex.i: stm32h7xx_hal_pwr_ex.c.i
+
+.PHONY : stm32h7xx_hal_pwr_ex.i
+
+# target to preprocess a source file
+stm32h7xx_hal_pwr_ex.c.i:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.i
+.PHONY : stm32h7xx_hal_pwr_ex.c.i
+
+stm32h7xx_hal_pwr_ex.s: stm32h7xx_hal_pwr_ex.c.s
+
+.PHONY : stm32h7xx_hal_pwr_ex.s
+
+# target to generate assembly for a file
+stm32h7xx_hal_pwr_ex.c.s:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.s
+.PHONY : stm32h7xx_hal_pwr_ex.c.s
+
 stm32h7xx_hal_rcc.o: stm32h7xx_hal_rcc.c.o
 
 .PHONY : stm32h7xx_hal_rcc.o
@@ -503,6 +611,33 @@ stm32h7xx_ll_fmc.c.s:
 	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.s
 .PHONY : stm32h7xx_ll_fmc.c.s
 
+stm32h7xx_ll_usb.o: stm32h7xx_ll_usb.c.o
+
+.PHONY : stm32h7xx_ll_usb.o
+
+# target to build an object file
+stm32h7xx_ll_usb.c.o:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o
+.PHONY : stm32h7xx_ll_usb.c.o
+
+stm32h7xx_ll_usb.i: stm32h7xx_ll_usb.c.i
+
+.PHONY : stm32h7xx_ll_usb.i
+
+# target to preprocess a source file
+stm32h7xx_ll_usb.c.i:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.i
+.PHONY : stm32h7xx_ll_usb.c.i
+
+stm32h7xx_ll_usb.s: stm32h7xx_ll_usb.c.s
+
+.PHONY : stm32h7xx_ll_usb.s
+
+# target to generate assembly for a file
+stm32h7xx_ll_usb.c.s:
+	cd /mnt/d/demo/build && $(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.s
+.PHONY : stm32h7xx_ll_usb.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -530,6 +665,18 @@ help:
 	@echo "... stm32h7xx_hal_mdma.o"
 	@echo "... stm32h7xx_hal_mdma.i"
 	@echo "... stm32h7xx_hal_mdma.s"
+	@echo "... stm32h7xx_hal_pcd.o"
+	@echo "... stm32h7xx_hal_pcd.i"
+	@echo "... stm32h7xx_hal_pcd.s"
+	@echo "... stm32h7xx_hal_pcd_ex.o"
+	@echo "... stm32h7xx_hal_pcd_ex.i"
+	@echo "... stm32h7xx_hal_pcd_ex.s"
+	@echo "... stm32h7xx_hal_pwr.o"
+	@echo "... stm32h7xx_hal_pwr.i"
+	@echo "... stm32h7xx_hal_pwr.s"
+	@echo "... stm32h7xx_hal_pwr_ex.o"
+	@echo "... stm32h7xx_hal_pwr_ex.i"
+	@echo "... stm32h7xx_hal_pwr_ex.s"
 	@echo "... stm32h7xx_hal_rcc.o"
 	@echo "... stm32h7xx_hal_rcc.i"
 	@echo "... stm32h7xx_hal_rcc.s"
@@ -554,6 +701,9 @@ help:
 	@echo "... stm32h7xx_ll_fmc.o"
 	@echo "... stm32h7xx_ll_fmc.i"
 	@echo "... stm32h7xx_ll_fmc.s"
+	@echo "... stm32h7xx_ll_usb.o"
+	@echo "... stm32h7xx_ll_usb.i"
+	@echo "... stm32h7xx_ll_usb.s"
 .PHONY : help
 
 

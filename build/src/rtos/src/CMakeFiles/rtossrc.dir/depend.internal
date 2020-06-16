@@ -110,11 +110,19 @@ src/rtos/src/CMakeFiles/rtossrc.dir/irq.c.o
  ../src/rtos/src/include/rtthread.h
  /mnt/d/demo/src/rtos/src/irq.c
 src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o
+ ../src/BSP/bsp.h
  ../src/BSP/cmsis_compiler.h
  ../src/BSP/cmsis_gcc.h
  ../src/BSP/cmsis_version.h
  ../src/BSP/core_cm7.h
  ../src/BSP/inc/Legacy/stm32_hal_legacy.h
+ ../src/BSP/inc/bsp_beep.h
+ ../src/BSP/inc/bsp_fmc_io.h
+ ../src/BSP/inc/bsp_key.h
+ ../src/BSP/inc/bsp_led.h
+ ../src/BSP/inc/bsp_tim_pwm.h
+ ../src/BSP/inc/bsp_timer.h
+ ../src/BSP/inc/bsp_uart_fifo.h
  ../src/BSP/inc/stm32h7xx_hal.h
  ../src/BSP/inc/stm32h7xx_hal_adc.h
  ../src/BSP/inc/stm32h7xx_hal_adc_ex.h

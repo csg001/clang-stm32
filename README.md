@@ -1,1 +1,18 @@
 # clang-stm32
+1. `main`项目
+
+- 带数据的main项目 用于生成报表中的数据项
+   包括
+
+        `input`    
+        `output`    
+        `Feature`
+- 不带数据的main项目 不生成报表的数据项
+ 包括 `Collection`和`END Collection`
+ 2. `Global`项目
+ - 实现对数据的描述，用来识别报表并且描述报表内的**数据**，包括**数据的功能**、**最大**与**最小数据允许值**以及**数据项的大小和数目**等。改变由Main类项目生成的项目状态表。
+ 3. `Local`类项目定义控制的特征，这一类项目的**作用域不超过**下一个Main项目，所以在每一Main项目之前可能有**多个**Local项目。Local项目用于**描述后面的Input、Output和Feature项目**
+
+ usage page:指定设备的功能。相当于hid的子集合。
+ usage 项目指定个别报表的功能。相当于usage page的子集合。
+ 

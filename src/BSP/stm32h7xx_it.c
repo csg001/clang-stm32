@@ -39,7 +39,7 @@
 #include "stm32h7xx_it.h"
 #include "stm32h7xx_hal.h"
 #include "bsp.h"
-
+extern PCD_HandleTypeDef hpcd_USB_OTG_FS;
 /** @addtogroup STM32H7xx_HAL_Examples
   * @{
   */
@@ -149,7 +149,16 @@ void DebugMon_Handler(void)
 /*void PPP_IRQHandler(void)
 {
 }*/
-
+void OTG_FS_IRQHandler(void)
+{
+    /* USER CODE BEGIN OTG_FS_IRQn 0 */
+    rt_interrupt_enter();
+    /* USER CODE END OTG_FS_IRQn 0 */
+    HAL_PCD_IRQHandler(&hpcd_USB_OTG_FS);
+    /* USER CODE BEGIN OTG_FS_IRQn 1 */
+    rt_interrupt_leave();
+    /* USER CODE END OTG_FS_IRQn 1 */
+}
 /**
   * @}
   */

@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.6)
+project(usb)
+
+#add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Core)
+#add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Class)
+
+list(APPEND ${PROJECT_NAME}_SOURCES 
+    "${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/usbd_core.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/usbd_ctlreq.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/usbd_ioreq.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/usb_device.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/usbd_conf.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/usbd_desc.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Class/HID/Src/usbd_hid.c")
+add_library(${PROJECT_NAME} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})
+target_compile_definitions(${PROJECT_NAME} PUBLIC 
+    -DUSE_HAL_DRIVER -DSTM32H743xx)
+target_include_directories(${PROJECT_NAME} PUBLIC
+                                                  "${CMAKE_CURRENT_SOURCE_DIR}/Core/Inc"
+                                                  "${CMAKE_CURRENT_SOURCE_DIR}/Class/HID/Inc"
+                                                  $<TARGET_PROPERTY:bsp,INTERFACE_INCLUDE_DIRECTORIES>)

@@ -106,7 +106,16 @@ src/User/CMakeFiles/user.dir/main.c.o: ../src/BSP/rtconfig.h
 src/User/CMakeFiles/user.dir/main.c.o: ../src/BSP/stm32h743xx.h
 src/User/CMakeFiles/user.dir/main.c.o: ../src/BSP/stm32h7xx.h
 src/User/CMakeFiles/user.dir/main.c.o: ../src/BSP/system_stm32h7xx.h
+src/User/CMakeFiles/user.dir/main.c.o: ../src/STM32_USB_Device_Library/Class/HID/Inc/usbd_hid.h
+src/User/CMakeFiles/user.dir/main.c.o: ../src/STM32_USB_Device_Library/Core/Inc/usb_device.h
+src/User/CMakeFiles/user.dir/main.c.o: ../src/STM32_USB_Device_Library/Core/Inc/usbd_conf.h
+src/User/CMakeFiles/user.dir/main.c.o: ../src/STM32_USB_Device_Library/Core/Inc/usbd_core.h
+src/User/CMakeFiles/user.dir/main.c.o: ../src/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
+src/User/CMakeFiles/user.dir/main.c.o: ../src/STM32_USB_Device_Library/Core/Inc/usbd_def.h
+src/User/CMakeFiles/user.dir/main.c.o: ../src/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
+src/User/CMakeFiles/user.dir/main.c.o: ../src/components/finsh/finsh.h
 src/User/CMakeFiles/user.dir/main.c.o: ../src/components/finsh/finsh_api.h
+src/User/CMakeFiles/user.dir/main.c.o: ../src/components/finsh/shell.h
 src/User/CMakeFiles/user.dir/main.c.o: ../src/driver/stm32h7xx_hal_conf.h
 src/User/CMakeFiles/user.dir/main.c.o: ../src/driver/stm32h7xx_hal_usart.h
 src/User/CMakeFiles/user.dir/main.c.o: ../src/driver/stm32h7xx_hal_usart_ex.h

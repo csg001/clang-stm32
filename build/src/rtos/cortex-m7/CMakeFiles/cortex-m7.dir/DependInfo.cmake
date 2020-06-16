@@ -25,6 +25,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../src/driver"
   "../src/User"
   "../src/components/finsh"
+  "../src/STM32_USB_Device_Library/Core/Inc"
+  "../src/STM32_USB_Device_Library/Class/HID/Inc"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/mnt/d/demo/src/rtos/cortex-m7/cpu_cache.c" "/mnt/d/demo/build/src/rtos/cortex-m7/CMakeFiles/cortex-m7.dir/cpu_cache.c.o"
@@ -49,6 +51,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/driver"
   "../src/User"
   "../src/components/finsh"
+  "../src/STM32_USB_Device_Library/Core/Inc"
+  "../src/STM32_USB_Device_Library/Class/HID/Inc"
   )
 
 # Targets to which this target links.

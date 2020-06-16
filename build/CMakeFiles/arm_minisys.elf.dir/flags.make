@@ -9,7 +9,7 @@ ASM_DEFINES =
 
 ASM_INCLUDES = 
 
-C_FLAGS =   -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16  -mfloat-abi=hard  -O0 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include  -fmessage-length=0  -target arm-none-eabi -std=c11  -Og -g -DDEBUG   -std=gnu11
+C_FLAGS =   -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16  -mfloat-abi=hard  -O0 -Wall -fdata-sections -ffunction-sections -g -I/mnt/d/gcc-arm-none-eabi-8-2019-q3-update/arm-none-eabi/include -fmessage-length=0  -target arm-none-eabi -std=c11  -Og -g -DDEBUG   -std=gnu11
 
 C_DEFINES = 
 

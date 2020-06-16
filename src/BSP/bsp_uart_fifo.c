@@ -1110,7 +1110,7 @@ static void InitHardUart(void)
 static void UartSend(UART_T *_pUart, uint8_t *_ucaBuf, uint16_t _usLen)
 {
     uint16_t i;
-
+    rt_base_t level;
     for (i = 0; i < _usLen; i++)
     {
         /* 如果发送缓冲区已经满了，则等待缓冲区空 */
@@ -1118,9 +1118,9 @@ static void UartSend(UART_T *_pUart, uint8_t *_ucaBuf, uint16_t _usLen)
         {
             __IO uint16_t usCount;
 
-            DISABLE_INT();
+            level = rt_hw_interrupt_disable();
             usCount = _pUart->usTxCount;
-            ENABLE_INT();
+            rt_hw_interrupt_enable(level);
 
             if (usCount < _pUart->usTxBufSize)
             {
@@ -1138,13 +1138,13 @@ static void UartSend(UART_T *_pUart, uint8_t *_ucaBuf, uint16_t _usLen)
         /* 将新数据填入发送缓冲区 */
         _pUart->pTxBuf[_pUart->usTxWrite] = _ucaBuf[i];
 
-        DISABLE_INT();
+        level = rt_hw_interrupt_disable();
         if (++_pUart->usTxWrite >= _pUart->usTxBufSize)
         {
             _pUart->usTxWrite = 0;
         }
         _pUart->usTxCount++;
-        ENABLE_INT();
+        rt_hw_interrupt_enable(level);
     }
 
     SET_BIT(_pUart->uart->CR1, USART_CR1_TXEIE); /* 使能发送中断（缓冲区空） */
@@ -1162,11 +1162,11 @@ static void UartSend(UART_T *_pUart, uint8_t *_ucaBuf, uint16_t _usLen)
 static uint8_t UartGetChar(UART_T *_pUart, uint8_t *_pByte)
 {
     uint16_t usCount;
-
+    rt_base_t level;
     /* usRxWrite 变量在中断函数中被改写，主程序读取该变量时，必须进行临界区保护 */
-    DISABLE_INT();
+    level = rt_hw_interrupt_disable();
     usCount = _pUart->usRxCount;
-    ENABLE_INT();
+    rt_hw_interrupt_enable(level);
 
     /* 如果读和写索引相同，则返回0 */
     //if (_pUart->usRxRead == usRxWrite)
@@ -1179,14 +1179,14 @@ static uint8_t UartGetChar(UART_T *_pUart, uint8_t *_pByte)
         *_pByte = _pUart->pRxBuf[_pUart->usRxRead]; /* 从串口接收FIFO取1个数据 */
 
         /* 改写FIFO读索引 */
-        DISABLE_INT();
+        level = rt_hw_interrupt_disable();
         if (++_pUart->usRxRead >= _pUart->usRxBufSize)
         {
             _pUart->usRxRead = 0;
         }
         _pUart->usRxCount--;
-        ENABLE_INT();
-        return *_pByte;
+        rt_hw_interrupt_enable(level);
+        return 1;
     }
 }
 
@@ -1473,7 +1473,10 @@ int fgetc(FILE *f)
 /***************************** 安富莱电子 www.armfly.com (END OF FILE) *********************************/
 char rt_hw_console_getchar(void)
 {
-    char *ch;
-    UartGetChar(&g_tUart1, ch);
-    return *ch;
+    static char ch;
+    if (UartGetChar(&g_tUart1, &ch) != 0)
+    {
+        return ch;
+    }
+    return -1;
 }

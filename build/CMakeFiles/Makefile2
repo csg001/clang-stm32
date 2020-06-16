@@ -71,6 +71,7 @@ CMakeFiles/arm_minisys.elf.dir/all: src/GCCARM/CMakeFiles/gccarm.dir/all
 CMakeFiles/arm_minisys.elf.dir/all: src/rtos/cortex-m7/CMakeFiles/cortex-m7.dir/all
 CMakeFiles/arm_minisys.elf.dir/all: src/rtos/src/CMakeFiles/rtossrc.dir/all
 CMakeFiles/arm_minisys.elf.dir/all: src/components/finsh/CMakeFiles/finsh.dir/all
+CMakeFiles/arm_minisys.elf.dir/all: src/STM32_USB_Device_Library/CMakeFiles/usb.dir/all
 	$(MAKE) -f CMakeFiles/arm_minisys.elf.dir/build.make CMakeFiles/arm_minisys.elf.dir/depend
 	$(MAKE) -f CMakeFiles/arm_minisys.elf.dir/build.make CMakeFiles/arm_minisys.elf.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=1 "Built target arm_minisys.elf"
@@ -83,7 +84,7 @@ all: CMakeFiles/arm_minisys.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/arm_minisys.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 64
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/arm_minisys.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 0
 .PHONY : CMakeFiles/arm_minisys.elf.dir/rule
@@ -120,7 +121,7 @@ all: CMakeFiles/arm_minisys.hex.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/arm_minisys.hex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 64
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/arm_minisys.hex.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 0
 .PHONY : CMakeFiles/arm_minisys.hex.dir/rule
@@ -157,7 +158,7 @@ all: CMakeFiles/arm_minisys.bin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/arm_minisys.bin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 64
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/arm_minisys.bin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 0
 .PHONY : CMakeFiles/arm_minisys.bin.dir/rule
@@ -188,6 +189,7 @@ src/all: src/User/all
 src/all: src/GCCARM/all
 src/all: src/rtos/all
 src/all: src/components/all
+src/all: src/STM32_USB_Device_Library/all
 
 .PHONY : src/all
 
@@ -199,6 +201,7 @@ src/clean: src/User/clean
 src/clean: src/GCCARM/clean
 src/clean: src/rtos/clean
 src/clean: src/components/clean
+src/clean: src/STM32_USB_Device_Library/clean
 
 .PHONY : src/clean
 
@@ -210,6 +213,7 @@ src/preinstall: src/User/preinstall
 src/preinstall: src/GCCARM/preinstall
 src/preinstall: src/rtos/preinstall
 src/preinstall: src/components/preinstall
+src/preinstall: src/STM32_USB_Device_Library/preinstall
 
 .PHONY : src/preinstall
 
@@ -338,12 +342,12 @@ src/driver/preinstall:
 src/driver/CMakeFiles/driver.dir/all:
 	$(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/depend
 	$(MAKE) -f src/driver/CMakeFiles/driver.dir/build.make src/driver/CMakeFiles/driver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27 "Built target driver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Built target driver"
 .PHONY : src/driver/CMakeFiles/driver.dir/all
 
 # Build rule for subdir invocation for target.
 src/driver/CMakeFiles/driver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 src/driver/CMakeFiles/driver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 0
 .PHONY : src/driver/CMakeFiles/driver.dir/rule
@@ -388,7 +392,7 @@ src/User/preinstall:
 src/User/CMakeFiles/user.dir/all:
 	$(MAKE) -f src/User/CMakeFiles/user.dir/build.make src/User/CMakeFiles/user.dir/depend
 	$(MAKE) -f src/User/CMakeFiles/user.dir/build.make src/User/CMakeFiles/user.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=47,48,49,50,51,52 "Built target user"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=59,60,61,62,63,64 "Built target user"
 .PHONY : src/User/CMakeFiles/user.dir/all
 
 # Build rule for subdir invocation for target.
@@ -438,7 +442,7 @@ src/GCCARM/preinstall:
 src/GCCARM/CMakeFiles/gccarm.dir/all:
 	$(MAKE) -f src/GCCARM/CMakeFiles/gccarm.dir/build.make src/GCCARM/CMakeFiles/gccarm.dir/depend
 	$(MAKE) -f src/GCCARM/CMakeFiles/gccarm.dir/build.make src/GCCARM/CMakeFiles/gccarm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=31 "Built target gccarm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=36 "Built target gccarm"
 .PHONY : src/GCCARM/CMakeFiles/gccarm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -559,7 +563,7 @@ src/rtos/src/preinstall:
 src/rtos/src/CMakeFiles/rtossrc.dir/all:
 	$(MAKE) -f src/rtos/src/CMakeFiles/rtossrc.dir/build.make src/rtos/src/CMakeFiles/rtossrc.dir/depend
 	$(MAKE) -f src/rtos/src/CMakeFiles/rtossrc.dir/build.make src/rtos/src/CMakeFiles/rtossrc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40,41,42,43,44,45,46 "Built target rtossrc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=37,38,39,40,41,42,43,44,45,46,47,48,49,50,51 "Built target rtossrc"
 .PHONY : src/rtos/src/CMakeFiles/rtossrc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -627,7 +631,7 @@ src/components/finsh/preinstall:
 src/components/finsh/CMakeFiles/finsh.dir/all:
 	$(MAKE) -f src/components/finsh/CMakeFiles/finsh.dir/build.make src/components/finsh/CMakeFiles/finsh.dir/depend
 	$(MAKE) -f src/components/finsh/CMakeFiles/finsh.dir/build.make src/components/finsh/CMakeFiles/finsh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=28,29,30 "Built target finsh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=33,34,35 "Built target finsh"
 .PHONY : src/components/finsh/CMakeFiles/finsh.dir/all
 
 # Build rule for subdir invocation for target.
@@ -649,6 +653,56 @@ src/components/finsh/CMakeFiles/finsh.dir/clean:
 
 # clean rule for target.
 clean: src/components/finsh/CMakeFiles/finsh.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/STM32_USB_Device_Library
+
+# Convenience name for "all" pass in the directory.
+src/STM32_USB_Device_Library/all:
+
+.PHONY : src/STM32_USB_Device_Library/all
+
+# Convenience name for "clean" pass in the directory.
+src/STM32_USB_Device_Library/clean: src/STM32_USB_Device_Library/CMakeFiles/usb.dir/clean
+
+.PHONY : src/STM32_USB_Device_Library/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/STM32_USB_Device_Library/preinstall:
+
+.PHONY : src/STM32_USB_Device_Library/preinstall
+
+#=============================================================================
+# Target rules for target src/STM32_USB_Device_Library/CMakeFiles/usb.dir
+
+# All Build rule for target.
+src/STM32_USB_Device_Library/CMakeFiles/usb.dir/all:
+	$(MAKE) -f src/STM32_USB_Device_Library/CMakeFiles/usb.dir/build.make src/STM32_USB_Device_Library/CMakeFiles/usb.dir/depend
+	$(MAKE) -f src/STM32_USB_Device_Library/CMakeFiles/usb.dir/build.make src/STM32_USB_Device_Library/CMakeFiles/usb.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=52,53,54,55,56,57,58 "Built target usb"
+.PHONY : src/STM32_USB_Device_Library/CMakeFiles/usb.dir/all
+
+# Build rule for subdir invocation for target.
+src/STM32_USB_Device_Library/CMakeFiles/usb.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 src/STM32_USB_Device_Library/CMakeFiles/usb.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/demo/build/CMakeFiles 0
+.PHONY : src/STM32_USB_Device_Library/CMakeFiles/usb.dir/rule
+
+# Convenience name for target.
+usb: src/STM32_USB_Device_Library/CMakeFiles/usb.dir/rule
+
+.PHONY : usb
+
+# clean rule for target.
+src/STM32_USB_Device_Library/CMakeFiles/usb.dir/clean:
+	$(MAKE) -f src/STM32_USB_Device_Library/CMakeFiles/usb.dir/build.make src/STM32_USB_Device_Library/CMakeFiles/usb.dir/clean
+.PHONY : src/STM32_USB_Device_Library/CMakeFiles/usb.dir/clean
+
+# clean rule for target.
+clean: src/STM32_USB_Device_Library/CMakeFiles/usb.dir/clean
 
 .PHONY : clean
 

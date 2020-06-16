@@ -4,7 +4,7 @@
         {
             "label": "cmake_all",
             "type": "shell",
-            "command": "bash cmake.sh clean cmake_all",
+            "command": "bash cmake.sh clean  cmake_all",
             "presentation": {
                 "reveal": "silent"
             },
@@ -13,19 +13,19 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
+            }
         },
         {
             "label": "make",
             "type": "shell",
-            "command": "bash cmake.sh _make {command:wsl-path.getRelativePath}",
+            "command": "bash cmake.sh _make ",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
             "problemMatcher": [
                 "$gcc"
-            ],
+            ]
         },
         {
             "label": "flash",
@@ -34,7 +34,7 @@
             "command": "bash cmake.sh flash",
             "presentation": {
                 "reveal": "silent"
-            },
+            }
         },
         {
             "label": "start debugsver",
@@ -44,7 +44,25 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": "$go",
+            "problemMatcher": "$go"
         },
+        {
+            "label": "serial connect",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "type": "shell",
+            "command": "picocom --baud 115200 /dev/ttyS3 ",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": []
+        }
     ],
 }

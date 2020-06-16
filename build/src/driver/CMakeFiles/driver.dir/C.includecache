@@ -582,6 +582,22 @@ stm32h7xx_hal.h
 stm32h7xx_hal.h
 /mnt/d/demo/src/driver/stm32h7xx_hal.h
 
+/mnt/d/demo/src/driver/stm32h7xx_hal_pcd.c
+stm32h7xx_hal.h
+/mnt/d/demo/src/driver/stm32h7xx_hal.h
+
+/mnt/d/demo/src/driver/stm32h7xx_hal_pcd_ex.c
+stm32h7xx_hal.h
+/mnt/d/demo/src/driver/stm32h7xx_hal.h
+
+/mnt/d/demo/src/driver/stm32h7xx_hal_pwr.c
+stm32h7xx_hal.h
+/mnt/d/demo/src/driver/stm32h7xx_hal.h
+
+/mnt/d/demo/src/driver/stm32h7xx_hal_pwr_ex.c
+stm32h7xx_hal.h
+/mnt/d/demo/src/driver/stm32h7xx_hal.h
+
 /mnt/d/demo/src/driver/stm32h7xx_hal_rcc.c
 stm32h7xx_hal.h
 /mnt/d/demo/src/driver/stm32h7xx_hal.h
@@ -613,6 +629,10 @@ stm32h7xx_hal.h
 /mnt/d/demo/src/driver/stm32h7xx_hal.h
 
 /mnt/d/demo/src/driver/stm32h7xx_ll_fmc.c
+stm32h7xx_hal.h
+/mnt/d/demo/src/driver/stm32h7xx_hal.h
+
+/mnt/d/demo/src/driver/stm32h7xx_ll_usb.c
 stm32h7xx_hal.h
 /mnt/d/demo/src/driver/stm32h7xx_hal.h
 

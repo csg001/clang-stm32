@@ -46,7 +46,7 @@
 // </c>
 // <o>enable components initialization debug configuration<0-1>
 //  <i>Default: 0
-#define RT_DEBUG_INIT 1
+#define RT_DEBUG_INIT 0
 // <c1>thread stack over flow detect
 //  <i> Diable Thread stack over flow detect
 //#define RT_USING_OVERFLOW_CHECK
@@ -128,7 +128,7 @@
 // </h>
 #define RT_USING_FINSH
 #if defined(RT_USING_FINSH)
-
+#define FINSH_USING_HISTORY
 #define FINSH_USING_MSH      // 使用 FinSH 组件 MSH 模式
 #define FINSH_USING_MSH_ONLY // 仅使用 MSH 模式
 
@@ -137,9 +137,10 @@
 
 #define FINSH_THREAD_STACK_SIZE 512 // 设置 FinSH 线程栈大小，范围 1-4096
 
-#define FINSH_HISTORY_LINES 1 // 设置 FinSH 组件记录历史命令个数，值范围 1-32
+#define FINSH_HISTORY_LINES 10 // 设置 FinSH 组件记录历史命令个数，值范围 1-32
 
 #define FINSH_USING_SYMTAB // 使用符号表，需要打开，默认打开
+#define FINSH_USING_DESCRIPTION
 // </h>
 #endif
 

@@ -253,6 +253,19 @@ finsh/fast:
 	$(MAKE) -f src/components/finsh/CMakeFiles/finsh.dir/build.make src/components/finsh/CMakeFiles/finsh.dir/build
 .PHONY : finsh/fast
 
+#=============================================================================
+# Target rules for targets named usb
+
+# Build rule for target.
+usb: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 usb
+.PHONY : usb
+
+# fast build rule for target.
+usb/fast:
+	$(MAKE) -f src/STM32_USB_Device_Library/CMakeFiles/usb.dir/build.make src/STM32_USB_Device_Library/CMakeFiles/usb.dir/build
+.PHONY : usb/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -272,6 +285,7 @@ help:
 	@echo "... cortex-m7"
 	@echo "... rtossrc"
 	@echo "... finsh"
+	@echo "... usb"
 .PHONY : help
 
 

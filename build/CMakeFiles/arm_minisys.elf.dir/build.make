@@ -86,6 +86,11 @@ arm_minisys_elf_EXTERNAL_OBJECTS = \
 "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o" \
 "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o" \
 "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o" \
+"/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o" \
+"/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o" \
+"/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o" \
+"/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o" \
+"/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o" \
 "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/application.c.o" \
 "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/main.c.o" \
 "/mnt/d/demo/build/src/User/CMakeFiles/user.dir/normal_stack.c.o" \
@@ -112,7 +117,14 @@ arm_minisys_elf_EXTERNAL_OBJECTS = \
 "/mnt/d/demo/build/src/rtos/src/CMakeFiles/rtossrc.dir/timer.c.o" \
 "/mnt/d/demo/build/src/components/finsh/CMakeFiles/finsh.dir/cmd.c.o" \
 "/mnt/d/demo/build/src/components/finsh/CMakeFiles/finsh.dir/msh.c.o" \
-"/mnt/d/demo/build/src/components/finsh/CMakeFiles/finsh.dir/shell.c.o"
+"/mnt/d/demo/build/src/components/finsh/CMakeFiles/finsh.dir/shell.c.o" \
+"/mnt/d/demo/build/src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Core/Src/usbd_core.c.o" \
+"/mnt/d/demo/build/src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Core/Src/usbd_ctlreq.c.o" \
+"/mnt/d/demo/build/src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Core/Src/usbd_ioreq.c.o" \
+"/mnt/d/demo/build/src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Core/Src/usb_device.c.o" \
+"/mnt/d/demo/build/src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Core/Src/usbd_conf.c.o" \
+"/mnt/d/demo/build/src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Core/Src/usbd_desc.c.o" \
+"/mnt/d/demo/build/src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Class/HID/Src/usbd_hid.c.o"
 
 arm_minisys.elf: src/BSP/CMakeFiles/bsp.dir/bsp_fmc_io.c.o
 arm_minisys.elf: src/BSP/CMakeFiles/bsp.dir/bsp_key.c.o
@@ -138,6 +150,11 @@ arm_minisys.elf: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o
 arm_minisys.elf: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o
 arm_minisys.elf: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal.c.o
 arm_minisys.elf: src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o
+arm_minisys.elf: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o
+arm_minisys.elf: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o
+arm_minisys.elf: src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o
+arm_minisys.elf: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o
+arm_minisys.elf: src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o
 arm_minisys.elf: src/User/CMakeFiles/user.dir/application.c.o
 arm_minisys.elf: src/User/CMakeFiles/user.dir/main.c.o
 arm_minisys.elf: src/User/CMakeFiles/user.dir/normal_stack.c.o
@@ -165,6 +182,13 @@ arm_minisys.elf: src/rtos/src/CMakeFiles/rtossrc.dir/timer.c.o
 arm_minisys.elf: src/components/finsh/CMakeFiles/finsh.dir/cmd.c.o
 arm_minisys.elf: src/components/finsh/CMakeFiles/finsh.dir/msh.c.o
 arm_minisys.elf: src/components/finsh/CMakeFiles/finsh.dir/shell.c.o
+arm_minisys.elf: src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Core/Src/usbd_core.c.o
+arm_minisys.elf: src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Core/Src/usbd_ctlreq.c.o
+arm_minisys.elf: src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Core/Src/usbd_ioreq.c.o
+arm_minisys.elf: src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Core/Src/usb_device.c.o
+arm_minisys.elf: src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Core/Src/usbd_conf.c.o
+arm_minisys.elf: src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Core/Src/usbd_desc.c.o
+arm_minisys.elf: src/STM32_USB_Device_Library/CMakeFiles/usb.dir/Class/HID/Src/usbd_hid.c.o
 arm_minisys.elf: CMakeFiles/arm_minisys.elf.dir/build.make
 arm_minisys.elf: CMakeFiles/arm_minisys.elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C executable arm_minisys.elf"

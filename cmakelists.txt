@@ -17,7 +17,8 @@ add_executable(${elf_name}.elf
          #$<TARGET_OBJECTS:segger>
          $<TARGET_OBJECTS:cortex-m7>
          $<TARGET_OBJECTS:rtossrc>
-         $<TARGET_OBJECTS:finsh>)
+         $<TARGET_OBJECTS:finsh>
+         $<TARGET_OBJECTS:usb>)
 #target_link_libraries(${EXE_NAME} m)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CMAKE_SOURCE_DIR}/custom_output.sh")

@@ -6,5 +6,5 @@ ASM_FLAGS =    -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16  -
 
 ASM_DEFINES = 
 
-ASM_INCLUDES = -I/mnt/d/demo/src/GCCARM -I/mnt/d/demo/src/rtos/src/include -I/mnt/d/demo/src/rtos/src/include/libc -I/mnt/d/demo/src/BSP -I/mnt/d/demo/src/BSP/inc -I/mnt/d/demo/src/driver -I/mnt/d/demo/src/rtos/cortex-m7 -I/mnt/d/demo/src/User -I/mnt/d/demo/src/components/finsh 
+ASM_INCLUDES = -I/mnt/d/demo/src/GCCARM -I/mnt/d/demo/src/rtos/src/include -I/mnt/d/demo/src/rtos/src/include/libc -I/mnt/d/demo/src/BSP -I/mnt/d/demo/src/BSP/inc -I/mnt/d/demo/src/driver -I/mnt/d/demo/src/rtos/cortex-m7 -I/mnt/d/demo/src/User -I/mnt/d/demo/src/components/finsh -I/mnt/d/demo/src/STM32_USB_Device_Library/Core/Inc -I/mnt/d/demo/src/STM32_USB_Device_Library/Class/HID/Inc 
 

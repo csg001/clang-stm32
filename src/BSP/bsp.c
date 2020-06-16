@@ -47,13 +47,15 @@ int _write(int file, char *ptr, int len)
             while ((USART1->ISR & USART_ISR_TC) == 0)
                 ;
         }
-
+        USART1->TDR = *ptr;
+        while ((USART1->ISR & USART_ISR_TC) == 0)
+            ;
         DataIdx++;
         ptr++;
     }
 
     return len;
-    fflush(stdout);
+    //fflush(stdout);
 }
 
 void bsp_Init(void)
@@ -66,7 +68,7 @@ void bsp_Init(void)
 
     /* 
        STM32H7xx HAL 库初始化，此时系统用的还是H7自带的64MHz，HSI时钟:
-	   - 调用函数HAL_InitTick，初始化滴答时钟中断1ms。
+	   - 调用函tTick，初始化滴答时钟中断1ms。
 	   - 设置NVIV优先级分组为4。
 	 */
     HAL_Init();
@@ -74,7 +76,7 @@ void bsp_Init(void)
     /* 
        配置系统时钟到400MHz
        - 切换使用HSE。
-       - 此函数会更新全局变量SystemCoreClock，并重新配置HAL_InitTick。
+       - 此函数会更新全局变量SystemCoreClock，并重新配置Tick。
     */
     SystemClock_Config();
 
@@ -124,9 +126,12 @@ static void SystemClock_Config(void)
 {
     RCC_ClkInitTypeDef RCC_ClkInitStruct;
     RCC_OscInitTypeDef RCC_OscInitStruct;
+    RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
     HAL_StatusTypeDef ret = HAL_OK;
 
+    //  HAL_PWREx_ConfigSupply(PWR_LDO_SUPPLY);
     /* 锁住SCU(Supply configuration update) */
+
     MODIFY_REG(PWR->CR3, PWR_CR3_SCUEN, 0);
 
     /* 
@@ -149,13 +154,14 @@ static void SystemClock_Config(void)
     RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
 
     RCC_OscInitStruct.PLL.PLLM = 5;
-    RCC_OscInitStruct.PLL.PLLN = 160;
+    RCC_OscInitStruct.PLL.PLLN = 192;
     RCC_OscInitStruct.PLL.PLLP = 2;
     RCC_OscInitStruct.PLL.PLLR = 2;
-    RCC_OscInitStruct.PLL.PLLQ = 4;
+    RCC_OscInitStruct.PLL.PLLQ = 20;
 
     RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
     RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_2;
+    RCC_OscInitStruct.PLL.PLLFRACN = 0;
     ret = HAL_RCC_OscConfig(&RCC_OscInitStruct);
     if (ret != HAL_OK)
     {
@@ -171,8 +177,7 @@ static void SystemClock_Config(void)
        配置RCC_CLOCKTYPE_D1PCLK1时钟，对应APB3总线
        配置RCC_CLOCKTYPE_D3PCLK1时钟，对应APB4总线     
     */
-    RCC_ClkInitStruct.ClockType = (RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_D1PCLK1 | RCC_CLOCKTYPE_PCLK1 |
-                                   RCC_CLOCKTYPE_PCLK2 | RCC_CLOCKTYPE_D3PCLK1);
+    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2 | RCC_CLOCKTYPE_D3PCLK1 | RCC_CLOCKTYPE_D1PCLK1;
 
     RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
     RCC_ClkInitStruct.SYSCLKDivider = RCC_SYSCLK_DIV1;
@@ -188,7 +193,13 @@ static void SystemClock_Config(void)
     {
         Error_Handler(__FILE__, __LINE__);
     }
-
+    PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_USB;
+    PeriphClkInitStruct.UsbClockSelection = RCC_USBCLKSOURCE_PLL;
+    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
+    {
+        Error_Handler(__FILE__, __LINE__);
+    }
+    HAL_PWREx_EnableUSBVoltageDetector();
     /*
       使用IO的高速模式，要使能IO补偿，即调用下面三个函数 
       （1）使能CSI clock
@@ -224,7 +235,7 @@ void Error_Handler(char *file, uint32_t line)
 		用户可以添加自己的代码报告源代码文件名和代码行号，比如将错误文件和行号打印到串口
 		printf("Wrong parameters value: file %s on line %d\r\n", file, line) 
 	*/
-
+    printf("%s%d\n", file, line);
     /* 这是一个死循环，断言失败时程序会在此处死机，以便于用户查错 */
     if (line == 0)
     {

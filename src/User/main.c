@@ -32,8 +32,10 @@
 #include "normal_stack.h"
 #include "validator.h"
 #include <rtthread.h>
-
+#include <shell.h>
 #include <string.h>
+#include "usb_device.h"
+#include "usbd_hid.h"
 /* 定义例程名和例程发布日期 */
 #define EXAMPLE_NAME "V7-"
 #define EXAMPLE_DATE "2018-12-12"
@@ -57,66 +59,29 @@ int main(void)
 
     //bsp_Init(); /* 硬件初始化 */
     int count = 1;
+    uint8_t buffer[8] = {0, 100};
+    extern USBD_HandleTypeDef hUsbDeviceFS;
     /* set LED0 pin mode to output */
     //rt_pin_mode(LED0_PIN, PIN_MODE_OUTPUT);
-
+    MX_USB_DEVICE_Init();
+    rt_thread_mdelay(500);
+    USBD_HID_SendReport(&hUsbDeviceFS, buffer, 8);
     while (count++)
     {
         //rt_pin_write(LED0_PIN, PIN_HIGH);
         bsp_LedOn(1);
+
         rt_thread_mdelay(500);
-        //rt_kprintf("helloworld\n");
-        //rt_pin_write(LED0_PIN, PIN_LOW);
+        //USBD_HID_SendReport(&hUsbDeviceFS, buffer, 8);
         bsp_LedOff(1);
         rt_thread_mdelay(500);
+        rt_thread_delay(10);
+
+        rt_thread_delay(10);
+        bsp_LedOn(1);
+        rt_thread_mdelay(500);
     }
-    //return RT_EOK;
-    PrintfLogo(); /* 打印例程名称和版本等信息 */
-    PrintfHelp(); /* 打印操作提示 */
-
-    /* 先做个LED1的亮灭显示 */
-    bsp_LedOn(1);
-    bsp_DelayMS(100);
-    bsp_LedOff(1);
-    bsp_DelayMS(100);
-
-    bsp_StartAutoTimer(0, 100); /* 启动1个100ms的自动重装的定时器 */
-    bsp_StartAutoTimer(1, 500); /* 启动1个500ms的自动重装的定时器 */
-
-    /* 进入主程序循环体 */
-    while (1)
-    {
-        int buf[20];
-        struct application app;
-        //struct normal_stack stack;
-        struct range_stack_validator dock;
-        struct range_stack stack_test;
-
-        normal_stack_init(&stack_test.super, buf, 20);
-        range_stack_init(&stack_test, &dock, 3, 50);
-        application_init(&app, &stack_test);
-
-        bsp_Idle(); /* 这个函数在bsp.c文件。用户可以修改这个函数实现CPU休眠和喂狗 */
-
-        /* 判断定时器超时时间 */
-        if (bsp_CheckTimer(0))
-        {
-            /* 每隔100ms 进来一次 */
-            bsp_LedToggle(1);
-        }
-
-        /* 判断定时器超时时间 */
-        if (bsp_CheckTimer(1))
-        {
-            /* 每隔500ms 进来一次 */
-            printf(":\r\n");
-            printf("1. LED1LED2\r\n");
-            application_run(&app);
-            bsp_LedToggle(2);
-            bsp_LedToggle(3);
-            bsp_LedToggle(4);
-        }
-    }
+    return RT_EOK;
 }
 
 /*

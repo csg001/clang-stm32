@@ -25,6 +25,7 @@
 *********************************************************************************************************
 */
 #include "bsp.h"
+#include "rtconfig.h"
 
 /*
 	定义用于硬件定时器的TIM， 可以使 TIM2 - TIM5
@@ -118,7 +119,7 @@ void bsp_InitTimer(void)
 
     	对于常规的应用，我们一般取定时周期1ms。对于低速CPU或者低功耗应用，可以设置定时周期为 10ms
     */
-    SysTick_Config(SystemCoreClock / 1000);
+    SysTick_Config(SystemCoreClock / RT_TICK_PER_SECOND);
 
     g_ucEnableSystickISR = 1; /* 1表示执行systick中断 */
 

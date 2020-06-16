@@ -13,6 +13,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o"
   "CMakeFiles/driver.dir/stm32h7xx_hal.c.o"
   "CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o"
+  "CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o"
+  "CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o"
+  "CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o"
+  "CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o"
+  "CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o"
 )
 
 # Per-language clean rules from dependency scanning.

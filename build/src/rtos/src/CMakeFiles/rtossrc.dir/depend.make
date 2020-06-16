@@ -109,11 +109,19 @@ src/rtos/src/CMakeFiles/rtossrc.dir/irq.c.o: ../src/rtos/src/include/rtservice.h
 src/rtos/src/CMakeFiles/rtossrc.dir/irq.c.o: ../src/rtos/src/include/rtthread.h
 src/rtos/src/CMakeFiles/rtossrc.dir/irq.c.o: ../src/rtos/src/irq.c
 
+src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/bsp.h
 src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/cmsis_compiler.h
 src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/cmsis_gcc.h
 src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/cmsis_version.h
 src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/core_cm7.h
 src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/inc/Legacy/stm32_hal_legacy.h
+src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/inc/bsp_beep.h
+src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/inc/bsp_fmc_io.h
+src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/inc/bsp_key.h
+src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/inc/bsp_led.h
+src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/inc/bsp_tim_pwm.h
+src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/inc/bsp_timer.h
+src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/inc/bsp_uart_fifo.h
 src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/inc/stm32h7xx_hal.h
 src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/inc/stm32h7xx_hal_adc.h
 src/rtos/src/CMakeFiles/rtossrc.dir/kservice.c.o: ../src/BSP/inc/stm32h7xx_hal_adc_ex.h

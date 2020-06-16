@@ -6,6 +6,32 @@
 
 #IncludeRegexTransform: 
 
+../src/BSP/bsp.h
+EventRecorder.h
+../src/BSP/EventRecorder.h
+stm32h7xx_hal.h
+../src/BSP/stm32h7xx_hal.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+bsp_timer.h
+../src/BSP/bsp_timer.h
+bsp_led.h
+../src/BSP/bsp_led.h
+bsp_key.h
+../src/BSP/bsp_key.h
+bsp_uart_fifo.h
+../src/BSP/bsp_uart_fifo.h
+bsp_fmc_io.h
+../src/BSP/bsp_fmc_io.h
+bsp_beep.h
+../src/BSP/bsp_beep.h
+bsp_tim_pwm.h
+../src/BSP/bsp_tim_pwm.h
+
 ../src/BSP/cmsis_compiler.h
 stdint.h
 -
@@ -37,6 +63,20 @@ mpu_armv7.h
 ../src/BSP/mpu_armv7.h
 
 ../src/BSP/inc/Legacy/stm32_hal_legacy.h
+
+../src/BSP/inc/bsp_beep.h
+
+../src/BSP/inc/bsp_fmc_io.h
+
+../src/BSP/inc/bsp_key.h
+
+../src/BSP/inc/bsp_led.h
+
+../src/BSP/inc/bsp_tim_pwm.h
+
+../src/BSP/inc/bsp_timer.h
+
+../src/BSP/inc/bsp_uart_fifo.h
 
 ../src/BSP/inc/stm32h7xx_hal.h
 stm32h7xx_hal_conf.h
@@ -736,6 +776,8 @@ stdio.h
 rtthread.h
 -
 rthw.h
+-
+bsp.h
 -
 stm32h7xx_hal.h
 /mnt/d/demo/src/rtos/src/stm32h7xx_hal.h

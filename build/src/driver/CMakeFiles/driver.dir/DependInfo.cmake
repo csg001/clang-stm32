@@ -10,6 +10,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/mnt/d/demo/src/driver/stm32h7xx_hal_dma_ex.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_dma_ex.c.o"
   "/mnt/d/demo/src/driver/stm32h7xx_hal_gpio.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_gpio.c.o"
   "/mnt/d/demo/src/driver/stm32h7xx_hal_mdma.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_mdma.c.o"
+  "/mnt/d/demo/src/driver/stm32h7xx_hal_pcd.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd.c.o"
+  "/mnt/d/demo/src/driver/stm32h7xx_hal_pcd_ex.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pcd_ex.c.o"
+  "/mnt/d/demo/src/driver/stm32h7xx_hal_pwr.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr.c.o"
+  "/mnt/d/demo/src/driver/stm32h7xx_hal_pwr_ex.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_pwr_ex.c.o"
   "/mnt/d/demo/src/driver/stm32h7xx_hal_rcc.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc.c.o"
   "/mnt/d/demo/src/driver/stm32h7xx_hal_rcc_ex.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_rcc_ex.c.o"
   "/mnt/d/demo/src/driver/stm32h7xx_hal_sram.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_sram.c.o"
@@ -18,6 +22,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/mnt/d/demo/src/driver/stm32h7xx_hal_uart.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart.c.o"
   "/mnt/d/demo/src/driver/stm32h7xx_hal_uart_ex.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_hal_uart_ex.c.o"
   "/mnt/d/demo/src/driver/stm32h7xx_ll_fmc.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_fmc.c.o"
+  "/mnt/d/demo/src/driver/stm32h7xx_ll_usb.c" "/mnt/d/demo/build/src/driver/CMakeFiles/driver.dir/stm32h7xx_ll_usb.c.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")
 
@@ -38,6 +43,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/rtos/cortex-m7"
   "../src/User"
   "../src/components/finsh"
+  "../src/STM32_USB_Device_Library/Core/Inc"
+  "../src/STM32_USB_Device_Library/Class/HID/Inc"
   )
 
 # Targets to which this target links.

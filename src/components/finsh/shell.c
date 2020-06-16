@@ -43,51 +43,51 @@ struct finsh_shell _shell;
 
 /* finsh symtab */
 #ifdef FINSH_USING_SYMTAB
-struct finsh_syscall *_syscall_table_begin  = NULL;
-struct finsh_syscall *_syscall_table_end    = NULL;
-struct finsh_sysvar *_sysvar_table_begin    = NULL;
-struct finsh_sysvar *_sysvar_table_end      = NULL;
+struct finsh_syscall *_syscall_table_begin = NULL;
+struct finsh_syscall *_syscall_table_end = NULL;
+struct finsh_sysvar *_sysvar_table_begin = NULL;
+struct finsh_sysvar *_sysvar_table_end = NULL;
 #endif
 
 struct finsh_shell *shell;
 static char *finsh_prompt_custom = RT_NULL;
 
 #if defined(_MSC_VER) || (defined(__GNUC__) && defined(__x86_64__))
-struct finsh_syscall* finsh_syscall_next(struct finsh_syscall* call)
+struct finsh_syscall *finsh_syscall_next(struct finsh_syscall *call)
 {
     unsigned int *ptr;
-    ptr = (unsigned int*) (call + 1);
-    while ((*ptr == 0) && ((unsigned int*)ptr < (unsigned int*) _syscall_table_end))
-        ptr ++;
+    ptr = (unsigned int *)(call + 1);
+    while ((*ptr == 0) && ((unsigned int *)ptr < (unsigned int *)_syscall_table_end))
+        ptr++;
 
-    return (struct finsh_syscall*)ptr;
+    return (struct finsh_syscall *)ptr;
 }
 
-struct finsh_sysvar* finsh_sysvar_next(struct finsh_sysvar* call)
+struct finsh_sysvar *finsh_sysvar_next(struct finsh_sysvar *call)
 {
     unsigned int *ptr;
-    ptr = (unsigned int*) (call + 1);
-    while ((*ptr == 0) && ((unsigned int*)ptr < (unsigned int*) _sysvar_table_end))
-        ptr ++;
+    ptr = (unsigned int *)(call + 1);
+    while ((*ptr == 0) && ((unsigned int *)ptr < (unsigned int *)_sysvar_table_end))
+        ptr++;
 
-    return (struct finsh_sysvar*)ptr;
+    return (struct finsh_sysvar *)ptr;
 }
 #endif /* defined(_MSC_VER) || (defined(__GNUC__) && defined(__x86_64__)) */
 
 #ifdef RT_USING_HEAP
-int finsh_set_prompt(const char * prompt)
+int finsh_set_prompt(const char *prompt)
 {
-    if(finsh_prompt_custom)
+    if (finsh_prompt_custom)
     {
         rt_free(finsh_prompt_custom);
         finsh_prompt_custom = RT_NULL;
     }
 
     /* strdup */
-    if(prompt)
+    if (prompt)
     {
-        finsh_prompt_custom = (char *)rt_malloc(strlen(prompt)+1);
-        if(finsh_prompt_custom)
+        finsh_prompt_custom = (char *)rt_malloc(strlen(prompt) + 1);
+        if (finsh_prompt_custom)
         {
             strcpy(finsh_prompt_custom, prompt);
         }
@@ -104,7 +104,7 @@ int finsh_set_prompt(const char * prompt)
 const char *finsh_get_prompt()
 {
 #define _MSH_PROMPT "msh "
-#define _PROMPT     "finsh "
+#define _PROMPT "finsh "
     static char finsh_prompt[RT_CONSOLEBUF_SIZE + 1] = {0};
 
     /* check prompt mode */
@@ -114,14 +114,15 @@ const char *finsh_get_prompt()
         return finsh_prompt;
     }
 
-    if(finsh_prompt_custom)
+    if (finsh_prompt_custom)
     {
-        strncpy(finsh_prompt, finsh_prompt_custom, sizeof(finsh_prompt)-1);
+        strncpy(finsh_prompt, finsh_prompt_custom, sizeof(finsh_prompt) - 1);
         return finsh_prompt;
     }
 
 #ifdef FINSH_USING_MSH
-    if (msh_is_used()) strcpy(finsh_prompt, _MSH_PROMPT);
+    if (msh_is_used())
+        strcpy(finsh_prompt, _MSH_PROMPT);
     else
 #endif
         strcpy(finsh_prompt, _PROMPT);
@@ -215,10 +216,11 @@ void finsh_set_device(const char *device_name)
     }
 
     /* check whether it's a same device */
-    if (dev == shell->device) return;
+    if (dev == shell->device)
+        return;
     /* open this device and set the new device in finsh shell */
-    if (rt_device_open(dev, RT_DEVICE_OFLAG_RDWR | RT_DEVICE_FLAG_INT_RX | \
-                       RT_DEVICE_FLAG_STREAM) == RT_EOK)
+    if (rt_device_open(dev, RT_DEVICE_OFLAG_RDWR | RT_DEVICE_FLAG_INT_RX |
+                                RT_DEVICE_FLAG_STREAM) == RT_EOK)
     {
         if (shell->device != RT_NULL)
         {
@@ -288,7 +290,8 @@ rt_uint32_t finsh_get_echo()
  * @return result, RT_EOK on OK, -RT_ERROR on the new password length is less than
  *  FINSH_PASSWORD_MIN or greater than FINSH_PASSWORD_MAX
  */
-rt_err_t finsh_set_password(const char *password) {
+rt_err_t finsh_set_password(const char *password)
+{
     rt_ubase_t level;
     rt_size_t pw_len = rt_strlen(password);
 
@@ -316,10 +319,11 @@ static void finsh_wait_auth(void)
 {
     int ch;
     rt_bool_t input_finish = RT_FALSE;
-    char password[FINSH_PASSWORD_MAX] = { 0 };
+    char password[FINSH_PASSWORD_MAX] = {0};
     rt_size_t cur_pos = 0;
     /* password not set */
-    if (rt_strlen(finsh_get_password()) == 0) return;
+    if (rt_strlen(finsh_get_password()) == 0)
+        return;
 
     while (1)
     {
@@ -356,7 +360,8 @@ static void finsh_wait_auth(void)
                 }
             }
         }
-        if (!rt_strncmp(shell->password, password, FINSH_PASSWORD_MAX)) return;
+        if (!rt_strncmp(shell->password, password, FINSH_PASSWORD_MAX))
+            return;
         else
         {
             /* authentication failed, delay 2S for retry */
@@ -383,7 +388,7 @@ static void shell_auto_complete(char *prefix)
 #endif
     {
 #ifndef FINSH_USING_MSH_ONLY
-        extern void list_prefix(char * prefix);
+        extern void list_prefix(char *prefix);
         list_prefix(prefix);
 #endif
     }
@@ -396,7 +401,7 @@ void finsh_run_line(struct finsh_parser *parser, const char *line)
 {
     const char *err_str;
 
-    if(shell->echo_mode)
+    if (shell->echo_mode)
         rt_kprintf("\n");
     finsh_parser_run(parser, (unsigned char *)line);
 
@@ -467,7 +472,7 @@ static void shell_push_history(struct finsh_shell *shell)
             {
                 /* move history */
                 int index;
-                for (index = 0; index < FINSH_HISTORY_LINES - 1; index ++)
+                for (index = 0; index < FINSH_HISTORY_LINES - 1; index++)
                 {
                     memcpy(&shell->cmd_history[index][0],
                            &shell->cmd_history[index + 1][0], FINSH_CMD_SIZE);
@@ -489,7 +494,7 @@ static void shell_push_history(struct finsh_shell *shell)
                 memcpy(&shell->cmd_history[shell->history_count][0], shell->line, shell->line_position);
 
                 /* increase count and set current history position */
-                shell->history_count ++;
+                shell->history_count++;
             }
         }
     }
@@ -499,7 +504,7 @@ static void shell_push_history(struct finsh_shell *shell)
 
 void finsh_thread_entry(void *parameter)
 {
-    int ch;
+    volatile rt_int8_t ch;
 
     /* normal is echo mode */
 #ifndef FINSH_ECHO_DISABLE_DEFAULT
@@ -546,7 +551,6 @@ void finsh_thread_entry(void *parameter)
         {
             continue;
         }
-
         /*
          * handle control key
          * up key  : 0x1b 0x5b 0x41
@@ -578,7 +582,7 @@ void finsh_thread_entry(void *parameter)
 #ifdef FINSH_USING_HISTORY
                 /* prev history */
                 if (shell->current_history > 0)
-                    shell->current_history --;
+                    shell->current_history--;
                 else
                 {
                     shell->current_history = 0;
@@ -598,7 +602,7 @@ void finsh_thread_entry(void *parameter)
 #ifdef FINSH_USING_HISTORY
                 /* next history */
                 if (shell->current_history < shell->history_count - 1)
-                    shell->current_history ++;
+                    shell->current_history++;
                 else
                 {
                     /* set to the end of history */
@@ -620,7 +624,7 @@ void finsh_thread_entry(void *parameter)
                 if (shell->line_curpos)
                 {
                     rt_kprintf("\b");
-                    shell->line_curpos --;
+                    shell->line_curpos--;
                 }
 
                 continue;
@@ -630,7 +634,7 @@ void finsh_thread_entry(void *parameter)
                 if (shell->line_curpos < shell->line_position)
                 {
                     rt_kprintf("%c", shell->line[shell->line_curpos]);
-                    shell->line_curpos ++;
+                    shell->line_curpos++;
                 }
 
                 continue;
@@ -638,7 +642,8 @@ void finsh_thread_entry(void *parameter)
         }
 
         /* received null or error */
-        if (ch == '\0' || ch == 0xFF) continue;
+        if (ch == '\0' || ch == 0xFF)
+            continue;
         /* handle tab key */
         else if (ch == '\t')
         {
@@ -709,9 +714,10 @@ void finsh_thread_entry(void *parameter)
                 /* add ';' and run the command line */
                 shell->line[shell->line_position] = ';';
 
-                if (shell->line_position != 0) finsh_run_line(&shell->parser, shell->line);
-                else
-                    if (shell->echo_mode) rt_kprintf("\n");
+                if (shell->line_position != 0)
+                    finsh_run_line(&shell->parser, shell->line);
+                else if (shell->echo_mode)
+                    rt_kprintf("\n");
 #endif
             }
 
@@ -749,7 +755,7 @@ void finsh_thread_entry(void *parameter)
         }
 
         ch = 0;
-        shell->line_position ++;
+        shell->line_position++;
         shell->line_curpos++;
         if (shell->line_position >= FINSH_CMD_SIZE)
         {
@@ -762,20 +768,20 @@ void finsh_thread_entry(void *parameter)
 
 void finsh_system_function_init(const void *begin, const void *end)
 {
-    _syscall_table_begin = (struct finsh_syscall *) begin;
-    _syscall_table_end = (struct finsh_syscall *) end;
+    _syscall_table_begin = (struct finsh_syscall *)begin;
+    _syscall_table_end = (struct finsh_syscall *)end;
 }
 
 void finsh_system_var_init(const void *begin, const void *end)
 {
-    _sysvar_table_begin = (struct finsh_sysvar *) begin;
-    _sysvar_table_end = (struct finsh_sysvar *) end;
+    _sysvar_table_begin = (struct finsh_sysvar *)begin;
+    _sysvar_table_end = (struct finsh_sysvar *)end;
 }
 
-#if defined(__ICCARM__) || defined(__ICCRX__)               /* for IAR compiler */
+#if defined(__ICCARM__) || defined(__ICCRX__) /* for IAR compiler */
 #ifdef FINSH_USING_SYMTAB
-#pragma section="FSymTab"
-#pragma section="VSymTab"
+#pragma section = "FSymTab"
+#pragma section = "VSymTab"
 #endif
 #elif defined(__ADSPBLACKFIN__) /* for VisaulDSP++ Compiler*/
 #ifdef FINSH_USING_SYMTAB
@@ -789,21 +795,19 @@ extern "asm" int __vsymtab_end;
 const char __fsym_begin_name[] = "__start";
 const char __fsym_begin_desc[] = "begin of finsh";
 __declspec(allocate("FSymTab$a")) const struct finsh_syscall __fsym_begin =
-{
-    __fsym_begin_name,
-    __fsym_begin_desc,
-    NULL
-};
+    {
+        __fsym_begin_name,
+        __fsym_begin_desc,
+        NULL};
 
 #pragma section("FSymTab$z", read)
 const char __fsym_end_name[] = "__end";
 const char __fsym_end_desc[] = "end of finsh";
 __declspec(allocate("FSymTab$z")) const struct finsh_syscall __fsym_end =
-{
-    __fsym_end_name,
-    __fsym_end_desc,
-    NULL
-};
+    {
+        __fsym_end_name,
+        __fsym_end_desc,
+        NULL};
 #endif
 
 /*
@@ -817,7 +821,7 @@ int finsh_system_init(void)
     rt_thread_t tid;
 
 #ifdef FINSH_USING_SYMTAB
-#if defined(__CC_ARM) || defined(__CLANG_ARM)          /* ARM C Compiler */
+#if defined(__CC_ARM) || defined(__CLANG_ARM) /* ARM C Compiler */
     extern const int FSymTab$$Base;
     extern const int FSymTab$$Limit;
     extern const int VSymTab$$Base;
@@ -826,12 +830,12 @@ int finsh_system_init(void)
 #ifndef FINSH_USING_MSH_ONLY
     finsh_system_var_init(&VSymTab$$Base, &VSymTab$$Limit);
 #endif
-#elif defined (__ICCARM__) || defined(__ICCRX__)      /* for IAR Compiler */
+#elif defined(__ICCARM__) || defined(__ICCRX__) /* for IAR Compiler */
     finsh_system_function_init(__section_begin("FSymTab"),
                                __section_end("FSymTab"));
     finsh_system_var_init(__section_begin("VSymTab"),
                           __section_end("VSymTab"));
-#elif defined (__GNUC__) || defined(__TI_COMPILER_VERSION__)
+#elif defined(__GNUC__) || defined(__TI_COMPILER_VERSION__)
     /* GNU GCC Compiler and TI CCS */
     extern const int __fsymtab_start;
     extern const int __fsymtab_end;
@@ -844,8 +848,8 @@ int finsh_system_init(void)
     finsh_system_var_init(&__vsymtab_start, &__vsymtab_end);
 #elif defined(_MSC_VER)
     unsigned int *ptr_begin, *ptr_end;
-		
-    if(shell)
+
+    if (shell)
     {
         rt_kprintf("finsh shell already init.\n");
         return RT_EOK;
@@ -853,11 +857,13 @@ int finsh_system_init(void)
 
     ptr_begin = (unsigned int *)&__fsym_begin;
     ptr_begin += (sizeof(struct finsh_syscall) / sizeof(unsigned int));
-    while (*ptr_begin == 0) ptr_begin ++;
+    while (*ptr_begin == 0)
+        ptr_begin++;
 
-    ptr_end = (unsigned int *) &__fsym_end;
-    ptr_end --;
-    while (*ptr_end == 0) ptr_end --;
+    ptr_end = (unsigned int *)&__fsym_end;
+    ptr_end--;
+    while (*ptr_end == 0)
+        ptr_end--;
 
     finsh_system_function_init(ptr_begin, ptr_end);
 #endif
@@ -894,4 +900,3 @@ int finsh_system_init(void)
 INIT_APP_EXPORT(finsh_system_init);
 
 #endif /* RT_USING_FINSH */
-

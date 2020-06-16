@@ -8,6 +8,8 @@ struct stack
 int stack_init(struct stack *p_stack,
                int (*push)(struct stack *, int),
                int (*pop)(struct stack *, int *));
+
+               
 static inline int stack_push(void *p_stack, int val)
 {
     return ((struct stack *)p_stack)->push(p_stack, val);

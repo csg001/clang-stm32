@@ -27,6 +27,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/driver"
   "../src/rtos/cortex-m7"
   "../src/User"
+  "../src/STM32_USB_Device_Library/Core/Inc"
+  "../src/STM32_USB_Device_Library/Class/HID/Inc"
   )
 
 # Targets to which this target links.

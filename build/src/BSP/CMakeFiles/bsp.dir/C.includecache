@@ -743,12 +743,18 @@ bsp.h
 /mnt/d/demo/src/BSP/bsp_timer.c
 bsp.h
 /mnt/d/demo/src/BSP/bsp.h
+rtconfig.h
+/mnt/d/demo/src/BSP/rtconfig.h
 
 /mnt/d/demo/src/BSP/bsp_uart_fifo.c
 bsp.h
 /mnt/d/demo/src/BSP/bsp.h
 rtthread.h
 /mnt/d/demo/src/BSP/rtthread.h
+
+/mnt/d/demo/src/BSP/rtconfig.h
+RTE_Components.h
+/mnt/d/demo/src/BSP/RTE_Components.h
 
 /mnt/d/demo/src/BSP/stm32h7xx_it.c
 stm32h7xx_it.h

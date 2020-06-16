@@ -21,6 +21,7 @@
 #include <stdio.h>
 #include <rtthread.h>
 #include <rthw.h>
+#include <bsp.h>
 #include "stm32h7xx_hal.h"
 
 #ifdef RT_USING_MODULE
@@ -1172,20 +1173,19 @@ RTM_EXPORT(rt_console_set_device);
 #endif
 void rt_hw_console_output(const char *str)
 {
+
     rt_size_t size = 0;
     char a = '\r';
+
     size = rt_strlen(str);
+
     for (int i = 0; i < size; i++)
     {
         if (*(str + i) == '\n')
         {
-            USART1->TDR = a;
-            while ((USART1->ISR & USART_ISR_TC) == 0)
-                ;
+            comSendChar(COM1, a);
         }
-        USART1->TDR = *(uint8_t *)(str + i);
-        while ((USART1->ISR & USART_ISR_TC) == 0)
-            ;
+        comSendChar(COM1, *(uint8_t *)(str + i));
     }
     //printf("%s", str);
 }

@@ -529,6 +529,7 @@ src/BSP/CMakeFiles/bsp.dir/bsp_timer.c.o
  ../src/driver/stm32h7xx_hal_usart_ex.h
  /mnt/d/demo/src/BSP/bsp.h
  /mnt/d/demo/src/BSP/bsp_timer.c
+ /mnt/d/demo/src/BSP/rtconfig.h
 src/BSP/CMakeFiles/bsp.dir/bsp_uart_fifo.c.o
  ../src/BSP/cmsis_compiler.h
  ../src/BSP/cmsis_gcc.h

@@ -22,6 +22,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../src/CMSIS/CMakeLists.txt"
   "../src/CMakeLists.txt"
   "../src/GCCARM/CMakeLists.txt"
+  "../src/STM32_USB_Device_Library/CMakeLists.txt"
   "../src/User/CMakeLists.txt"
   "../src/components/CMakeLists.txt"
   "../src/components/finsh/CMakeLists.txt"
@@ -146,6 +147,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/rtos/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/components/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/components/finsh/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/STM32_USB_Device_Library/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -161,4 +163,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/rtos/cortex-m7/CMakeFiles/cortex-m7.dir/DependInfo.cmake"
   "src/rtos/src/CMakeFiles/rtossrc.dir/DependInfo.cmake"
   "src/components/finsh/CMakeFiles/finsh.dir/DependInfo.cmake"
+  "src/STM32_USB_Device_Library/CMakeFiles/usb.dir/DependInfo.cmake"
   )

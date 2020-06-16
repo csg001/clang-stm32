@@ -83,7 +83,7 @@ void rt_components_board_init(void)
 {
 #if RT_DEBUG_INIT
     int result;
-    const struct rt_init_desc *desc;
+    volatile const struct rt_init_desc *desc;
     for (desc = &__rt_init_desc_rti_board_start; desc < &__rt_init_desc_rti_board_end; desc++)
     {
         rt_kprintf("initialize %s", desc->fn_name);
@@ -233,7 +233,7 @@ int rtthread_startup(void)
 
     /* create init_thread */
     rt_application_init();
-    finsh_system_init();
+
     /* timer thread initialization */
     rt_system_timer_thread_init();
 

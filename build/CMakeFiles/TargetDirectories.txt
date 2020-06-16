@@ -33,3 +33,6 @@
 /mnt/d/demo/build/src/components/finsh/CMakeFiles/rebuild_cache.dir
 /mnt/d/demo/build/src/components/finsh/CMakeFiles/finsh.dir
 /mnt/d/demo/build/src/components/finsh/CMakeFiles/edit_cache.dir
+/mnt/d/demo/build/src/STM32_USB_Device_Library/CMakeFiles/rebuild_cache.dir
+/mnt/d/demo/build/src/STM32_USB_Device_Library/CMakeFiles/usb.dir
+/mnt/d/demo/build/src/STM32_USB_Device_Library/CMakeFiles/edit_cache.dir
