@@ -2,9 +2,23 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "cmake_all",
+            "label": "cmake_all_debug",
             "type": "shell",
-            "command": "bash cmake.sh clean  cmake_all",
+            "command": "bash cmake.sh clean  cmake_all_debug",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$go",
+            "promptOnClose": true,
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "cmake_all_release",
+            "type": "shell",
+            "command": "bash cmake.sh clean  cmake_all_release",
             "presentation": {
                 "reveal": "silent"
             },

@@ -55,6 +55,7 @@ else()
     set(TOOLCHAIN_EXT "" )
 endif()
 
+
 # Perform compiler test with static library
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
@@ -65,8 +66,8 @@ set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 # Options for DEBUG build
 # -Og enables optimizations that do not interfere with debugging
 # -g produce debugging information in the operating system’s native format
-set(CMAKE_C_FLAGS_DEBUG "-Og -g -DDEBUG" CACHE INTERNAL "C Compiler options for debug build type")
-set(CMAKE_CXX_FLAGS_DEBUG "-Og -g -DDEBUG" CACHE INTERNAL "C++ Compiler options for debug build type")
+set(CMAKE_C_FLAGS_DEBUG " -g -DDEBUG" CACHE INTERNAL "C Compiler options for debug build type")
+set(CMAKE_CXX_FLAGS_DEBUG " -g -DDEBUG" CACHE INTERNAL "C++ Compiler options for debug build type")
 set(CMAKE_ASM_FLAGS_DEBUG "-g" CACHE INTERNAL "ASM Compiler options for debug build type")
 set(CMAKE_EXE_LINKER_FLAGS_DEBUG "" CACHE INTERNAL "Linker options for debug build type")
 
@@ -86,8 +87,8 @@ set(COMPILER clang CACHE STRING "Default Application is LoRaMac")
 set_property(CACHE COMPILER PROPERTY STRINGS ${APPLICATION_LIST})
 
 if(COMPILER STREQUAL gcc)
-    set(OBJECT_GEN_FLAGS " -fcolor-diagnostics -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard  -Og -Wall -fdata-sections -ffunction-sections -g -I${TOOLCHAIN_INC_DIR}")
-    set(CMAKE_C_FLAGS "${OBJECT_GEN_FLAGS}  -std=gnu99 " CACHE INTERNAL "C Compiler options")
+    set(OBJECT_GEN_FLAGS " -fcolor-diagnostics -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard   -Wall -fdata-sections -ffunction-sections  -I${TOOLCHAIN_INC_DIR}")
+    set(CMAKE_C_FLAGS "${OBJECT_GEN_FLAGS}  -std=c11 " CACHE INTERNAL "C Compiler options")
     set(CMAKE_CXX_FLAGS "${OBJECT_GEN_FLAGS} -std=c++11 " CACHE INTERNAL "C++ Compiler options")
     set(CMAKE_ASM_FLAGS " ${OBJECT_GEN_FLAGS} -Wa,-mimplicit-it=thumb -fmessage-length=0 -x assembler-with-cpp  " CACHE INTERNAL "ASM Compiler options")
     set(CMAKE_EXE_LINKER_FLAGS " -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard -Wl,--gc-sections -specs=nano.specs  -specs=nosys.specs -T${LINKER_SCRIPT} -Wl,--start-group -lc -lgcc -lnosys -Wl,--end-group -Wl,-Map=${CMAKE_PROJECT_NAME}.map,--cref -Wl,--gc-sections " CACHE INTERNAL "Linker options")
@@ -96,10 +97,9 @@ if(COMPILER STREQUAL gcc)
 elseif(COMPILER STREQUAL clang)
     set(CMAKE_CXX_COMPILER  "/mnt/d/clangllvm/bin/clang" CACHE INTERNAL "C++ Compiler")
     set(CMAKE_C_COMPILER "/mnt/d/clangllvm/bin/clang" CACHE INTERNAL "C Compiler")
-    set(CROSS_COMPILE_GCC ${TOOLCHAIN_BIN_DIR}/${TOOLCHAIN}-gcc${TOOLCHAIN_EXT})
-    #set(CMAKE_ASM_COMPILER ${TOOLCHAIN_BIN_DIR}/${TOOLCHAIN}-gcc${TOOLCHAIN_EXT} CACHE INTERNAL "ASM Compiler")
+    #set(CROSS_COMPILE_GCC ${TOOLCHAIN_BIN_DIR}/${TOOLCHAIN}-gcc${TOOLCHAIN_EXT})
     set(CMAKE_ASM_COMPILER "/mnt/d/clangllvm/bin/clang" CACHE INTERNAL "ASM Compiler")
-    set(OBJECT_GEN_FLAGS "  -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16  -mfloat-abi=hard  -O0 -Wall -fdata-sections -ffunction-sections -g -I${TOOLCHAIN_INC_DIR}")
+    set(OBJECT_GEN_FLAGS "  -gdwarf-2 -fshort-enums -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16  -mfloat-abi=hard   -Wall -fdata-sections -ffunction-sections  -I${TOOLCHAIN_INC_DIR}")
     set(CMAKE_C_FLAGS "${OBJECT_GEN_FLAGS} -fmessage-length=0  -target arm-none-eabi -std=c11 " CACHE INTERNAL "C Compiler options")
     set(CMAKE_CXX_FLAGS "${OBJECT_GEN_FLAGS} -fmessage-length=0 -target arm-none-eabi -std=c++11 " CACHE INTERNAL "C++ Compiler options")
     set(CMAKE_ASM_FLAGS " ${OBJECT_GEN_FLAGS} -mimplicit-it=thumb -target arm-none-eabi -fmessage-length=0 -x assembler-with-cpp  " CACHE INTERNAL "ASM Compiler options")

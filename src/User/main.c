@@ -43,7 +43,6 @@
 
 static void PrintfLogo(void);
 static void PrintfHelp(void);
-
 /*
 *********************************************************************************************************
 *	函 数 名: main
@@ -59,25 +58,23 @@ int main(void)
 
     //bsp_Init(); /* 硬件初始化 */
     int count = 1;
-    uint8_t buffer[8] = {0, 100};
+
     extern USBD_HandleTypeDef hUsbDeviceFS;
     /* set LED0 pin mode to output */
     //rt_pin_mode(LED0_PIN, PIN_MODE_OUTPUT);
+    DAP_Setup();
     MX_USB_DEVICE_Init();
     rt_thread_mdelay(500);
-    USBD_HID_SendReport(&hUsbDeviceFS, buffer, 8);
     while (count++)
     {
-        //rt_pin_write(LED0_PIN, PIN_HIGH);
+
         bsp_LedOn(1);
 
         rt_thread_mdelay(500);
-        //USBD_HID_SendReport(&hUsbDeviceFS, buffer, 8);
+
         bsp_LedOff(1);
         rt_thread_mdelay(500);
-        rt_thread_delay(10);
 
-        rt_thread_delay(10);
         bsp_LedOn(1);
         rt_thread_mdelay(500);
     }

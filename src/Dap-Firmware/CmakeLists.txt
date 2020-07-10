@@ -1,0 +1,18 @@
+target_sources(${PROJECT_NAME}
+    PRIVATE
+        # {{BEGIN_TARGET_SOURCES}}
+        ${CMAKE_CURRENT_LIST_DIR}/SOURCE/SWO.c
+        ${CMAKE_CURRENT_LIST_DIR}/SOURCE/DAP.c
+        ${CMAKE_CURRENT_LIST_DIR}/SOURCE/SW_DP.c
+        ${CMAKE_CURRENT_LIST_DIR}/SOURCE/JTAG_DP.c
+        ${CMAKE_CURRENT_LIST_DIR}/SOURCE/DAP_vendor.c
+        # {{END_TARGET_SOURCES}}
+)
+target_include_directories(${PROJECT_NAME} 
+    PUBLIC 
+    ${CMAKE_CURRENT_LIST_DIR}/Include
+    ${CMAKE_CURRENT_LIST_DIR}/Config
+    
+)
+target_compile_definitions(${PROJECT_NAME} PUBLIC 
+    -DUSE_HAL_DRIVER -DSTM32H743xx )

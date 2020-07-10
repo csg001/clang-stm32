@@ -13,5 +13,6 @@
         "stdint.h": "c",
         "rthw.h": "c"
     },
-    "C_Cpp.dimInactiveRegions": false
+    "C_Cpp.dimInactiveRegions": false,
+    "cmake.sourceDirectory": "${workspaceFolder}/."
 }

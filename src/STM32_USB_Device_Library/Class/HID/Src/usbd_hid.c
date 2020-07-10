@@ -81,7 +81,7 @@ EndBSPDependencies */
 /** @defgroup USBD_HID_Private_FunctionPrototypes
   * @{
   */
-
+uint8_t request[64];
 static uint8_t USBD_HID_Init(USBD_HandleTypeDef *pdev,
                              uint8_t cfgidx);
 
@@ -100,6 +100,7 @@ static uint8_t *USBD_HID_GetOtherSpeedCfgDesc(uint16_t *length);
 static uint8_t *USBD_HID_GetDeviceQualifierDesc(uint16_t *length);
 
 static uint8_t USBD_HID_DataIn(USBD_HandleTypeDef *pdev, uint8_t epnum);
+static uint8_t USBD_HID_DataOut(USBD_HandleTypeDef *pdev, uint8_t epnum);
 /**
   * @}
   */
@@ -113,11 +114,11 @@ USBD_ClassTypeDef USBD_HID =
         USBD_HID_Init,
         USBD_HID_DeInit,
         USBD_HID_Setup,
-        NULL,            /*EP0_TxSent*/
-        NULL,            /*EP0_RxReady*/
-        USBD_HID_DataIn, /*DataIn*/
-        NULL,            /*DataOut*/
-        NULL,            /*SOF */
+        NULL,             /*EP0_TxSent*/
+        NULL,             /*EP0_RxReady*/
+        USBD_HID_DataIn,  /*DataIn*/
+        USBD_HID_DataOut, /*DataOut*/
+        NULL,             /*SOF */
         NULL,
         NULL,
         USBD_HID_GetHSCfgDesc,
@@ -177,9 +178,9 @@ __ALIGN_BEGIN static uint8_t USBD_HID_CfgFSDesc[USB_HID_CONFIG_DESC_SIZ] __ALIGN
         0x07,                   /*bLength: Endpoint Descriptor size*/
         USB_DESC_TYPE_ENDPOINT, /*bDescriptorType:*/
 
-        0x01,          /*bEndpointAddress: Endpoint Address (HID_MOUSE_REPORT_DESC_SIZE)*/
-        0x03,          /*bmAttributes: Interrupt endpoint*/
-        HID_EPIN_SIZE, /*wMaxPacketSize: 4 Byte max */
+        HID_EPOUT_ADDR, /*bEndpointAddress: Endpoint Address (HID_MOUSE_REPORT_DESC_SIZE)*/
+        0x03,           /*bmAttributes: Interrupt endpoint*/
+        HID_EPIN_SIZE,  /*wMaxPacketSize: 4 Byte max */
         0x00,
         HID_FS_BINTERVAL, /*bInterval: Polling Interval */
                           /* 41*/
@@ -315,7 +316,7 @@ __ALIGN_BEGIN static uint8_t USBD_HID_DeviceQualifierDesc[USB_LEN_DEV_QUALIFIER_
         0x00,
 };
 
-__ALIGN_BEGIN static uint8_t HID_MOUSE_ReportDesc[HID_MOUSE_REPORT_DESC_SIZE] __ALIGN_END =
+__ALIGN_BEGIN static uint8_t HID_CMSIS_DAP_ReportDesc[HID_MOUSE_REPORT_DESC_SIZE] __ALIGN_END =
     {
         0x06, 0x00, 0xFF, // Usage Page = 0xFF00 (Vendor Defined Page 1)
         0x09, 0x01,       // Usage (Vendor Usage 1)
@@ -353,17 +354,25 @@ static uint8_t USBD_HID_Init(USBD_HandleTypeDef *pdev, uint8_t cfgidx)
     /* Open EP IN */
     USBD_LL_OpenEP(pdev, HID_EPIN_ADDR, USBD_EP_TYPE_INTR, HID_EPIN_SIZE);
     pdev->ep_in[HID_EPIN_ADDR & 0xFU].is_used = 1U;
+    pdev->ep_in[HID_EPIN_ADDR & 0xFU].maxpacket = HID_EPIN_SIZE;
 
+    /* Open EP OUT */
+    USBD_LL_OpenEP(pdev, HID_EPOUT_ADDR, USBD_EP_TYPE_INTR, HID_EPOUT_SIZE);
+    pdev->ep_out[HID_EPOUT_ADDR & 0xFU].is_used = 1U;
+    pdev->ep_out[HID_EPIN_ADDR & 0xFU].maxpacket = HID_EPOUT_SIZE;
     pdev->pClassData = USBD_malloc(sizeof(USBD_HID_HandleTypeDef));
 
     if (pdev->pClassData == NULL)
     {
         return USBD_FAIL;
     }
-
-    ((USBD_HID_HandleTypeDef *)pdev->pClassData)->state = HID_IDLE;
-
-    return USBD_OK;
+    else
+    {
+        ((USBD_HID_HandleTypeDef *)pdev->pClassData)->state = HID_IDLE;
+        USBD_LL_PrepareReceive(pdev, HID_EPOUT_ADDR, request,
+                               0x40);
+        return USBD_OK;
+    }
 }
 
 /**
@@ -379,6 +388,9 @@ static uint8_t USBD_HID_DeInit(USBD_HandleTypeDef *pdev,
     /* Close HID EPs */
     USBD_LL_CloseEP(pdev, HID_EPIN_ADDR);
     pdev->ep_in[HID_EPIN_ADDR & 0xFU].is_used = 0U;
+    /* Close CUSTOM_HID EP OUT */
+    USBD_LL_CloseEP(pdev, HID_EPOUT_ADDR);
+    pdev->ep_out[HID_EPOUT_ADDR & 0xFU].is_used = 0U;
 
     /* FRee allocated memory */
     if (pdev->pClassData != NULL)
@@ -452,7 +464,7 @@ static uint8_t USBD_HID_Setup(USBD_HandleTypeDef *pdev,
             if (req->wValue >> 8 == HID_REPORT_DESC)
             {
                 len = MIN(HID_MOUSE_REPORT_DESC_SIZE, req->wLength);
-                pbuf = HID_MOUSE_ReportDesc;
+                pbuf = HID_CMSIS_DAP_ReportDesc;
             }
             else if (req->wValue >> 8 == HID_DESCRIPTOR_TYPE)
             {
@@ -618,7 +630,24 @@ static uint8_t USBD_HID_DataIn(USBD_HandleTypeDef *pdev,
     ((USBD_HID_HandleTypeDef *)pdev->pClassData)->state = HID_IDLE;
     return USBD_OK;
 }
-
+/**
+  * @brief  USBD_HID_DataOut
+  *         handle data OUT Stage
+  * @param  pdev: device instance
+  * @param  epnum: endpoint index
+  * @retval status
+  */
+static uint8_t USBD_HID_DataOut(USBD_HandleTypeDef *pdev,
+                                uint8_t epnum)
+{
+    uint8_t response[64] = {0x00};
+    //USBD_CUSTOM_HID_HandleTypeDef *hhid = (USBD_CUSTOM_HID_HandleTypeDef *)pdev->pClassData;
+    //((USBD_CUSTOM_HID_ItfTypeDef *)pdev->pUserData)->OutEvent(hhid->Report_buf[0], hhid->Report_buf[1]);
+    DAP_ProcessCommand(request, response);
+    USBD_HID_SendReport(pdev, response, 0x40);
+    USBD_LL_PrepareReceive(pdev, HID_EPOUT_ADDR, request, 0x40);
+    return USBD_OK;
+}
 /**
 * @brief  DeviceQualifierDescriptor
 *         return Device Qualifier descriptor

@@ -3,12 +3,14 @@ cmake_minimum_required(VERSION 3.6)
 set(CMAKE_SYSTEM_NAME  Generic)
 set(CMAKE_SYSTEM_PROCESSOR ARM)
 
+
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 set(TOOLCHAIN_PREFIX "/mnt/d/gcc-arm-none-eabi-8-2019-q3-update")
 set(elf_name arm_minisys)
 
 add_executable(${elf_name}.elf
+         $<TARGET_OBJECTS:src>
          $<TARGET_OBJECTS:bsp>
          $<TARGET_OBJECTS:cmsis>
          $<TARGET_OBJECTS:gccarm>
@@ -19,7 +21,7 @@ add_executable(${elf_name}.elf
          $<TARGET_OBJECTS:rtossrc>
          $<TARGET_OBJECTS:finsh>
          $<TARGET_OBJECTS:usb>)
-#target_link_libraries(${EXE_NAME} m)
+#target_link_libraries(${EXE_NAME} src)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CMAKE_SOURCE_DIR}/custom_output.sh")
 set_property(GLOBAL PROPERTY RULE_LAUNCH_LINK "${CMAKE_SOURCE_DIR}/custom_linker.sh")

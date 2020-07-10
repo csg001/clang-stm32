@@ -3,18 +3,25 @@ function clean() {
     rm -rf build
     mkdir build
 }
-function cmake_all() {
+function cmake_all_debug() {
     cd build
-    time cmake -DCMAKE_BUILD_TYPE=debug -D CMAKE_TOOLCHAIN_FILE=cmake/toolchain-arm-none-eabi.cmake -D COMPILER="clang" ..
+    time cmake -GNinja -DCMAKE_BUILD_TYPE=debug -D CMAKE_TOOLCHAIN_FILE=cmake/toolchain-arm-none-eabi.cmake -D COMPILER="clang" ..
     #cmake -DCMAKE_BUILD_TYPE=debug -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON -D CMAKE_TOOLCHAIN_FILE=cmake/toolchain-arm-none-eabi.cmake -D COMPILER="clang" ..
     #make >> output_file.txt 2>&1
     _make
     return 1
 }
-
+function cmake_all_release() {
+    cd build
+    time cmake -GNinja -DCMAKE_BUILD_TYPE=release -D CMAKE_TOOLCHAIN_FILE=cmake/toolchain-arm-none-eabi.cmake -D COMPILER="clang" ..
+    #cmake -DCMAKE_BUILD_TYPE=debug -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON -D CMAKE_TOOLCHAIN_FILE=cmake/toolchain-arm-none-eabi.cmake -D COMPILER="clang" ..
+    #make >> output_file.txt 2>&1
+    _make
+    return 1
+}
 function _make() {
     cd build
-    time make -j
+    time ninja
     return 1
 }
 

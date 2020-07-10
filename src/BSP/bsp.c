@@ -200,6 +200,8 @@ static void SystemClock_Config(void)
         Error_Handler(__FILE__, __LINE__);
     }
     HAL_PWREx_EnableUSBVoltageDetector();
+    
+
     /*
       使用IO的高速模式，要使能IO补偿，即调用下面三个函数 
       （1）使能CSI clock

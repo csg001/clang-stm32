@@ -3,7 +3,7 @@ project(src)
 
 #set(LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/GCCARM/STM32H743XIHx_FLASH.ld)
 include(stm32h7)
-
+add_library(${PROJECT_NAME} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/BSP)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/CMSIS)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/driver)
@@ -13,6 +13,9 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/GCCARM)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/rtos)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/components)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/STM32_USB_Device_Library)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Dap-Firmware)
+
+
 
 #add_library(${project_nmae} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})
 

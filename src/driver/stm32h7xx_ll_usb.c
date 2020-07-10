@@ -559,7 +559,7 @@ HAL_StatusTypeDef USB_ActivateEndpoint(USB_OTG_GlobalTypeDef *USBx, USB_OTG_EPTy
             USBx_OUTEP(epnum)->DOEPCTL |= (ep->maxpacket & USB_OTG_DOEPCTL_MPSIZ) |
                                           ((uint32_t)ep->type << 18) |
                                           USB_OTG_DIEPCTL_SD0PID_SEVNFRM |
-                                          USB_OTG_DOEPCTL_USBAEP;
+                                          USB_OTG_DOEPCTL_USBAEP ;
         }
     }
     return HAL_OK;

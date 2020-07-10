@@ -671,7 +671,7 @@ static void USBD_SetConfig(USBD_HandleTypeDef *pdev, USBD_SetupReqTypedef *req)
         {
           pdev->dev_state = USBD_STATE_ADDRESSED;
           pdev->dev_config = cfgidx;
-          USBD_ClrClassConfig(pdev, cfgidx);
+          USBD_ClrClassConfig(pdev, cfgidx);//配置是零的话清除配置回到设置地址的状态
           USBD_CtlSendStatus(pdev);
         }
         else if (cfgidx != pdev->dev_config)
